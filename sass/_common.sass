@@ -53,25 +53,98 @@ body
 	font-size: 12px 
 	line-height: 1.4
 
+.out
+	margin: 0 auto
+	min-width: 320px
+.inner
+	max-width: 1200px 
+	padding: 0 10px 
+	+box
+	margin: 0 auto
+	position: relative
+// fonts
 
-// common blocks      
++font("HelveticaNeue Bold", helveticaneuecyr-bold)
++font("HelveticaNeue Medium", helveticaneuecyr-medium)
++font("HelveticaNeue Roman", helveticaneuecyr-roman)
++font("HelveticaNeue Light", helveticaneuecyr-light)
 
+//vars
 
+=bold
+	font-family: "HelveticaNeue Bold", Helvetica, sans-serif 
+=med
+	font-family: "HelveticaNeue Medium", Helvetica, sans-serif 
+=reg
+	font-family: "HelveticaNeue Roman", Helvetica, sans-serif 
+=light
+	font-family: "HelveticaNeue Light", Helvetica, sans-serif 
 
+=r1
+	@media only screen and (max-width: 1200px)
+		@content
+=r2
+	@media only screen and (max-width: 1024px)
+		@content
+=r3
+	@media only screen and (max-width: 768px)
+		@content
+=r4
+	@media only screen and (max-width: 480px)
+		@content
 
+//reset
+h1, h2, h3, h4, h5, h6, strong, b
+	font-weight: normal
+	line-height: 1.2
+a
+	text-decoration: none
 
+h2
+	+reg
+	font-size: 24px
+	color: #333
 
+h3
+	+reg
+	font-size: 22px
+	color: #333
 
+h4
+	+reg
+	font-size: 18px
+	color: #333 
+	
+h5
+	+reg
+	font-size: 15px
+	line-height: 1.4
+	
+p
+	+reg
+	font-size: 14px
+	line-height: 16px
+	
+.small
+	display: block
+	+light
+	font-size: 12px
+	color: #666 
+	line-height: 1.2
 
+.price
+	+bold
+	font-size: 14px
+	line-height: 16px
+	color: #333 
+	display: block
 
-
-
-
-
-
-
-
-
+hr
+	width: 100%
+	border: none
+	height: 1px
+	background: #000
+	+opacity(0.1) 
 
 
 

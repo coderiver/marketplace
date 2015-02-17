@@ -15,5 +15,17 @@ head.ready(function() {
 	//     scrollFixedElements()
 	// });
 
-	console.log($('body').html());
+	$('.js-btn-menu').on('click', function() {
+		$('.js-menu').toggleClass('is-active');
+		return false;
+	});
+
+	//range
+	$(function() {
+		$( ".js-range" ).slider({
+			range: true
+		});
+	});
+
+
 });

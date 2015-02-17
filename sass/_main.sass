@@ -1,216 +1,503 @@
-// Normally mainpage styles
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.main
+	padding: 20px 0 0
+	+clr
+	&__inner
+		+clr
+.slider 
+	position: relative
+	margin-bottom: 20px
+	&__inner
+		background: #000 
+		position: relative
+		+border-radius(2px)
+	&__pager
+		position: absolute
+		bottom: 12px
+		width: 100% 
+		text-align: center
+		z-index: 200 
+		height: 8px
+		span
+			width: 8px
+			height: 8px
+			border: 2px solid #fff
+			+opacity(0.2)
+			+box
+			display: inline-block
+			text-indent: -100000px 
+			+border-radius(50%)
+			margin: 0 5px 
+			cursor: pointer
+			&.cycle-pager-active
+				+opacity(1)
+				background: #fff 
+	&__item
+		width: 100%
+		background-repeat: no-repeat
+		+cover
+		height: 300px
+		+vertical
+		text-align: left
+	&__info
+		max-width: 520px
+		display: inline-block
+		vertical-align: middle
+		padding: 20px
+		+box 
+	.small
+		max-width: 330px
+	h2
+		color: #fff 
+		margin-bottom: 20px
+.banners
+	float: right
+	max-width: 280px
+	width: 100%
+	margin: 0 0 0 -280px 
+	+r2
+		max-width: 100%
+		float: none
+		margin: 0
+.banner
+	width: 100%
+	overflow: hidden
+	border: 1px solid #efefef
+	+border-radius(2px)
+	text-align: center
+	margin-bottom: 20px
+	+box
+	max-width: 280px
+	+r2
+		margin: 0 auto 20px
+		max-width: 460px
+	&__inner
+		display: block
+		font-size: 0
+		padding: 18px 0 0 
+	&__info
+		max-width: 260px
+		padding: 0 20px 
+		+box 
+		text-align: left
+		margin-bottom: 25px
+		+r2
+			max-width: 100%
+	h4
+		margin-bottom: 20px
+	img
+		max-width: 100%
+	&__btns
+		text-align: center
+		padding: 9px 9px 9px
+		font-size: 0
+		+r2
+			max-width: 260px
+			margin: 0 auto 10px 
+	&__tab
+		display: inline-block
+		+reg
+		font-size: 12px
+		color: #333 
+		+border-radius(2px)
+		+box
+		position: relative
+		padding: 8px 0 6px
+		text-align: center 
+		width: 50%
+		display: inline-block
+		vertical-align: top
+		&_black
+			background: #1a1b1f
+			color: #fff  
+			+border-radius(2px 0 0 2px)
+		&_white
+			+border-radius(0 2px 2px 0)
+			&:before
+				border: 1px solid #efefef
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+				content: "" 
+				+border-radius(0 2px 2px 0)
+	&__box
+		padding: 0 0 10px 
+		a
+			display: block
+			position: relative
+			padding: 0 20px 
+			font-size: 0
+			span
+				position: absolute
+				top: 50%
+				left: 10px
+				margin-top: -11px
+				+bold
+				font-size: 16px
+				color: #000 
+				+opacity(0.2)
+			img
+				max-width: 100%
+.banner_gray
+	background: #ccc
+	border: none
+	+border-radius(2px)
+	.banner__inner
+		padding: 18px 0 10px 
+.banner_big
+	.banner__info
+		margin-bottom: 50px
+.content
+	float: left
+	width: 100%
+	padding: 0 300px 0 0
+	+box 
+	+r2
+		text-align: center
+		padding: 0
+		float: none 
+.big-item
+	+clr
+	border: 1px solid #efefef
+	+border-radius(2px)
+	margin-bottom: 20px
+	+r2
+		display: inline-block
+	+r3
+		max-width: 460px
+	a
+		display: block
+	&__text
+		width: 100%
+		max-width: 250px
+		float: left
+		height: 298px
+		+vertical
+		+box
+		padding: 20px 5px 20px 28px 
+		+r2
+			height: auto
+			max-width: 100%
+			float: none
+		div
+			display: inline-block
+			vertical-align: middle
+			width: 100%
+			text-align: left
+		h4
+			margin-bottom: 20px
+	&__img
+		overflow: hidden
+		font-size: 0
+		height: 300px
+		+vertical
+		text-align: right
+		+r2
+			height: auto
+		img
+			max-width: 100%
+			display: inline-block
+			vertical-align: middle
+.row
+	padding: 18px 0 0
+	h3
+		margin-bottom: 15px
+
+.item-wrapper
+	font-size: 0
+	margin: 0 -10px 
+.item
+	display: inline-block
+	width: 33.3%
+	padding: 0 10px 20px
+	vertical-align: top
+	+box 
+	background: #fff 
+	+r3
+		width: 100%
+		max-width: 480px 
+	a
+		display: block
+		position: relative
+		border: 1px solid #efefef
+		+border-radius(2px)
+		height: 158px
+		+vertical
+		&:hover
+			.item__info
+				visibility: visible
+				+opacity(1)
+		img
+			display: inline-block
+			vertical-align: middle
+			max-width: 100%
+			max-height: 100%
+	&__info
+		padding: 7px 10px 12px 
+		background: rgba(255, 255, 255, 0.9) 
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0 
+		text-align: left
+		+transition(opacity 0.3s, visibility 0.3s)
+		+opacity(0)
+		visibility: hidden
+		p
+			color: #2196f3
+			margin-bottom: 2px
+		.small
+			margin-bottom: 11px
+	.sticker
+		position: absolute
+		top: 9px 
+		right: 9px  
+	hr
+		margin-bottom: 10px
+.sticker
+	display: inline-block
+	+bold
+	font-size: 10px
+	color: #fff
+	text-transform: uppercase
+	line-height: 40px
+	width: 40px
+	text-align: center
+	+border-radius(50%)
+	&.is-red
+		background-color: #E53935
+	&.is-green
+		background-color: #4CAF50
+	&.is-orange
+		background-color: #FF9800 
+
+.box-wrapper
+	margin: 0 -10px		
+	font-size: 0
+	padding: 2px 0 0 
+.box
+	display: inline-block
+	width: 50%
+	padding: 0 10px 20px
+	vertical-align: top
+	+box 
+	+r3
+		width: 100%
+		max-width: 490px
+	a
+		display: block
+		position: relative
+		border: 1px solid #efefef
+		+border-radius(2px)
+		height: 200px
+		+box
+		+vertical
+		text-align: left
+		+cover
+		background-position: center right
+		background-repeat: no-repeat  
+		overflow: hidden
+	&__text
+		display: inline-block
+		vertical-align: middle
+		max-width: 260px
+		padding: 20px
+		+box 
+	h4
+		color: #fff
+		margin-bottom: 20px
+	&.is-lighter
+		a
+			border: none
+			+border-radius(2px)
+		.small
+			color: #666 
+	&.is-darker
+		a
+			border: none
+			+border-radius(2px)
+		.small
+			color: #333 
+	&.is-yellow
+		a
+			border: none
+			+border-radius(2px)
+		.small
+			color: #fff
+	&.is-white
+		h4
+			color: #333
+		.small
+			color: #666 
+			
+.viewed
+	background: #efefef
+	overflow: hidden
+	padding: 17px 0 0
+	margin-bottom: 20px
+	+r2
+		text-align: center
+	h3
+		margin-bottom: 20px
+	&__row
+		margin: 0 -10px
+		font-size: 0
+	&__item
+		width: 25%
+		padding: 0 10px 20px 
+		+box
+		display: inline-block
+		vertical-align: top
+		+r2
+			width: 50%
+		+r4
+			width: 100%
+		a
+			display: block
+			position: relative
+			background: #fff 
+			height: 160px
+			+vertical
+			&:hover
+				.item__info
+					visibility: visible
+					+opacity(1)
+			img
+				display: inline-block
+				vertical-align: middle
+				max-width: 100%
+				max-height: 100%
+		.item__info
+			padding: 7px 10px 12px 
+			background: rgba(255, 255, 255, 0.9) 
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0 
+			text-align: left
+			+transition(opacity 0.3s, visibility 0.3s)
+			+opacity(0)
+			visibility: hidden
+			p
+				+reg
+				font-size: 14px
+				line-height: 16px
+				color: #2196f3
+				margin-bottom: 2px
+			.small
+				margin-bottom: 11px
+		.sticker
+			position: absolute
+			top: 9px 
+			right: 9px  
+		hr
+			margin-bottom: 10px
+			
+.category
+	background: #1a1b1f
+	+border-radius(2px)
+	padding: 0 10px 
+	margin-bottom: 20px
+	+r2
+		text-align: center
+	&__title
+		display: inline-block
+		width: 100%
+		max-width: 280px
+		vertical-align: top
+		color: #fff
+		+reg
+		font-size: 14px 
+		padding: 11px 0 10px 
+		+r2
+			display: block
+			margin: 0 auto 5px
+	&__list
+		display: inline-block
+		font-size: 0
+		li
+			display: inline-block
+			padding: 5px 8px 
+			+r2
+				display: block
+			a
+				font-size: 12px
+				+reg
+				color: #fff
+				padding: 8px 13px 6px 10px
+				display: block
+				+border-radius(2px)
+				&.is-active
+					background-color: #2196F3  
+					
+
+.sidebar
+	width: 300px
+	float: left
+	+r2
+		float: none
+		width: 100%
+		margin-bottom: 20px
+	&__inner
+		width: 100%
+		max-width: 280px
+		border: 1px solid #EFEFEF
+		+border-radius(2px)
+		padding: 5px 10px 
+		+box
+		+r2
+			max-width: 100%
+			font-size: 0
+	&__box
+		padding-bottom: 20px
+		+box
+		+r2
+			width: 33.3%
+			display: inline-block
+			vertical-align: top
+		+r3
+			width: 50%
+			padding-right: 20px
+		+r4
+			width: 100%
+			padding-right: 0
+		&:last-child
+			padding-bottom: 0
+	&__title
+		display: block
+		+bold
+		font-size: 14px
+		color: #333 
+		margin-bottom: 15px
+	&__list
+		li
+			font-size: 0
+			margin-bottom: 5px
+	&__range
+		margin-bottom: 15px
+		p
+			font-size: 12px
+			line-height: 25px
+			color: #333
+			+reg
+			margin-bottom: 10px
+			strong
+				+bold	
+.catalog
+	overflow: hidden
+	padding: 0 0 40px 
+	+r3
+		text-align: center
+	.link
+		float: right
+		margin-top: 10px
+	.slider
+		margin: 0
+.link
+	+reg
+	font-size: 12px
+	color: #2196f3
+	text-decoration: underline
+	&:hover
+		text-decoration: none

@@ -1,0 +1,299 @@
+.checkbox
+	position: relative
+	display: inline-block
+	+vertical
+	cursor: pointer
+	input
+		width: 20px
+		height: 20px
+		margin-right: 10px
+		display: inline-block
+		vertical-align: middle
+		+opacity(0)
+		&:checked + span
+			&:after
+				+opacity(1)
+				visibility: visible
+			&:before
+				background-color: #2196F3
+				border-color: #2196F3
+	span
+		display: inline-block
+		vertical-align: middle
+		+reg
+		font-size: 12px
+		color: #333 
+		padding: 1px 0 0 
+		&:before
+			position: absolute
+			top: 50%
+			left: 0
+			margin-top: -10px 
+			width: 20px
+			height: 20px
+			border: 1px solid #efefef
+			+border-radius(2px)
+			content: "" 
+			+box
+			+transition(border 0.3s, background 0.3s)
+		&:after
+			position: absolute
+			top: 50%
+			left: 5px
+			margin-top: -5px 
+			+s(check)
+			content: ""
+			+opacity(0)
+			visibility: hidden
+			+transition(opacity 0.3s, visibility 0.3s)
+
+
+.range-slider
+	height: 10px
+	display: block
+	margin: 0 10px 
+	+border-radius(10px)
+	+box
+	position: relative
+	&:before
+		content: "" 
+		height: 10px
+		position: absolute
+		top: 0
+		right: -10px
+		bottom: 0
+		left: -10px
+		border: 1px solid #EFEFEF
+		+border-radius(10px) 
+		+box
+	span
+		width: 20px
+		height: 20px
+		border: 5px solid #ffffff
+		+border-radius(50%)
+		display: block
+		position: absolute
+		top: 50% 
+		+box
+		margin: -10px 0 0 -10px 
+		background-color: #2196F3
+		&:before
+			content: "" 
+			position: absolute
+			top: -5px
+			right: -5px
+			bottom: -5px
+			left: -5px
+			border: 1px solid #EFEFEF
+			+border-radius(50%) 
+	div
+		height: 100%
+		background-color: #2196F3
+		position: absolute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

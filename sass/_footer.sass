@@ -1,0 +1,30 @@
+.footer
+	background: #1a1b1f
+	padding: 20px 0 30px 
+	&__row
+		margin: 0 -10px 
+		font-size: 0
+	&__box
+		display: inline-block
+		vertical-align: top
+		width: 25%
+		padding: 0 10px 20px
+		+box 
+		+r2
+			width: 33.3%
+		+r3
+			width: 100%
+			text-align: center
+		h5
+			color: #fff
+			margin-bottom: 17px
+		li
+			a
+				+reg
+				font-size: 12px
+				line-height: 25px
+				color: #fff
+				+opacity(0.5)
+				display: inline-block
+				&:hover
+					text-decoration: underline
