@@ -346,6 +346,7 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .box.is-white .small { color: #666666; }
 
 .viewed { background: #efefef; overflow: hidden; padding: 17px 0 0; margin-bottom: 20px; }
+.viewed_mod { margin-bottom: 0; }
 @media only screen and (max-width: 1024px) { .viewed { text-align: center; } }
 .viewed h3 { margin-bottom: 20px; }
 .viewed__row { margin: 0 -10px; font-size: 0; }
