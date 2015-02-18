@@ -201,6 +201,7 @@
 			vertical-align: middle
 .row
 	padding: 18px 0 0
+	overflow: hidden
 	h3
 		margin-bottom: 15px
 
@@ -265,6 +266,7 @@
 	width: 40px
 	text-align: center
 	+border-radius(50%)
+	z-index: 10 
 	&.is-red
 		background-color: #E53935
 	&.is-green
@@ -501,3 +503,152 @@
 	text-decoration: underline
 	&:hover
 		text-decoration: none
+
+//ProductList
+.product
+	+clr
+	&__left
+		float: left
+		margin-right: 20px
+	&__right
+		overflow: hidden
+		
+.i-sticker
+	font-size: 10px
+	+bold
+	color: #fff
+	text-align: center
+	+border-radius(20px)
+	line-height: 2
+	display: inline-block
+	width: 40px
+	text-transform: uppercase
+	&.is-red
+		background-color: #E53935
+	&.is-green
+		background-color: #4CAF50
+	&.is-orange
+		background-color: #FF9800
+.info
+	.i-sticker
+		float: right
+		margin-top: 4px
+	h2
+		overflow: hidden
+		color: #2196F3
+	&__row
+		border-bottom: 1px solid #efefef
+		padding-bottom: 15px
+		margin-bottom: 19px
+		font-size: 0
+		p
+			font-size: 12px
+			line-height: 18px
+			color: #666
+			+reg 
+	&__setting
+		+vertical
+		text-align: left
+		padding: 0 20px 0 0
+		display: inline-block
+		margin-bottom: 5px
+		&_mod
+			border-right: 1px solid #efefef 
+		.rating
+			margin-left: 20px
+	&__btns
+		+vertical
+		text-align: left
+		padding-bottom: 5px
+		ul.btn-wrap
+			display: inline-block
+			vertical-align: middle
+			margin: 0 0 0 -20px
+			font-size: 0
+			li
+				display: inline-block
+				padding: 0 20px
+				&.is-bord
+					border-right: 1px solid #efefef 
+	&__select
+		width: 60px
+	&__title
+		+reg
+		font-size: 12px
+		line-height: 16px
+		color: #333333 
+		padding-right: 15px
+	&__select, &__title
+		display: inline-block
+		vertical-align: middle
+	&__block
+		display: block
+		font-size: 0
+	&__box
+		display: inline-block
+		vertical-align: top
+		width: 50%
+		+box
+		padding: 0 40px 0 0 
+		&_mod
+			padding: 0 0 0 40px
+			border-left: 1px solid #efefef 
+		h4
+			+bold
+			color: #333
+			font-size: 14px
+			line-height: 1.2
+			margin-bottom: 11px
+		p
+			+reg
+			color: #666
+			font-size: 11px 
+			line-height: 1.2
+.rating
+	+vertical
+	&__title, &__number, .stars
+		display: inline-block
+		vertical-align: middle
+	&__title, &__number
+		+reg
+		font-size: 12px
+		line-height: 16px
+	&__title
+		color: #333333 
+		padding-right: 15px
+	&__number
+		color: #999 
+	.stars
+		padding: 0 5px 1px 0 
+		a
+			display: inline-block
+			position: relative
+			+opacity(0.5)
+			+transition(opacity 0.3s)
+			width: 14px
+			height: 13px
+			margin: 0 5px 0 0 
+			&:before, &:after
+				content: "" 
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				+transition(opacity 0.3s, visibility 0.3s)
+			&:before
+				+s(star-gray)
+				visibility: visible
+				+opacity(1)
+			&:after
+				+s(star-active)
+				visibility: hidden
+				+opacity(0)
+			&.is-active, &:hover
+				+opacity(1)
+				&:before
+					visibility: hidden
+					+opacity(0)
+				&:after
+					visibility: visible
+					+opacity(1)
