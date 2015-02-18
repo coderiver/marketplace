@@ -19,19 +19,19 @@ head.ready(function() {
 	//slick
 	$('.js-slick').slick({
 		infinite: true,
-		slidesToShow: 3,
+		slidesToShow: 5,
 		arrows: true,
-		slidesToScroll: 3,
+		slidesToScroll: 5,
 		responsive: [
 			{
-		        breakpoint: 1900,
+		        breakpoint: 1680,
 		        settings: {
-		        	slidesToShow: 5,
-		        	slidesToScroll: 5,
+		        	slidesToShow: 4,
+		        	slidesToScroll: 4,
 		    	}
 		    },
 			{
-		        breakpoint: 1600,
+		        breakpoint: 1280,
 		        settings: {
 		        	slidesToShow: 3,
 		        	slidesToScroll: 3,
