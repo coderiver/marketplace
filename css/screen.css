@@ -216,10 +216,9 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .nav-wrap { background: #1a1b1f; }
 
 .nav { font-size: 0; position: relative; text-align: center; }
+@media only screen and (max-width: 1024px) { .nav { padding: 0 60px; } }
 .nav li { display: inline-block; vertical-align: top; padding: 10px 0 10px 0; margin: 0 10px 0; position: relative; }
-@media only screen and (max-width: 1024px) { .nav li { display: inline-block; position: relative; text-align: center; margin: 0 auto; width: 33.3%; } }
-@media only screen and (max-width: 768px) { .nav li { width: 50%; } }
-@media only screen and (max-width: 480px) { .nav li { width: 100%; } }
+@media only screen and (max-width: 1024px) { .nav li { display: inline-block; position: relative; text-align: center; } }
 .nav li:hover .nav__drop { display: block; }
 .nav li:hover .nav__item { background: white; -moz-border-radius: 2px 2px 0 0; -webkit-border-radius: 2px; border-radius: 2px 2px 0 0; }
 .nav li:hover .nav__icon { border-color: white; -moz-border-radius: 2px 2px 0 0; -webkit-border-radius: 2px; border-radius: 2px 2px 0 0; }
@@ -256,8 +255,9 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .nav__icon i.is-food:before { background: url('../img/icons-sc7b8e73231.png') 0 -453px no-repeat; width: 22px; height: 27px; }
 .nav__icon i.is-office { background: url('../img/icons-sc7b8e73231.png') 0 -769px no-repeat; width: 26px; height: 28px; }
 .nav__icon i.is-office:before { background: url('../img/icons-sc7b8e73231.png') 0 -731px no-repeat; width: 26px; height: 28px; }
-.nav__drop { position: absolute; top: 100%; background: white; z-index: 200; border-top: none; padding: 6px 10px 0 10px; width: 200px; font-size: 0; -moz-border-radius: 0 0 2px 2px; -webkit-border-radius: 0; border-radius: 0 0 2px 2px; display: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: left; margin-top: -10px; }
+.nav__drop { position: absolute; top: 100%; background: white; z-index: 200; border-top: none; padding: 6px 10px 0 10px; width: 200px; font-size: 0; display: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: left; margin-top: -10px; }
 @media only screen and (max-width: 1024px) { .nav__drop { left: 50%; right: 50%; margin: -10px -100px 0 -100px; } }
+@media only screen and (max-width: 480px) { .nav__drop { width: 180px; margin: -10px -90px 0 -90px; } }
 .nav__drop.is-left { left: 0; -moz-border-radius: 0 2px 2px 2px; -webkit-border-radius: 0; border-radius: 0 2px 2px 2px; }
 @media only screen and (max-width: 1024px) { .nav__drop.is-left { left: 50%; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; } }
 .nav__drop.is-right { right: 0; -moz-border-radius: 2px 0 2px 2px; -webkit-border-radius: 2px; border-radius: 2px 0 2px 2px; }

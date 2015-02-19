@@ -162,6 +162,8 @@
 	font-size: 0
 	position: relative
 	text-align: center
+	+r2
+		padding: 0 60px 
 	li
 		display: inline-block
 		vertical-align: top
@@ -172,12 +174,12 @@
 			display: inline-block
 			position: relative
 			text-align: center
-			margin: 0 auto
-			width: 33.3%
+			// margin: 0 auto
+			// width: 33.3%
 		+r3
-			width: 50%
+			// width: 50%
 		+r4
-			width: 100%
+			// width: 100%
 		&:hover
 			.nav__drop
 				display: block
@@ -279,7 +281,7 @@
 		padding: 6px 10px 0 10px 
 		width: 200px
 		font-size: 0
-		+border-radius(0 0 2px 2px)
+		// +border-radius(0 0 2px 2px)
 		display: none
 		+box
 		text-align: left
@@ -288,6 +290,9 @@
 			left: 50%
 			right: 50%
 			margin: -10px -100px 0 -100px 
+		+r4
+			width: 180px
+			margin: -10px -90px 0 -90px 
 		&.is-left
 			left: 0
 			+border-radius(0 2px 2px 2px)
