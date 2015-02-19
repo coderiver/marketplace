@@ -1,5 +1,5 @@
 //checkbox
-.checkbox
+.checkbox, .checkbox-lite
 	position: relative
 	display: inline-block
 	cursor: pointer
@@ -47,7 +47,14 @@
 			+opacity(0)
 			visibility: hidden
 			+transition(opacity 0.3s, visibility 0.3s)
-
+	&-lite
+		span
+			&:after
+				+s(check-blue)
+		input
+			&:checked + span
+				&:before
+					background: #fff 
 //range slider
 .range-slider
 	height: 10px
@@ -170,6 +177,8 @@
 	line-height: 20px
 	color: #333 
 	+border-radius(2px)
+	&_mod
+		color: #999999 
 	i
 		display: block
 		width: 20px
@@ -437,13 +446,86 @@
 
 
 
-
-
-
-
-
-
-
+//table cabinet
+.table-cabinet
+	width: 100%
+	min-width: 880px
+	margin-bottom: 20px
+	text-align: left
+	th
+		text-align: left
+		font-weight: normal
+		border-bottom: 1px solid #efefef 
+		padding: 5px 0 
+		span
+			+reg
+			font-size: 12px
+			color: #666 
+			letter-spacing: 0.025em 
+	td
+		padding: 20px 0 0
+		vertical-align: middle
+		font-size: 0
+		.checkbox-lite
+			width: 20px
+			height: 20px
+			padding: 0
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+		span, .table-link
+			color: #333 
+			+reg
+			font-size: 12px
+			line-height: 16px
+		.table-link
+			color: #2196f3 
+	.photo__img
+		display: inline-block
+		vertical-align: middle
+		width: 130px
+		height: 80px
+		+box
+		border: 1px solid #efefef
+		+border-radius(2px)
+		+vertical
+		img
+			max-width: 100%
+			max-height: 100% 
+			display: inline-block
+			vertical-align: middle
+	.select-n
+		display: inline-block
+		vertical-align: top
+		max-width: 220px
+		width: 100%
+		margin-right: 10px
+		span
+			+reg
+			font-size: 12px
+			line-height: 20px
+			color: #999
+	.btn
+		display: inline-block
+		width: 50px
+		padding: 7px 10px 
+		+box
+		text-align: center
+	.table-strong
+		span
+			+bold
+	.table-result
+		background: #f7f7f7 
+		td
+			padding: 20px 0
+			border-bottom: 1px solid #efefef  
+		.table-mod
+			padding: 0 
+	.table-result__left
+		max-width: 90%
+		padding: 20px 0
+		background: #fff
+		border-right: 1px solid #efefef   
 
 
 

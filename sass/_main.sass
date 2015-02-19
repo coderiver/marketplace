@@ -3,6 +3,7 @@
 	+clr
 	&__inner
 		+clr
+		overflow: hidden
 .slider 
 	position: relative
 	margin-bottom: 20px
@@ -639,38 +640,40 @@
 		color: #999 
 	.stars
 		padding: 0 5px 1px 0 
-		a
-			display: inline-block
-			position: relative
-			+opacity(0.5)
-			+transition(opacity 0.3s)
-			width: 14px
-			height: 13px
-			margin: 0 5px 0 0 
-			&:before, &:after
-				content: "" 
-				position: absolute
-				top: 0
-				left: 0
-				right: 0
-				bottom: 0
-				+transition(opacity 0.3s, visibility 0.3s)
+.stars
+	font-size: 0
+	a
+		display: inline-block
+		position: relative
+		+opacity(0.5)
+		+transition(opacity 0.3s)
+		width: 14px
+		height: 13px
+		margin: 0 5px 0 0 
+		&:before, &:after
+			content: "" 
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			+transition(opacity 0.3s, visibility 0.3s)
+		&:before
+			+s(star-gray)
+			visibility: visible
+			+opacity(1)
+		&:after
+			+s(star-active)
+			visibility: hidden
+			+opacity(0)
+		&.is-active, &:hover
+			+opacity(1)
 			&:before
-				+s(star-gray)
-				visibility: visible
-				+opacity(1)
-			&:after
-				+s(star-active)
 				visibility: hidden
 				+opacity(0)
-			&.is-active, &:hover
+			&:after
+				visibility: visible
 				+opacity(1)
-				&:before
-					visibility: hidden
-					+opacity(0)
-				&:after
-					visibility: visible
-					+opacity(1)
 
 //breadcrumbs
 .breadcrumbs
@@ -771,14 +774,25 @@
 
 
 //personal cabinet
+.cabinet
+	+r3
+		text-align: left
 .title
 	margin-bottom: 20px
 	
 .choice
+	padding: 5px 0 19px
+	border-bottom: 1px solid #efefef
+	margin-bottom: 17px
+	p
+		margin-bottom: 15px
 	&__select
 		float: right
 		width: 100%
 		max-width: 280px
+		+r3
+			float: none
+			margin-bottom: 20px
 	&__search
 		overflow: hidden
 		padding: 0 10px 0 0 
@@ -792,4 +806,265 @@
 				+s(choice-search)
 	&__input
 		padding: 12px 10px 12px 40px
+		
+
+//tools
+.tools
+	font-size: 0
+	p
+		margin-bottom: 15px
+	.tool
+		margin: 0 13px 13px 0
+		&:last-child
+			margin: 0 0 13px 
+.tool
+	width: 100%
+	max-width: 210px
+	display: inline-block
+	vertical-align: top
+	a
+		display: block
+		background: #2196f3
+		height: 80px 
+		position: relative
+		padding: 10px 10px 10px 50px 
+		+box
+		+vertical
+		+border-radius(2px)
+		span
+			display: inline-block
+			vertical-align: middle
+			+reg
+			font-size: 12px
+			color: #fff 
+	&__icon
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		width: 50px
+		+vertical
+		i
+			display: inline-block
+			vertical-align: middle
+			&.is-burger
+				+s(is-burger)
+			&.is-box
+				+s(is-box)
+			&.is-heart
+				+s(is-heart)
+			&.is-round
+				+s(is-round)
+
+//check
+.check-wrap
+	+r2
+		text-align: left
+		margin: 0 -5px
+		font-size: 0
+	.check
+		+r2
+			margin: 0 5px 
+.check
+	max-width: 280px
+	display: inline-block
+	width: 100%
+	vertical-align: top
+	&__item
+		width: 100%
+		max-width: 280px
+		position: relative
+		height: 160px
+		+vertical
+		+box	
+		margin-bottom: 10px	
+		&:hover
+			border-color: #2196f3
+			.check__info
+				visibility: visible
+				+opacity(1)
+		img
+			display: inline-block
+			vertical-align: middle
+		.checkbox-lite
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			z-index: 100
+			padding: 0 
+			width: auto
+			&:hover
+				span
+					border-color: #2196f3 
+			input
+				&:checked + span
+					border-color: #2196f3
+			span
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				border: 1px solid #efefef
+				+border-radius(2px) 
+				+transition(border-color 0.3s)
+				&:before
+					top: auto
+					left: auto
+					right: 10px
+					bottom: 5px
+				&:after
+					top: auto
+					left: auto
+					right: 15px
+					bottom: 10px
+	&__info
+		background: rgba(255, 255, 255, 0.9) 
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		text-align: left
+		padding: 0 9px
+		visibility: hidden
+		+opacity(0)
+		+transition(visibility 0.3s, opacity 0.3s) 
+	&__top, &__rating, &__prices
+		border-bottom: 1px solid #efefef 
+	&__top
+		padding: 5px 0 10px 
+		p
+			color: #2196f3
+			margin-bottom: 2px
+	&__rating
+		padding: 4px 0 
+		+clr
+		.i-sticker
+			float: right
+		.stars
+			padding: 3px 0 
+			overflow: hidden
+	&__prices
+		padding: 10px 0 
+		margin-bottom: 8px
+	&__price
+		display: block
+		color: #333
+		+reg
+		font-size: 12px
+		&.is-red
+			color: #e53935 
+	&__btns
+		font-size: 0
+		margin: 0 -5px
+		padding-bottom: 10px
+		.btn, .select
+			display: inline-block
+			vertical-align: top
+			margin: 0 5px 10px
+		.btn
+			padding: 7px 18px 
+		.select
+			max-width: 140px
+			
+.sidebar__action
+	max-width: 280px
+	padding: 10px 0 
+	&__in
+		margin: 0 -5px
+		font-size: 0
+		padding: 20px 0 0
+		border-top: 1px solid #efefef  
+	.select-n, .btn
+		display: inline-block
+		vertical-align: middle
+		margin: 0 5px 
+	.select-n
+		max-width: 220px
+	.btn
+		padding: 7px 10px
+		width: 50px
+		+box
+		text-align: center 
+		
+
+//graphics
+.graphics
+	font-size: 0
+	border-bottom: 1px solid #efefef 
+	padding: 20px 0 0 
+.graphics__inner
+	margin: 0 -20px 
+.graphics__box
+	display: inline-block
+	vertical-align: top
+	width: 50%
+	+box
+	padding: 0 20px 
+	+r3
+		width: 100%
+		margin-bottom: 20px
+.graphic 
+	&_100
+		width: 100%
+	&_90
+		width: 90%
+	&_80
+		width: 80%
+	&__vert
+		width: 50%
+		display: inline-block
+		vertical-align: bottom
+	&__block
+		+vertical
+		border-top: 2px solid #efefef
+		&.is-good
+			height: 200px
+			+g(#c8e6c9, #fff)
+			border-color: #4caf50 
+			text-align: left
+		&.is-bad
+			height: 150px
+			+g(#ffcdd2, #fff)
+			border-color: #f44336 
+			text-align: right	
+	&__row
+		height: 50px	
+		+g(#e1f5fe, #fff)
+		border-top: 2px solid #2196f3	
+		margin-bottom: -32px
+		+vertical
+		padding: 0 10px 30px 
+		text-align: left
+		p, span
+			display: inline-block
+			vertical-align: middle
+		p
+			max-width: 130px
+			width: 100%
+	&__text
+		+clr
+		display: inline-block
+		vertical-align: bottom
+		width: 100%
+		+box
+		padding: 0 10px 3px
+	span
+		+reg
+		font-size: 12px
+		line-height: 20px
+		color: #333 
+	&__left
+		float: left
+	&__right
+		float: right
+	p
+		clear: both
+		+reg
+		font-size: 12px
+		line-height: 20px
+		color: #666 
 		
