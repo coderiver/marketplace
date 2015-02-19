@@ -142,7 +142,7 @@
 	&__quantity
 		+reg
 		color: #fff
-	&__icon, &__icons
+	&__icon
 		position: absolute
 		top: 50%
 		left: 0
@@ -150,39 +150,24 @@
 		width: 40px
 		height: 40px
 		i
-			border: 1px solid #fff 
-			+box
-			+border-radius(2px)
-	&__icon
-		i
-			display: block
-			width: 100%
-			height: 100%
-	&__icons
-		text-align: justify
-		font-size: 0.1
-		&:after
-			content: "" 
 			display: inline-block
-			width: 100%
-		i
-			display: inline-block
-			width: 18px
-			height: 18px
+			&.is-basket
+				+s(is-basket)
+			&.is-wishlist
+				+s(is-wishlist)
 			
 .nav-wrap
 	background: #1a1b1f
 .nav
 	font-size: 0
 	position: relative
+	text-align: center
 	li
 		display: inline-block
 		vertical-align: top
 		padding: 10px 0 10px 0
-		margin: 0 50px 0 0 
+		margin: 0 10px 0 
 		position: relative
-		+r1
-			margin: 0 30px 0 0 
 		+r2
 			display: inline-block
 			position: relative
@@ -196,62 +181,141 @@
 		&:hover
 			.nav__drop
 				display: block
-		a
+			.nav__item
+				background: #fff
+				+border-radius(2px 2px 0 0)
+			.nav__icon
+				border-color: #fff
+				+border-radius(2px 2px 0 0)
+				i
+					&:before
+						display: block
+		.nav__item
 			height: 40px
 			position: relative
 			width: 40px
 			display: block
+			+border-radius(2px)
 			+r1
 				margin: 0 auto
-			span
-				font-size: 11px
-				+reg
-				color: #fff
-				letter-spacing: 0.025em 
 	&__icon
 		width: 40px
 		height: 40px
 		border: 1px solid rgba(255, 255, 255, 0.1)
 		+box
+		+vertical
+		position: relative
+		+border-radius(2px)
+		i
+			display: inline-block
+			vertical-align: middle
+			position: relative
+			&:before
+				content: "" 
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				display: none
+			&.is-camera
+				+s(is-camera)
+				&:before
+					+s(is-camera-active)
+			&.is-monitor
+				+s(is-monitor)
+				&:before
+					+s(is-monitor-active)
+			&.is-tech
+				+s(is-tech)
+				&:before
+					+s(is-tech-active)
+			&.is-home
+				+s(is-home)
+				&:before
+					+s(is-home-active)
+			&.is-closet
+				+s(is-closet)
+				&:before
+					+s(is-closet-active)
+			&.is-child
+				+s(is-child)
+				&:before
+					+s(is-child-active)
+			&.is-makeup
+				+s(is-makeup)
+				&:before
+					+s(is-makeup-active)
+			&.is-sport
+				+s(is-sport)
+				&:before
+					+s(is-sport-active)
+			&.is-car
+				+s(is-car)
+				&:before
+					+s(is-car-active)
+			&.is-cake
+				+s(is-cake)
+				&:before
+					+s(is-cake-active)
+			&.is-piano
+				+s(is-piano)
+				&:before
+					+s(is-piano-active)
+			&.is-food
+				+s(is-food)
+				&:before
+					+s(is-food-active)
+			&.is-office
+				+s(is-office)
+				&:before
+					+s(is-office-active)
 	&__drop
 		position: absolute
 		top: 100%
 		background: #fff
-		border: 2px solid #1a1b1f
 		z-index: 200
 		border-top: none  
-		padding: 10px 15px 
+		padding: 6px 10px 0 10px 
 		width: 200px
 		font-size: 0
-		+border-radius(0 0 5px 5px)
+		+border-radius(0 0 2px 2px)
 		display: none
 		+box
+		text-align: left
+		margin-top: -10px
 		+r2
 			left: 50%
 			right: 50%
-			margin: 0 -100px 
+			margin: -10px -100px 0 -100px 
 		&.is-left
 			left: 0
+			+border-radius(0 2px 2px 2px)
 			+r2
 				left: 50%
+				+border-radius(2px)
 		&.is-right
 			right: 0
+			+border-radius(2px 0 2px 2px)
 			+r2
 				right: 50%
+				+border-radius(2px)
 		li
 			margin: 0 
+			padding: 10px 0 4px 
 			display: block
 			vertical-align: top
 			+box
+			text-align: left
+			width: 100%
 			a
-				width: auto
-				height: auto
-				&:hover
-					span
-						text-decoration: none
+				display: block
+				position: relative
 				span
-					color: #1a1b1f
-					text-decoration: underline
+					color: #333
+					+reg
+					font-size: 12px
+					letter-spacing: 0.025em
 			.nav__icon
 				border-color: rgba(26, 27, 31, 0.1)
 					 
