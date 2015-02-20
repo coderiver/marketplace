@@ -708,305 +708,986 @@
 					<div class="title">
 						<h3>Продавец</h3>
 					</div>					
-					<ul class="breadcrumbs">
-						<li><a href="#">Подать объявление</a></li>
-						<li><a href="#" class="is-active">Продать товары и услуги</a></li>
+					<ul class="breadcrumbs tabs1">
+						<li><a href="#advert">Подать объявление</a></li>
+						<li><a href="#sells" class="is-active">Продать товары и услуги</a></li>
 					</ul>
-					<div class="choice">
-						<p>Выбирите товар для продажи</p>
-						<div class="choice__select">
-							<div class="select select_big js-select">
-								<span class="select__text js-select-text">Добавить товар самому</span>
-								<input type="hidden" class="js-select-input" value="0">
-								<ul class="select__list js-select-list">
-									<li data-id="Позвонить">Добавить товар самому</li>
-									<li data-id="Не добавлять">Не добавлять</li>
-									<li data-id="Попросить кого-то">Попросить кого-то</li>
-								</ul>
+
+					<!-- SELLS -->
+					<div class="sells is-tab-block" id="sells">
+						<div class="choice">
+							<p>Выбирите товар для продажи</p>
+							<div class="choice__select">
+								<div class="select select_big js-select">
+									<span class="select__text js-select-text">Добавить товар самому</span>
+									<input type="hidden" class="js-select-input" value="0">
+									<ul class="select__list js-select-list">
+										<li data-id="Позвонить">Добавить товар самому</li>
+										<li data-id="Не добавлять">Не добавлять</li>
+										<li data-id="Попросить кого-то">Попросить кого-то</li>
+									</ul>
+								</div>
+							</div>
+							<div class="choice__search">
+								<label>
+									<input type="text" class="input choice__input">
+									<i></i>
+								</label>
 							</div>
 						</div>
-						<div class="choice__search">
-							<label>
-								<input type="text" class="input choice__input">
-								<i></i>
-							</label>
+						<div class="tools">
+							<p>Инструменты продаж</p>
+							<div class="tool">
+								<a href="#">
+									<div class="tool__icon">
+										<i class="is-burger"></i>
+									</div>
+									<span>Добавить услугу акцию</span>
+								</a>
+							</div>
+							<div class="tool">
+								<a href="#">
+									<div class="tool__icon">
+										<i class="is-box"></i>
+									</div>
+									<span>Создать инфографику</span>
+								</a>
+							</div>
+							<div class="tool">
+								<a href="#">
+									<div class="tool__icon">
+										<i class="is-heart"></i>
+									</div>
+									<span>Lucky Price</span>
+								</a>
+							</div>
+							<div class="tool">
+								<a href="#">
+									<div class="tool__icon">
+										<i class="is-round"></i>
+									</div>
+									<span>Хочу продавать быстрее</span>
+								</a>
+							</div>
 						</div>
-					</div>
-					<div class="tools">
-						<p>Инструменты продаж</p>
-						<div class="tool">
-							<a href="#">
-								<div class="tool__icon">
-									<i class="is-burger"></i>
-								</div>
-								<span>Добавить услугу акцию</span>
-							</a>
-						</div>
-						<div class="tool">
-							<a href="#">
-								<div class="tool__icon">
-									<i class="is-box"></i>
-								</div>
-								<span>Создать инфографику</span>
-							</a>
-						</div>
-						<div class="tool">
-							<a href="#">
-								<div class="tool__icon">
-									<i class="is-heart"></i>
-								</div>
-								<span>Lucky Price</span>
-							</a>
-						</div>
-						<div class="tool">
-							<a href="#">
-								<div class="tool__icon">
-									<i class="is-round"></i>
-								</div>
-								<span>Хочу продавать быстрее</span>
-							</a>
-						</div>
-					</div>
-					<ul class="breadcrumbs">
-						<li><a href="#" class="is-active">Витрина</a></li>
-						<li><a href="#">Склад</a></li>
-					</ul>
-					<!-- Table -->
-					<div class="table-wrap">
-						<div class="table-wrap__in">
-							<table class="table-cabinet">
-								<tr>
-									<th><span>Фото товар</span></th>
-									<th><span>Названиае товара</span></th>
-									<th><span>Просмотры</span></th>
-									<th><span>Просмотры моб.</span></th>
-									<th><span>Звонки</span></th>
-									<th><span>Цена</span></th>
-									<th><span>Динамика</span></th>
-								</tr>
-								<tr>
-									<td>
-										<div class="photo">
-											<label class="checkbox-lite">
-												<input type="checkbox">
-												<span></span>
-											</label>
-											<a href="#" class="photo__img">
-												<img src="img/table-img.jpg" alt="">
-											</a>
+						<ul class="breadcrumbs tabs2">
+							<li><a href="#shop" class="is-active">Витрина</a></li>
+							<li><a href="#warehouse">Склад</a></li>
+						</ul>
+						<!-- BEGIN SHOP -->
+						<div class="is-tab-block shop" id="shop">
+							<!-- Table -->
+							<div class="table-wrap">
+								<div class="table-wrap__in">
+									<table class="table-cabinet">
+										<tr>
+											<th><span>Фото товар</span></th>
+											<th><span>Названиае товара</span></th>
+											<th><span>Просмотры</span></th>
+											<th><span>Просмотры моб.</span></th>
+											<th><span>Звонки</span></th>
+											<th><span>Цена</span></th>
+											<th><span>Динамика</span></th>
+										</tr>
+										<tr>
+											<td>
+												<div class="photo">
+													<label class="checkbox-lite">
+														<input type="checkbox">
+														<span></span>
+													</label>
+													<a href="#" class="photo__img">
+														<img src="img/table-img.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="table-link">Apple MacBook Pro 13 </a>
+											</td>
+											<td><span>2400</span></td>
+											<td><span>3400</span></td>
+											<td><span>15</span></td>
+											<td><span>30 000 грн.</span></td>
+											<td><img src="img/graph.png" alt=""></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="photo">
+													<label class="checkbox-lite">
+														<input type="checkbox">
+														<span></span>
+													</label>
+													<a href="#" class="photo__img">
+														<img src="img/table-img.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="table-link">Apple MacBook Pro 13 </a>
+											</td>
+											<td><span>2400</span></td>
+											<td><span>3400</span></td>
+											<td><span>15</span></td>
+											<td><span>30 000 грн.</span></td>
+											<td><img src="img/graph.png" alt=""></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="photo">
+													<label class="checkbox-lite">
+														<input type="checkbox">
+														<span></span>
+													</label>
+													<a href="#" class="photo__img">
+														<img src="img/table-img.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="table-link">Apple MacBook Pro 13 </a>
+											</td>
+											<td><span>2400</span></td>
+											<td><span>3400</span></td>
+											<td><span>15</span></td>
+											<td><span>30 000 грн.</span></td>
+											<td><img src="img/graph.png" alt=""></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="photo">
+													<label class="checkbox-lite">
+														<input type="checkbox">
+														<span></span>
+													</label>
+													<a href="#" class="photo__img">
+														<img src="img/table-img.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="table-link">Apple MacBook Pro 13 </a>
+											</td>
+											<td><span>2400</span></td>
+											<td><span>3400</span></td>
+											<td><span>15</span></td>
+											<td><span>30 000 грн.</span></td>
+											<td><img src="img/graph.png" alt=""></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="photo">
+													<label class="checkbox-lite">
+														<input type="checkbox">
+														<span></span>
+													</label>
+													<a href="#" class="photo__img">
+														<img src="img/table-img.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="table-link">Apple MacBook Pro 13 </a>
+											</td>
+											<td><span>2400</span></td>
+											<td><span>3400</span></td>
+											<td><span>15</span></td>
+											<td><span>30 000 грн.</span></td>
+											<td><img src="img/graph.png" alt=""></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="photo">
+													<label class="checkbox-lite">
+														<input type="checkbox">
+														<span></span>
+													</label>
+													<a href="#" class="photo__img">
+														<img src="img/table-img.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="table-link">Apple MacBook Pro 13 </a>
+											</td>
+											<td><span>2400</span></td>
+											<td><span>3400</span></td>
+											<td><span>15</span></td>
+											<td><span>30 000 грн.</span></td>
+											<td><img src="img/graph.png" alt=""></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="photo">
+													<label class="checkbox-lite">
+														<input type="checkbox">
+														<span></span>
+													</label>
+													<a href="#" class="photo__img">
+														<img src="img/table-img.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="table-link">Apple MacBook Pro 13 </a>
+											</td>
+											<td><span>2400</span></td>
+											<td><span>3400</span></td>
+											<td><span>15</span></td>
+											<td><span>30 000 грн.</span></td>
+											<td><img src="img/graph.png" alt=""></td>
+										</tr>
+										<tr>
+											<td colspan="7">
+												<hr>
+											</td>
+										</tr>
+										<tr class="table-result">
+											<td colspan="2" class="table-mod">
+												<div class="table-result__left">
+													<div class="select-n select-n_mod js-select">
+														<span class="select-n__text js-select-text">Выберите действие</span>
+														<input type="hidden" class="js-select-input" value="0">
+														<ul class="select-n__list js-select-list">
+															<li data-id="Позвонить">Выберай</li>
+															<li data-id="Не позвонить">Ну же!</li>
+														</ul>
+													</div>
+													<a href="#" class="btn btn_blue">OK</a>	
+												</div>										
+											</td>
+											<td class="table-strong"><span>68 000</span></td>
+											<td class="table-strong"><span>93 400</span></td>
+											<td class="table-strong"><span>256</span></td>
+											<td class="table-strong"><span>360 000 грн.</span></td>
+											<td></td>
+										</tr>
+									</table>
+								</div>						
+							</div>	
+							<!-- /Table -->
+							
+							<!-- begin graphics  -->
+							<div class="graphics">
+								<div class="graphics__inner">
+									<div class="graphics__box">
+										<div class="graphic graphic__vert">
+											<div class="graphic__block is-good">
+												<div class="graphic__text">
+													<span class="graphic__left">36%</span>
+													<span class="graphic__right">2303</span>
+													<p>Положительных отзывов</p>
+												</div>
+											</div>									
 										</div>
-									</td>
-									<td>
-										<a href="#" class="table-link">Apple MacBook Pro 13 </a>
-									</td>
-									<td><span>2400</span></td>
-									<td><span>3400</span></td>
-									<td><span>15</span></td>
-									<td><span>30 000 грн.</span></td>
-									<td><img src="img/graph.png" alt=""></td>
-								</tr>
-								<tr>
-									<td>
-										<div class="photo">
-											<label class="checkbox-lite">
-												<input type="checkbox">
-												<span></span>
-											</label>
-											<a href="#" class="photo__img">
-												<img src="img/table-img.jpg" alt="">
-											</a>
+										<div class="graphic graphic__vert">
+											<div class="graphic__block is-bad">
+												<div class="graphic__text">
+													<span class="graphic__left">26%</span>
+													<span class="graphic__right">1686</span>
+													<p>Отрицательных отзывов</p>
+												</div>
+											</div>									
 										</div>
-									</td>
-									<td>
-										<a href="#" class="table-link">Apple MacBook Pro 13 </a>
-									</td>
-									<td><span>2400</span></td>
-									<td><span>3400</span></td>
-									<td><span>15</span></td>
-									<td><span>30 000 грн.</span></td>
-									<td><img src="img/graph.png" alt=""></td>
-								</tr>
-								<tr>
-									<td>
-										<div class="photo">
-											<label class="checkbox-lite">
-												<input type="checkbox">
-												<span></span>
-											</label>
-											<a href="#" class="photo__img">
-												<img src="img/table-img.jpg" alt="">
-											</a>
-										</div>
-									</td>
-									<td>
-										<a href="#" class="table-link">Apple MacBook Pro 13 </a>
-									</td>
-									<td><span>2400</span></td>
-									<td><span>3400</span></td>
-									<td><span>15</span></td>
-									<td><span>30 000 грн.</span></td>
-									<td><img src="img/graph.png" alt=""></td>
-								</tr>
-								<tr>
-									<td>
-										<div class="photo">
-											<label class="checkbox-lite">
-												<input type="checkbox">
-												<span></span>
-											</label>
-											<a href="#" class="photo__img">
-												<img src="img/table-img.jpg" alt="">
-											</a>
-										</div>
-									</td>
-									<td>
-										<a href="#" class="table-link">Apple MacBook Pro 13 </a>
-									</td>
-									<td><span>2400</span></td>
-									<td><span>3400</span></td>
-									<td><span>15</span></td>
-									<td><span>30 000 грн.</span></td>
-									<td><img src="img/graph.png" alt=""></td>
-								</tr>
-								<tr>
-									<td>
-										<div class="photo">
-											<label class="checkbox-lite">
-												<input type="checkbox">
-												<span></span>
-											</label>
-											<a href="#" class="photo__img">
-												<img src="img/table-img.jpg" alt="">
-											</a>
-										</div>
-									</td>
-									<td>
-										<a href="#" class="table-link">Apple MacBook Pro 13 </a>
-									</td>
-									<td><span>2400</span></td>
-									<td><span>3400</span></td>
-									<td><span>15</span></td>
-									<td><span>30 000 грн.</span></td>
-									<td><img src="img/graph.png" alt=""></td>
-								</tr>
-								<tr>
-									<td>
-										<div class="photo">
-											<label class="checkbox-lite">
-												<input type="checkbox">
-												<span></span>
-											</label>
-											<a href="#" class="photo__img">
-												<img src="img/table-img.jpg" alt="">
-											</a>
-										</div>
-									</td>
-									<td>
-										<a href="#" class="table-link">Apple MacBook Pro 13 </a>
-									</td>
-									<td><span>2400</span></td>
-									<td><span>3400</span></td>
-									<td><span>15</span></td>
-									<td><span>30 000 грн.</span></td>
-									<td><img src="img/graph.png" alt=""></td>
-								</tr>
-								<tr>
-									<td>
-										<div class="photo">
-											<label class="checkbox-lite">
-												<input type="checkbox">
-												<span></span>
-											</label>
-											<a href="#" class="photo__img">
-												<img src="img/table-img.jpg" alt="">
-											</a>
-										</div>
-									</td>
-									<td>
-										<a href="#" class="table-link">Apple MacBook Pro 13 </a>
-									</td>
-									<td><span>2400</span></td>
-									<td><span>3400</span></td>
-									<td><span>15</span></td>
-									<td><span>30 000 грн.</span></td>
-									<td><img src="img/graph.png" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="7">
-										<hr>
-									</td>
-								</tr>
-								<tr class="table-result">
-									<td colspan="2" class="table-mod">
-										<div class="table-result__left">
-											<div class="select-n select-n_mod js-select">
-												<span class="select-n__text js-select-text">Выберите действие</span>
-												<input type="hidden" class="js-select-input" value="0">
-												<ul class="select-n__list js-select-list">
-													<li data-id="Позвонить">Выберай</li>
-													<li data-id="Не позвонить">Ну же!</li>
-												</ul>
+									</div>
+									<div class="graphics__box">
+										<div class="graphic graphic_100">
+											<div class="graphic__row">
+												<p>Просмотры</p>
+												<span>1560</span>
 											</div>
-											<a href="#" class="btn btn_blue">OK</a>	
-										</div>										
-									</td>
-									<td class="table-strong"><span>68 000</span></td>
-									<td class="table-strong"><span>93 400</span></td>
-									<td class="table-strong"><span>256</span></td>
-									<td class="table-strong"><span>360 000 грн.</span></td>
-									<td></td>
-								</tr>
-							</table>
-						</div>						
-					</div>	
-					<!-- /Table -->
-					
-					<!-- begin graphics  -->
-					<div class="graphics">
-						<div class="graphics__inner">
-							<div class="graphics__box">
-								<div class="graphic graphic__vert">
-									<div class="graphic__block is-good">
-										<div class="graphic__text">
-											<span class="graphic__left">36%</span>
-											<span class="graphic__right">2303</span>
-											<p>Положительных отзывов</p>
-										</div>
-									</div>									
-								</div>
-								<div class="graphic graphic__vert">
-									<div class="graphic__block is-bad">
-										<div class="graphic__text">
-											<span class="graphic__left">26%</span>
-											<span class="graphic__right">1686</span>
-											<p>Отрицательных отзывов</p>
-										</div>
-									</div>									
+										</div>								
+										<div class="graphic graphic_90">
+											<div class="graphic__row">
+												<p>Просмотры моб.</p>
+												<span>1360</span>
+											</div>
+										</div>								
+										<div class="graphic graphic_80">
+											<div class="graphic__row">
+												<p>Звонки</p>
+												<span>2683</span>
+											</div>
+										</div>								
+									</div>						
 								</div>
 							</div>
-							<div class="graphics__box">
-								<div class="graphic graphic_100">
-									<div class="graphic__row">
-										<p>Просмотры</p>
-										<span>1560</span>
-									</div>
-								</div>								
-								<div class="graphic graphic_90">
-									<div class="graphic__row">
-										<p>Просмотры моб.</p>
-										<span>1360</span>
-									</div>
-								</div>								
-								<div class="graphic graphic_80">
-									<div class="graphic__row">
-										<p>Звонки</p>
-										<span>2683</span>
-									</div>
-								</div>								
-							</div>						
+							<!-- end graphics -->
 						</div>
+						<!-- END SHOP -->
+
+						<!-- begin warehouse  -->
+						<div class="is-tab-block warehouse is-hidden" id="warehouse">
+							<!-- Table -->
+							<div class="table-wrap">
+								<div class="table-wrap__in">
+									<table class="table-cabinet">
+										<tr>
+											<th><span>Фото товар</span></th>
+											<th><span>Названиае товара</span></th>
+											<th><span>Состояние</span></th>
+											<th><span>Кол-во</span></th>
+											<th><span>Базовая цена</span></th>
+											<th><span>Скидка</span></th>
+											<th><span>Цена</span></th>
+											<th class="table-btn"><span>Статус</span></th>
+										</tr>
+										<tr>
+											<td>
+												<div class="photo">
+													<label class="checkbox-lite">
+														<input type="checkbox">
+														<span></span>
+													</label>
+													<a href="#" class="photo__img">
+														<img src="img/table-img.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="table-link">Apple MacBook Pro 13 </a>
+											</td>
+											<td class="table-new">
+												<div class="select-n select-n_mod js-select">
+													<span class="select-n__text js-select-text">Новый</span>
+													<input type="hidden" class="js-select-input" value="0">
+													<ul class="select-n__list js-select-list">
+														<li data-id="Позвонить">Новый</li>
+														<li data-id="Не позвонить">Старый</li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<label class="spinner">
+													<input type="text" class="input spinner__input js-spinner" name="value">
+												</label>
+											</td>
+											<td><span>30 000 грн.</span></td>
+											<td><span>50%</span></td>
+											<td><span>15 000 грн.</span></td>
+											<td class="table-btn"><a href="#" class="btn-simple btn-simple_green">Продается</a></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="photo">
+													<label class="checkbox-lite">
+														<input type="checkbox">
+														<span></span>
+													</label>
+													<a href="#" class="photo__img">
+														<img src="img/table-img.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="table-link">Apple MacBook Pro 13 </a>
+											</td>
+											<td class="table-new">
+												<div class="select-n select-n_mod js-select">
+													<span class="select-n__text js-select-text">Новый</span>
+													<input type="hidden" class="js-select-input" value="0">
+													<ul class="select-n__list js-select-list">
+														<li data-id="Позвонить">Новый</li>
+														<li data-id="Не позвонить">Старый</li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<label class="spinner">
+													<input type="text" class="input spinner__input js-spinner" name="value">
+												</label>
+											</td>
+											<td><span>30 000 грн.</span></td>
+											<td><span>50%</span></td>
+											<td><span>15 000 грн.</span></td>
+											<td class="table-btn"><a href="#" class="btn-simple btn-simple_red">Закончился</a></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="photo">
+													<label class="checkbox-lite">
+														<input type="checkbox">
+														<span></span>
+													</label>
+													<a href="#" class="photo__img">
+														<img src="img/table-img.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="table-link">Apple MacBook Pro 13 </a>
+											</td>
+											<td class="table-new">
+												<div class="select-n select-n_mod js-select">
+													<span class="select-n__text js-select-text">Новый</span>
+													<input type="hidden" class="js-select-input" value="0">
+													<ul class="select-n__list js-select-list">
+														<li data-id="Позвонить">Новый</li>
+														<li data-id="Не позвонить">Старый</li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<label class="spinner">
+													<input type="text" class="input spinner__input js-spinner" name="value">
+												</label>
+											</td>
+											<td><span>30 000 грн.</span></td>
+											<td><span>50%</span></td>
+											<td><span>15 000 грн.</span></td>
+											<td class="table-btn"><a href="#" class="btn-simple btn-simple_green">Продается</a></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="photo">
+													<label class="checkbox-lite">
+														<input type="checkbox">
+														<span></span>
+													</label>
+													<a href="#" class="photo__img">
+														<img src="img/table-img.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="table-link">Apple MacBook Pro 13 </a>
+											</td>
+											<td class="table-new">
+												<div class="select-n select-n_mod js-select">
+													<span class="select-n__text js-select-text">Новый</span>
+													<input type="hidden" class="js-select-input" value="0">
+													<ul class="select-n__list js-select-list">
+														<li data-id="Позвонить">Новый</li>
+														<li data-id="Не позвонить">Старый</li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<label class="spinner">
+													<input type="text" class="input spinner__input js-spinner" name="value">
+												</label>
+											</td>
+											<td><span>30 000 грн.</span></td>
+											<td><span>50%</span></td>
+											<td><span>15 000 грн.</span></td>
+											<td class="table-btn"><a href="#" class="btn-simple btn-simple_blue">Продавать</a></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="photo">
+													<label class="checkbox-lite">
+														<input type="checkbox">
+														<span></span>
+													</label>
+													<a href="#" class="photo__img">
+														<img src="img/table-img.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="table-link">Apple MacBook Pro 13 </a>
+											</td>
+											<td class="table-new">
+												<div class="select-n select-n_mod js-select">
+													<span class="select-n__text js-select-text">Новый</span>
+													<input type="hidden" class="js-select-input" value="0">
+													<ul class="select-n__list js-select-list">
+														<li data-id="Позвонить">Новый</li>
+														<li data-id="Не позвонить">Старый</li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<label class="spinner">
+													<input type="text" class="input spinner__input js-spinner" name="value">
+												</label>
+											</td>
+											<td><span>30 000 грн.</span></td>
+											<td><span>50%</span></td>
+											<td><span>15 000 грн.</span></td>
+											<td class="table-btn"><a href="#" class="btn-simple btn-simple_green">Продается</a></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="photo">
+													<label class="checkbox-lite">
+														<input type="checkbox">
+														<span></span>
+													</label>
+													<a href="#" class="photo__img">
+														<img src="img/table-img.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="table-link">Apple MacBook Pro 13 </a>
+											</td>
+											<td class="table-new">
+												<div class="select-n select-n_mod js-select">
+													<span class="select-n__text js-select-text">Новый</span>
+													<input type="hidden" class="js-select-input" value="0">
+													<ul class="select-n__list js-select-list">
+														<li data-id="Позвонить">Новый</li>
+														<li data-id="Не позвонить">Старый</li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<label class="spinner">
+													<input type="text" class="input spinner__input js-spinner" name="value">
+												</label>
+											</td>
+											<td><span>30 000 грн.</span></td>
+											<td><span>50%</span></td>
+											<td><span>15 000 грн.</span></td>
+											<td class="table-btn"><a href="#" class="btn-simple btn-simple_green">Продается</a></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="photo">
+													<label class="checkbox-lite">
+														<input type="checkbox">
+														<span></span>
+													</label>
+													<a href="#" class="photo__img">
+														<img src="img/table-img.jpg" alt="">
+													</a>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="table-link">Apple MacBook Pro 13 </a>
+											</td>
+											<td class="table-new">
+												<div class="select-n select-n_mod js-select">
+													<span class="select-n__text js-select-text">Новый</span>
+													<input type="hidden" class="js-select-input" value="0">
+													<ul class="select-n__list js-select-list">
+														<li data-id="Позвонить">Новый</li>
+														<li data-id="Не позвонить">Старый</li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<label class="spinner">
+													<input type="text" class="input spinner__input js-spinner" name="value">
+												</label>
+											</td>
+											<td><span>30 000 грн.</span></td>
+											<td><span>50%</span></td>
+											<td><span>15 000 грн.</span></td>
+											<td class="table-btn"><a href="#" class="btn-simple btn-simple_green">Продается</a></td>
+										</tr>
+										<tr>
+											<td colspan="7">
+												<hr>
+											</td>
+										</tr>
+										<tr class="table-result">
+											<td colspan="2" class="table-mod">
+												<div class="table-result__left">
+													<div class="select-n select-n_mod js-select">
+														<span class="select-n__text js-select-text">Выберите действие</span>
+														<input type="hidden" class="js-select-input" value="0">
+														<ul class="select-n__list js-select-list">
+															<li data-id="Позвонить">Выберай</li>
+															<li data-id="Не позвонить">Ну же!</li>
+														</ul>
+													</div>
+													<a href="#" class="btn btn_blue">OK</a>	
+												</div>										
+											</td>
+											<td class="table-strong"><span></span></td>
+											<td class="table-strong"><span></span></td>
+											<td class="table-strong"><span>930 400 грн.</span></td>
+											<td class="table-strong"></td>
+											<td class="table-strong"><span>360 000 грн.</span></td>
+											<td class="table-strong"></td>
+										</tr>
+									</table>
+								</div>						
+							</div>	
+							<!-- /Table -->
+						</div>
+						<!-- end warehouse -->
 					</div>
-					<!-- end graphics -->
+					<!-- /SELLS -->
+					
+					<!--ADVERT-->
+					<div class="advert is-tab-block is-hidden" id="advert">
+						<!-- begin adds  -->
+						<div class="adds">
+							<form action="">
+								<div class="adds__inner">
+									<div class="adds__field">
+										<span class="adds__title">Ваш телефон</span>
+										<div class="adds__items">
+											<div class="adds__row">
+												<div class="adds__box adds__phone">
+													<span>+7</span>
+													<div class="is-small">
+														<input type="text" class="input">
+													</div>
+													<div class="is-normal">
+														<input type="text" class="input">
+													</div>
+												</div>
+											</div>	
+											<div class="adds__help">
+												<p>Номер телефона в формате 9037125674 (без +7, пробелов и скобок) или код из букв и цифр, например, as89Hj890.</p>
+											</div>									
+										</div>
+									</div>
+									<div class="adds__field">
+										<span class="adds__title">Пароль</span>
+										<div class="adds__items">
+											<div class="adds__row">
+												<div class="adds__box">											
+													<input type="text" class="input">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="adds__field">
+										<span class="adds__title">Категории</span>
+										<div class="adds__items">
+											<div class="adds__row">		
+												<div class="adds__full">
+													<div class="select-n js-select">
+														<span class="select-n__text js-select-text"></span>
+														<input type="hidden" class="js-select-input" value="0">
+														<ul class="select-n__list js-select-list">
+															<li data-id="Позвонить">Категория1</li>
+															<li data-id="Не позвонить">Категория2</li>
+														</ul>
+													</div>
+												</div>	
+											</div>
+										</div>
+									</div>
+									<div class="adds__field">
+										<span class="adds__title">Заголовок</span>
+										<div class="adds__items">
+											<div class="adds__row">		
+												<div class="adds__full">
+													<input type="text" class="input">
+												</div>
+											</div>
+										</div>
+									</div>	
+									<div class="adds__field">
+										<span class="adds__title">Заголовок</span>
+										<div class="adds__items">
+											<div class="adds__row">		
+												<div class="adds__full">
+													<textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="adds__field">
+										<span class="adds__title">Цена</span>
+										<div class="adds__items">
+											<div class="adds__row">		
+												<div class="adds__box">
+													<input type="text" class="input">
+												</div>
+												<div class="adds__box">
+													<label class="checkbox-lite">
+														<input type="checkbox">
+														<span>Торг</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>	
+									<div class="adds__field">
+										<span class="adds__title">Регион</span>
+										<div class="adds__items">
+											<div class="adds__row">		
+												<div class="adds__box">
+													<div class="select-n js-select">
+														<span class="select-n__text js-select-text">Москва</span>
+														<input type="hidden" class="js-select-input" value="0">
+														<ul class="select-n__list js-select-list">
+															<li data-id="Позвонить">Москва</li>
+															<li data-id="Не позвонить">Киев</li>
+														</ul>
+													</div>
+												</div>	
+												<div class="adds__box">
+													<div class="select-n js-select">
+														<span class="select-n__text js-select-text">Москва</span>
+														<input type="hidden" class="js-select-input" value="0">
+														<ul class="select-n__list js-select-list">
+															<li data-id="Позвонить">Москва</li>
+															<li data-id="Не позвонить">Киев</li>
+														</ul>
+													</div>
+												</div>	
+											</div>
+										</div>
+									</div>	
+									<div class="adds__field">
+										<span class="adds__title">Изображения</span>
+										<div class="adds__items">
+											<div class="adds__row">		
+												<div class="file">
+													<img src="img/adds-img1.jpg" alt="">
+												</div>
+												<div class="file">
+													<label>
+														<input type="file" class="input_file">
+														<i class="file__add"></i>
+													</label>
+												</div>
+												<div class="file">
+													<i class="file__load"></i>
+												</div>
+												<div class="file">
+													<img src="img/adds-img1.jpg" alt="">
+													<a href="#" class="file__close"></a>
+												</div>
+												<div class="file">
+													<label>
+														<input type="file" class="input_file">
+														<i class="file__add"></i>
+													</label>
+												</div>
+												<div class="file">
+													<label>
+														<input type="file" class="input_file">
+														<i class="file__add"></i>
+													</label>
+												</div>
+												<div class="file">
+													<label>
+														<input type="file" class="input_file">
+														<i class="file__add"></i>
+													</label>
+												</div>
+												<div class="file">
+													<label>
+														<input type="file" class="input_file">
+														<i class="file__add"></i>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>									
+									<div class="adds__field">
+										<span class="adds__title">Теги</span>
+										<div class="adds__items">
+											<div class="adds__row">	
+												<div class="adds__full">
+													<div class="tags">
+														<a href="#" class="tag">Услуги адвоката</a>
+														<a href="#" class="tag">Услуги адвоката</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="adds__field">
+										<span class="adds__title">Пакет размещения</span>
+										<div class="adds__items">
+											<div class="adds__row">	
+												<div class="packages">
+													<div class="package">
+														<span class="package__title">Базовый</span>
+														<div class="package__body">
+															<div class="package__info package__info_mod">
+																<div class="package__text">
+																	<p>Мини-сайт</p>
+																	<p>Реклама на портале</p>
+																	<p>Личный кабинет</p>
+																</div>
+																<span class="package__bold">Звонок бесплатно</span>
+															</div>
+															<div class="package__btn">
+																<a href="#" class="btn-simple btn-simple_blue">Заказать</a>
+															</div>
+														</div>													
+													</div>
+													<div class="package is-active">
+														<span class="package__title">Групповой</span>
+														<div class="package__body">
+															<div class="package__info">
+																<div class="package__text">
+																	<p>Мини-сайт</p>
+																	<p>Реклама на портале</p>
+																	<p>Личный кабинет</p>
+																</div>
+																<span class="package__bold">Звонок бесплатно</span>
+															</div>
+															<div class="package__info">
+																<div class="package__text">
+																	<p>Групповая реклама</p>
+																	<p>Продвижение</p>
+																	<p>Звонки</p>
+																</div>
+																<span class="package__bold">90 руб. за звонок</span>
+															</div>
+															<div class="package__btn">
+																<a href="#" class="btn-simple btn-simple_blue">Заказать</a>
+															</div>
+														</div>													
+													</div>
+													<div class="package">
+														<span class="package__title">Персональный</span>
+														<div class="package__body">
+															<div class="package__info">
+																<div class="package__text">
+																	<p>Мини-сайт</p>
+																	<p>Реклама на портале</p>
+																	<p>Личный кабинет</p>
+																</div>
+																<span class="package__bold">Звонок бесплатно</span>
+															</div>
+															<div class="package__info">
+																<div class="package__text">
+																	<p>Групповая реклама</p>
+																	<p>Продвижение</p>
+																	<p>Звонки</p>
+																</div>
+																<span class="package__bold">90 руб. за звонок</span>
+															</div>
+															<div class="package__info">
+																<div class="package__text">
+																	<p>Персональная реклама</p>
+																	<p>Премиум продвижение</p>
+																	<p>Аналитика</p>
+																</div>
+																<span class="package__bold">120 руб. з</span>
+															</div>
+															<div class="package__btn">
+																<a href="#" class="btn-simple btn-simple_blue">Заказать</a>
+															</div>
+														</div>													
+													</div>
+												</div>												
+											</div>
+										</div>
+									</div>								
+									<div class="adds__field">
+										<span class="adds__title">График работы</span>
+										<div class="adds__items">
+											<div class="adds__row">	
+												<div class="adds__full">
+													<div class="timetable">
+														<span class="timetable__days">Пн-Пт:</span>
+														<div class="timetable__select">
+															<div class="select-n js-select">
+																<span class="select-n__text js-select-text">08:00</span>
+																<input type="hidden" class="js-select-input" value="0">
+																<ul class="select-n__list js-select-list">
+																	<li data-id="Позвонить">08:00</li>
+																	<li data-id="Не позвонить">9:00</li>
+																	<li data-id="Не позвонить">10:00</li>
+																</ul>
+															</div>
+														</div>
+														<div class="timetable__select">
+															<div class="select-n js-select">
+																<span class="select-n__text js-select-text">19:00</span>
+																<input type="hidden" class="js-select-input" value="0">
+																<ul class="select-n__list js-select-list">
+																	<li data-id="Позвонить">18:00</li>
+																	<li data-id="Не позвонить">19:00</li>
+																	<li data-id="Не позвонить">20:00</li>
+																</ul>
+															</div>
+														</div>
+														<div class="timetable__checkbox">
+															<label class="checkbox-lite">
+																<input type="checkbox">
+																<span>Выходной</span>
+															</label>
+														</div>													
+													</div>
+													<div class="timetable">
+														<span class="timetable__days">Сб:</span>
+														<div class="timetable__select">
+															<div class="select-n js-select">
+																<span class="select-n__text js-select-text">10:00</span>
+																<input type="hidden" class="js-select-input" value="0">
+																<ul class="select-n__list js-select-list">
+																	<li data-id="Позвонить">08:00</li>
+																	<li data-id="Не позвонить">9:00</li>
+																	<li data-id="Не позвонить">10:00</li>
+																</ul>
+															</div>
+														</div>
+														<div class="timetable__select">
+															<div class="select-n js-select">
+																<span class="select-n__text js-select-text">16:00</span>
+																<input type="hidden" class="js-select-input" value="0">
+																<ul class="select-n__list js-select-list">
+																	<li data-id="Позвонить">16:00</li>
+																	<li data-id="Позвонить">17:00</li>
+																	<li data-id="Позвонить">18:00</li>
+																</ul>
+															</div>
+														</div>
+														<div class="timetable__checkbox">
+															<label class="checkbox-lite">
+																<input type="checkbox">
+																<span>Выходной</span>
+															</label>
+														</div>													
+													</div>
+													<div class="timetable">
+														<span class="timetable__days">Вс:</span>
+														<div class="timetable__select">
+															<div class="select-n js-select">
+																<span class="select-n__text js-select-text">12:00</span>
+																<input type="hidden" class="js-select-input" value="0">
+																<ul class="select-n__list js-select-list">
+																	<li data-id="Не позвонить">10:00</li>
+																	<li data-id="Не позвонить">11:00</li>
+																	<li data-id="Не позвонить">12:00</li>
+																</ul>
+															</div>
+														</div>
+														<div class="timetable__select">
+															<div class="select-n js-select">
+																<span class="select-n__text js-select-text">15:00</span>
+																<input type="hidden" class="js-select-input" value="0">
+																<ul class="select-n__list js-select-list">
+																	<li data-id="Позвонить">15:00</li>
+																	<li data-id="Позвонить">16:00</li>
+																	<li data-id="Позвонить">17:00</li>
+																</ul>
+															</div>
+														</div>
+														<div class="timetable__checkbox">
+															<label class="checkbox-lite">
+																<input type="checkbox">
+																<span>Выходной</span>
+															</label>
+														</div>													
+													</div>
+													<div class="agree">		
+														<div class="agree__check">
+															<label class="checkbox-lite">
+																<input type="checkbox">
+																<span></span>
+															</label>
+															<p>Я принимаю условия <a href="#">пользовательского соглашения</a></p>
+														</div>													
+														<div class="agree__btns">
+															<a href="#" class="btn-agree btn-agree_blue">Сохранить объявление</a>
+															<a href="#" class="btn-agree btn-agree_gray">Отмена</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</form>
+						</div>
+						<!-- end adds -->
+					</div>
+					<!--ADVERT-->
 				</div>	
 				<!-- end catalog -->
 

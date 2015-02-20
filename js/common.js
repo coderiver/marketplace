@@ -152,6 +152,30 @@ head.ready(function() {
 	    
 	});
 
-	
+	//spinner
+	$(function() {
+	    var spinner = $( ".js-spinner" ).spinner({
+	    	max: 99,
+	    	min: 0
+	    });
+	 	$( "button" ).button();
+	});
 
+	//tabs
+	$('.tabs1 a').click(function(event) {
+		$('.tabs1 a').removeClass('is-active');
+		$(this).addClass('is-active');
+		attr = $(this).attr('href');
+		$('#advert,#sells').addClass('is-hidden');
+		$(' '+attr).removeClass('is-hidden');
+		return false;
+	});
+	$('.tabs2 a').click(function(event) {
+		$('.tabs2 a').removeClass('is-active');
+		$(this).addClass('is-active');
+		attr = $(this).attr('href');
+		$('#shop,#warehouse').addClass('is-hidden');
+		$(' '+attr).removeClass('is-hidden');
+		return false;
+	});
 });

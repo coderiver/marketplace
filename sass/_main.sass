@@ -973,6 +973,8 @@
 .sidebar__action
 	max-width: 280px
 	padding: 10px 0 
+	+r2
+		padding: 10px 5px 
 	&__in
 		margin: 0 -5px
 		font-size: 0
@@ -1068,3 +1070,316 @@
 		line-height: 20px
 		color: #666 
 		
+
+//adds
+.adds
+	padding: 10px 0 
+	&__inner
+		max-width: 580px
+		+r3
+			max-width: 460px
+	&__field
+		+clr
+		position: relative
+	&__title
+		width: 100%
+		max-width: 120px
+		float: left
+		padding: 7px 0 0 0
+		+box 
+		+r3
+			float: none
+			display: block
+			margin-bottom: 10px
+	&__items
+		width: 100%
+		+box
+		padding: 0 0 0 120px
+		margin: 0 0 0 -120px
+		float: left  
+		font-family: Arial, sans-serif
+		color: #333
+		font-size: 12px  
+		+r3
+			padding: 0
+			margin: 0
+			float: none
+	&__row
+		margin: 0 -10px 
+		font-size: 0
+		input, textarea, .select, .select-n, .checkbox, .checkbox-lite, .tags
+			margin-bottom: 10px
+		.textarea
+			height: 120px
+		.checkbox-lite
+			margin: 5px 0 15px  
+			span
+				font-family: Arial, sans-serif 
+				&:after
+					top: 6px
+			input
+				&:checked + span
+					&:before
+						border-color: #efefef 
+	&__box
+		+vertical
+		text-align: left
+		width: 50%
+		padding: 0 10px 10px
+		+box 
+		display: inline-block
+		vertical-align: top
+		+r3
+			width: 280px
+	&__full
+		width: 100%
+		padding: 0 10px 10px
+		+box
+		+vertical
+		text-align: left 
+	&__phone
+		span, div
+			display: inline-block
+			vertical-align: middle
+			margin-bottom: 10px
+		input
+			margin-bottom: 0
+		span
+			font-family: Arial, sans-serif
+			color: #333
+			font-size: 12px  
+			width: 22px
+		div
+			&.is-small
+				width: 45px
+				margin-right: 10px
+			&.is-normal
+				width: 143px
+	.file
+		margin: 0 10px 20px 	
+	&__help	
+		position: absolute
+		top: 0
+		left: 100%
+		margin-left: 20px
+		background: #8c8d8f
+		width: 100%
+		max-width: 280px
+		+box
+		padding: 9px 10px
+		+border-radius(2px)
+		clear: both
+		+r1
+			position: relative
+			top: auto
+			left: auto
+			margin-bottom: 20px
+		&:before
+			content: "" 
+			position: absolute
+			top: 9px
+			right: 100%
+			+arr(5, 10, #8c8d8f, l)
+			+r1
+				top: auto
+				bottom: 100%
+				right: auto
+				left: 9px
+				+arr(10, 5, #8c8d8f, t)
+		p
+			+reg
+			font-size: 12px
+			line-height: 1.2
+			color: #fff
+			max-width: 200px
+			 
+.file
+	width: 100px
+	height: 80px
+	+box
+	border: 1px solid #efefef
+	+vertical
+	display: inline-block
+	vertical-align: top
+	overflow: hidden
+	+border-radius(2px)
+	position: relative
+	img
+		display: inline-block
+		vertical-align: middle
+		max-width: 100%
+		max-height: 100% 
+	label
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		cursor: pointer
+	&__add
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-top: -20px
+		margin-left: -20px
+		width: 40px
+		height: 40px
+		+vertical
+		background: #2196f3 
+		+border-radius(50%)
+		z-index: 1
+		&:after
+			content: "" 
+			+s(file-add)
+			display: inline-block
+			vertical-align: middle
+	&__load
+		display: inline-block
+		vertical-align: middle
+		+s(load)
+	input
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		z-index: 2 
+		visibility: hidden
+		+opacity(0)
+		cursor: pointer
+		margin: 0
+	&__close
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: rgba(229, 57, 53, 0.5)
+		+vertical
+		&:after
+			content: "" 
+			display: inline-block
+			vertical-align: middle
+			+s(close)
+.tags
+	border: 1px solid #efefef
+	+border-radius(2px)
+	.tag
+		margin: 3px
+.tag
+	background: #4dabf5
+	border: 1px solid #2196f3
+	display: inline-block 
+	+reg
+	font-size: 12px
+	color: #fff
+	padding: 2px 26px 2px 7px  
+	position: relative
+	+border-radius(2px)
+	&:before
+		content: "" 
+		position: absolute
+		top: 50%
+		right: 4px
+		margin-top: -4px
+		+s(tag-close)
+		+opacity(0.25)
+
+.packages
+	padding: 0 7.5px 15px
+	+r(500)
+		padding: 0 10px 15px
+	.package
+		margin: 0 2.5px 5px
+		+r(500)
+			display: block
+			width: 100%
+			margin: 0 0 5px
+		
+.package
+	width: 150px
+	text-align: center
+	display: inline-block
+	vertical-align: top
+	&.is-active
+		.package__title
+			background: #2196f3
+		.package__body
+			border-color: #2196f3
+	&__title
+		display: block
+		+bold
+		font-size: 12px
+		color: #fff
+		background: #1a1b1f  
+		padding: 12px 
+		+border-radius(2px 2px 0 0)
+		+transition(background 0.3s)
+	&__body
+		border: 1px solid #eeeeee
+		+border-radius(0 0 2px 2px)
+		padding: 4px 0 0 
+		+transition(border-color 0.3s)
+	&__info
+		border-bottom: 1px solid #eeeeee
+		&_mod
+			background: #f6f6f6 
+	&__text
+		margin-bottom: 15px
+	p
+		line-height: 20px
+		color: #666 
+		font-size: 12px
+		font-family: Arial, sans-serif 
+	&__bold
+		display: block
+		+bold
+		font-size: 12px
+		color: #000 
+		margin-bottom: 10px
+	&__btn
+		padding: 15px  
+		
+.timetable
+	&__days
+		width: 60px
+		+reg
+		font-size: 12px
+		color: #666
+		padding: 7px 0 
+	&__select
+		width: 70px
+		padding: 0 20px 0 0
+	&__days, &__select, &__checkbox
+		display: inline-block
+		vertical-align: top
+		
+.agree
+	&__check
+		margin-bottom: 20px
+		+clr
+		.checkbox-lite
+			float: left
+			height: 20px
+			width: 20px
+			margin: 0 10px 0 0
+			padding: 0
+			input, span
+				margin: 0
+	p
+		overflow: hidden
+		font-family: Arial, sans-serif
+		color: #333 
+		font-size: 12px
+		padding: 3px 0 
+		line-height: 1.2
+		a
+			color: #2196f3 
+	&__btns
+		margin: 0 -10px
+		.btn-agree
+			margin: 0 10px 20px 
+			
+.is-tab-block
+	&.is-hidden
+		display: none

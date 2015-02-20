@@ -191,6 +191,8 @@
 	position: relative
 	display: block
 	padding: 4px 19px 4px 9px 
+	min-height: 28px 
+	+box
 	&:before
 		content: "" 
 		position: absolute
@@ -336,6 +338,43 @@
 	&_no
 		background: #e53935 
 
+.btn-simple
+	display: inline-block
+	padding: 7px 15px 
+	+reg
+	font-size: 12px
+	color: #fff
+	+border-radius(2px)
+	position: relative
+	text-align: center 
+	+box
+	width: 100px
+	&:active
+		top: 1px
+	&_green
+		background: #4caf50
+	&_red
+		background: #e53935
+	&_blue
+		background: #2196f3
+.btn-agree
+	display: inline-block
+	padding: 7px 10px 
+	+reg
+	font-size: 12px
+	color: #fff
+	+border-radius(2px)
+	position: relative
+	text-align: center 
+	+box
+	&:active
+		top: 1px
+	&_gray
+		background: #999999
+		width: 100px
+	&_blue
+		background: #2196f3
+		width: 160px
 //table
 .table-wrap
 	overflow-y: auto 
@@ -526,11 +565,57 @@
 		padding: 20px 0
 		background: #fff
 		border-right: 1px solid #efefef   
+	.table-new
+		min-width: 80px
+		.select-n
+			max-width: 80px
+			margin: 0
+			color: #333 
+			span
+				color: #333 
+	.table-btn
+		width: 100px
 
 
-
-
-
+.spinner
+	position: relative
+	width: 60px
+	display: block
+	.ui-spinner
+		position: relative
+		display: block
+		font-size: 0
+	.ui-spinner-button
+		position: absolute
+		right: 0
+		width: 30px
+		border-left: 1px solid #efefef
+		display: block 
+		height: 50%
+		cursor: pointer
+		+box
+		span
+			display: block
+			line-height: 1
+			height: 100%
+		.ui-icon
+			display: block
+			+vertical
+			&:after
+				content: "" 
+				display: inline-block
+				vertical-align: middle
+		&.ui-spinner-up
+			top: 0
+			.ui-icon
+				&:after
+					+s(plus)
+		&.ui-spinner-down
+			bottom: 0
+			border-top: 1px solid #efefef 
+			.ui-icon
+				&:after
+					+s(minus)
 
 
 
