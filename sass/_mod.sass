@@ -219,6 +219,7 @@
 	line-height: 20px
 	color: #333 
 	+border-radius(2px)
+	z-index: 200
 	&_mod
 		color: #999999 
 	&_dark
@@ -273,6 +274,7 @@
 	line-height: 20px
 	color: #fff 
 	+border-radius(2px)
+	z-index: 200
 	&.is-active
 		+border-radius(2px 2px 0 0)
 	i
@@ -302,7 +304,7 @@
 		position: absolute
 	&:before
 		top: 50%
-		right: 9px
+		right: 12px
 		margin-top: -1px
 		+arr(6, 3, #fff, b)
 	&:after
@@ -327,6 +329,83 @@
 		&:hover
 			background: lighten(#2196f3, 10%)
 
+.select-btns
+	position: relative
+	cursor: pointer
+	width: 100%
+	text-align: left
+	background: #2196f3 
+	+user-select(none)
+	+box
+	+border-radius(2px)
+	z-index: 200
+	&.is-active
+		+border-radius(2px 2px 0 0)
+	button
+		padding: 10px 10px 10px 10px
+		width: 100%
+		+box
+		display: block
+		text-align: left 
+		+reg
+		font-size: 12px
+		line-height: 20px
+		color: #fff
+		background: none 
+		&:active
+			background: darken(#2196f3, 10%) 
+.select-btns__btn
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	width: 40px
+	&:before, &:after
+		content: "" 
+		position: absolute
+	&:before
+		border-right: 1px solid #fff 
+		top: 0
+		bottom: 0
+		left: 0
+		+opacity(0.1)
+	&:after
+		top: 50%
+		right: 17px
+		margin-top: -1px
+		+arr(6, 3, #fff, b)
+.select-btns__text
+	position: relative
+	display: block
+	padding: 0 40px 0 0 
+	+border-radius(2px 0 0 2px)
+	overflow: hidden
+.select-btns__list
+	position: absolute
+	display: none
+	top: 100%
+	left: 0
+	right: 0
+	z-index: 100
+	background: #2196f3
+	+border-radius(0 0 2px 2px)
+	overflow: hidden
+	li
+		cursor: pointer
+		&:hover
+			background: lighten(#2196f3, 10%)
+
+.select-btns_mod
+	button
+		padding: 5px 10px
+	.select-btns__text
+		padding-right: 30px
+	.select-btns__btn
+		width: 30px
+		&:after
+			right: 12px
+		&:before
+			right: 31px
 //btns
 .btn
 	display: inline-block
@@ -489,7 +568,7 @@
 		min-width: 180px
 	&__btns
 		min-width: 160px 
-		.select
+		.select-btns
 			margin-bottom: 10px
 			max-width: 160px
 		.btn

@@ -151,6 +151,45 @@ head.ready(function() {
 	    });
 	    
 	});
+	//select-btns
+	$(document).ready(function() {
+	    $(document).click(function() {
+	        $(".js-btns-list").hide();
+	        $(".js-btns").removeClass("is-active");
+	    });
+	    function selectList() {
+	        var btns = $(".js-btns");
+	        var btns_list = $(".js-btns-list");
+	        $("body").on("click", ".js-btns-btn", function(event){
+	            if ($('.js-btns').hasClass("is-active")) {
+	                $(this).parent('.js-btns').removeClass("is-active");
+	                btns_list.hide();
+	            }
+	            else {
+	                $(this).parent('.js-btns').addClass("is-active");
+	               	
+	                btns_list.hide();
+	                $(this).parent('.js-btns').find(".js-btns-list").show();
+	            }
+	            event.stopPropagation();
+	        });
+	        $("body").on("click", ".js-btns-list li", function(event){
+	            var id = $(this).attr("data-id");
+	            var text = $(this).text();
+	            $(this).parents(".js-btns").find(".js-btns-text").html($(this).html());
+	            $(this).parents(".js-btns").find(".js-btns-input").val(id);
+	            $(this).parent().hide();
+	            $(this).parents(".js-btns").removeClass("is-active");
+	            event.stopPropagation();
+	        });
+	    }  
+	    
+	    selectList();
+	    $("body").on("click", ".js-colors", function(event){
+	        event.stopPropagation();
+	    });
+	    
+	});
 
 	//spinner
 	$(function() {
@@ -178,4 +217,5 @@ head.ready(function() {
 		$(' '+attr).removeClass('is-hidden');
 		return false;
 	});
+
 });

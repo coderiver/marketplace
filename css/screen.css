@@ -92,7 +92,7 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .gallery__pager .slide.cycle-slide-active { border: 1px solid #2196f3; -moz-border-radius: 2; -webkit-border-radius: 2; border-radius: 2; }
 .gallery__pager .slide img { display: inline-block; vertical-align: middle; max-width: 100%; max-height: 100%; }
 
-.select-n { position: relative; cursor: pointer; width: 100%; text-align: left; background: white; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid #efefef; font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; line-height: 20px; color: #333333; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+.select-n { position: relative; cursor: pointer; width: 100%; text-align: left; background: white; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid #efefef; font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; line-height: 20px; color: #333333; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; z-index: 200; }
 .select-n_mod { color: #999999; }
 .select-n_dark { color: #333333; }
 .select-n i { display: block; width: 20px; height: 20px; }
@@ -105,7 +105,7 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .select-n__list li { padding: 4px 9px; cursor: pointer; }
 .select-n__list li:hover { background: #efefef; }
 
-.select { position: relative; cursor: pointer; width: 100%; text-align: left; background: #2196f3; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; line-height: 20px; color: white; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+.select { position: relative; cursor: pointer; width: 100%; text-align: left; background: #2196f3; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; line-height: 20px; color: white; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; z-index: 200; }
 .select.is-active { -moz-border-radius: 2px 2px 0 0; -webkit-border-radius: 2px; border-radius: 2px 2px 0 0; }
 .select i { display: block; width: 20px; height: 20px; }
 .select img { display: block; max-width: 100%; max-height: 20px; }
@@ -116,12 +116,34 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 
 .select__text { position: relative; display: block; padding: 5px 31px 5px 9px; }
 .select__text:before, .select__text:after { content: ""; position: absolute; }
-.select__text:before { top: 50%; right: 9px; margin-top: -1px; width: 0px; height: 0px; border-style: solid; border-width: 3px 3px 0 3px; border-color: white transparent transparent transparent; }
+.select__text:before { top: 50%; right: 12px; margin-top: -1px; width: 0px; height: 0px; border-style: solid; border-width: 3px 3px 0 3px; border-color: white transparent transparent transparent; }
 .select__text:after { top: 0; bottom: 0; right: 31px; border-right: 1px solid white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10); opacity: 0.1; }
 
 .select__list { position: absolute; display: none; top: 100%; left: 0; right: 0; z-index: 100; background: #2196f3; -moz-border-radius: 0 0 2px 2px; -webkit-border-radius: 0; border-radius: 0 0 2px 2px; overflow: hidden; }
 .select__list li { padding: 5px 9px; cursor: pointer; }
 .select__list li:hover { background: #51adf6; }
+
+.select-btns { position: relative; cursor: pointer; width: 100%; text-align: left; background: #2196f3; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; z-index: 200; }
+.select-btns.is-active { -moz-border-radius: 2px 2px 0 0; -webkit-border-radius: 2px; border-radius: 2px 2px 0 0; }
+.select-btns button { padding: 10px 10px 10px 10px; width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: block; text-align: left; font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; line-height: 20px; color: white; background: none; }
+.select-btns button:active { background: #0c7cd5; }
+
+.select-btns__btn { position: absolute; top: 0; bottom: 0; right: 0; width: 40px; }
+.select-btns__btn:before, .select-btns__btn:after { content: ""; position: absolute; }
+.select-btns__btn:before { border-right: 1px solid white; top: 0; bottom: 0; left: 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10); opacity: 0.1; }
+.select-btns__btn:after { top: 50%; right: 17px; margin-top: -1px; width: 0px; height: 0px; border-style: solid; border-width: 3px 3px 0 3px; border-color: white transparent transparent transparent; }
+
+.select-btns__text { position: relative; display: block; padding: 0 40px 0 0; -moz-border-radius: 2px 0 0 2px; -webkit-border-radius: 2px; border-radius: 2px 0 0 2px; overflow: hidden; }
+
+.select-btns__list { position: absolute; display: none; top: 100%; left: 0; right: 0; z-index: 100; background: #2196f3; -moz-border-radius: 0 0 2px 2px; -webkit-border-radius: 0; border-radius: 0 0 2px 2px; overflow: hidden; }
+.select-btns__list li { cursor: pointer; }
+.select-btns__list li:hover { background: #51adf6; }
+
+.select-btns_mod button { padding: 5px 10px; }
+.select-btns_mod .select-btns__text { padding-right: 30px; }
+.select-btns_mod .select-btns__btn { width: 30px; }
+.select-btns_mod .select-btns__btn:after { right: 12px; }
+.select-btns_mod .select-btns__btn:before { right: 31px; }
 
 .btn { display: inline-block; padding: 7px 23px; font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; color: white; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; position: relative; }
 .btn:active { top: 1px; }
@@ -170,7 +192,7 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .table__info p { margin-right: 10px; }
 .table__delivery { min-width: 180px; }
 .table__btns { min-width: 160px; }
-.table__btns .select { margin-bottom: 10px; max-width: 160px; }
+.table__btns .select-btns { margin-bottom: 10px; max-width: 160px; }
 .table__btns .btn { width: 100%; max-width: 160px; text-align: center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .form__row { margin: 0 -5px; font-size: 0; }
@@ -598,6 +620,7 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 @media only screen and (max-width: 1024px) { .check-wrap .check { margin: 0 5px; } }
 
 .check { max-width: 280px; display: inline-block; width: 100%; vertical-align: top; }
+.check:hover .check__btns { display: block; }
 .check__item { width: 100%; max-width: 280px; position: relative; height: 160px; text-align: center; font-size: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: 10px; }
 .check__item:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .check__item:hover { border-color: #2196f3; }
@@ -620,10 +643,10 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .check__prices { padding: 10px 0; margin-bottom: 8px; }
 .check__price { display: block; color: #333333; font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; }
 .check__price.is-red { color: #e53935; }
-.check__btns { font-size: 0; margin: 0 -5px; padding-bottom: 10px; }
-.check__btns .btn, .check__btns .select { display: inline-block; vertical-align: top; margin: 0 5px 10px; }
+.check__btns { font-size: 0; margin: 0 -5px; padding-bottom: 10px; display: none; }
+.check__btns .btn, .check__btns .select-btns { display: inline-block; vertical-align: top; margin: 0 5px 10px; }
 .check__btns .btn { padding: 7px 18px; }
-.check__btns .select { max-width: 140px; }
+.check__btns .select-btns { max-width: 140px; }
 
 .sidebar__action { max-width: 280px; padding: 10px 0; }
 @media only screen and (max-width: 1024px) { .sidebar__action { padding: 10px 5px; } }
