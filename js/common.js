@@ -241,4 +241,9 @@ head.ready(function() {
 		$('.js-popup-thx').addClass('is-active');
 		return false;
 	});
+
+	$('.js-check-open').on('click', function() {
+		$('.js-check-block').toggleClass('is-active');
+		return false;
+	});
 });

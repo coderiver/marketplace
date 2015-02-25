@@ -871,6 +871,7 @@
 	display: inline-block
 	width: 100%
 	vertical-align: top
+	position: relative
 	&:hover
 		.check__btns
 			display: block
@@ -963,18 +964,69 @@
 			color: #e53935 
 	&__btns
 		font-size: 0
-		margin: 0 -5px
+		margin: 0 -5px -10px
 		padding-bottom: 10px
 		display: none
-		.btn, .select-btns
+		.btn, .select-btns, .btn-date
 			display: inline-block
 			vertical-align: top
 			margin: 0 5px 10px
+			z-index: 210 
 		.btn
 			padding: 7px 18px 
 		.select-btns
 			max-width: 140px
-			
+	&__hidden
+		border: 1px solid #efefef
+		border-top: none
+		+box-shadow(0 10px 20px rgba(0, 0, 1, 0.1))
+		+border-radius(2px)
+		overflow: hidden
+		display: none
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		z-index: 200 
+		background: #fff 
+		&.is-active
+			display: block
+	&__row
+		+clr
+		border-top: 1px solid #efefef
+		position: relative
+		padding: 0 0 0 58px 
+		+vertical
+		height: 49px 
+		text-align: left
+		.stars
+			padding: 3px 0 0 
+	&__icon
+		+vertical
+		float: left
+		width: 58px
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		border-right: 1px solid #efefef 
+		i
+			display: inline-block
+			vertical-align: middle
+			&.is-phone
+				+s(is-phone)
+			&.is-star
+				+s(is-star)
+	&__text
+		display: inline-block
+		vertical-align: middle
+		padding: 0 20px
+	&__phone
+		font-size: 16px
+		color: #333
+		font-family: Helvetica, sans-serif
+		font-weight: bold 
+		
 .sidebar__action
 	max-width: 280px
 	padding: 10px 0 

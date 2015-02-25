@@ -514,6 +514,34 @@
 	&:active
 		top: 1px
 
+.btn-date
+	width: 130px
+	+box
+	padding: 8px 30px 7px 0 
+	background: #2196f3
+	+reg
+	font-size: 11px
+	color: #fff
+	text-align: center
+	display: inline-block  
+	+border-radius(2px)
+	position: relative
+	&:before, &:after
+		content: "" 
+		position: absolute
+	&:before
+		top: 0
+		bottom: 0
+		right: 30px
+		border-right: 1px solid #fff
+		+opacity(0.1) 
+	&:after
+		+s(refresh)
+		top: 50%
+		right: 6px
+		margin-top: -7px 
+	&:active
+		top: 1px
 //table
 .table-wrap
 	overflow-y: auto 
