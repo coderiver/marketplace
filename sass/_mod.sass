@@ -542,6 +542,37 @@
 		margin-top: -7px 
 	&:active
 		top: 1px
+		
+.btn-like
+	width: 40px
+	height: 30px
+	border: 1px solid #efefef
+	+border-radius(2px)
+	position: relative
+	display: inline-block
+	+transition(background 0.3s, border-color 0.3s)
+	&:before, &:after
+		content: "" 
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-top: -7px
+		margin-left: -8px
+	&:before
+		+s(is-heart-gray)
+	&:after
+		+s(is-heart-white)
+		visibility: hidden
+		+opacity(0)
+		+transition(visibility 0.3s, opacity 0.3s)
+	&:hover
+		background: #2196f3 
+		border-color: #2196f3 
+		&:after
+			visibility: visible
+			+opacity(1)
+	&:active
+		top: 1px
 //table
 .table-wrap
 	overflow-y: auto 

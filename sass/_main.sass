@@ -501,6 +501,17 @@
 		margin-top: 10px
 	.slider
 		margin: 0
+	&__items
+		+r(768)
+			text-align: left
+		.item
+			width: 20%
+			+r(1680)
+				width: 25%
+			+r(1280)
+				width: 33.3%
+			+r(768)
+				width: 50%
 .link
 	+reg
 	font-size: 12px
@@ -570,8 +581,14 @@
 			display: inline-block
 			vertical-align: middle
 			margin: 0 20px 5px 0 
+		.btn-like
+			display: inline-block
+			vertical-align: middle
 		.info__select
 			margin-bottom: 5px
+		&_mod
+			.btn, .btn-like
+				margin: 0 10px 5px 0 
 	&__select
 		width: 60px
 	&__title
