@@ -181,6 +181,7 @@ head.ready(function() {
 	            $(this).parent().hide();
 	            $(this).parents(".js-btns").removeClass("is-active");
 	            event.stopPropagation();
+	            return false;
 	        });
 	    }  
 	    
@@ -217,5 +218,27 @@ head.ready(function() {
 		$(' '+attr).removeClass('is-hidden');
 		return false;
 	});
+	$('.js-popup-open').click(function(event) {
+		attr = $(this).attr('href');
+		$('#luckyprice, #phone, #add, #new, #load, #services, #order, #create, #thx').removeClass('is-active');
+		$(' '+attr).addClass('is-active');
+		$('.js-popup-wrap').addClass('is-active')
+		return false;
+	});
+	$('.js-popup-close').on('click', function() {
+		$('.js-popup-wrap').removeClass('is-active');
+		$('.js-popup').removeClass('is-active');
+		return false;
+	});
+	$('.overlay').on('click', function() {
+		$('.js-popup-wrap').removeClass('is-active');
+		$('.js-popup').removeClass('is-active');
+		return false;
+	});
 
+	$('.js-open-thx').on('click', function() {
+		$('.js-popup').removeClass('is-active');
+		$('.js-popup-thx').addClass('is-active');
+		return false;
+	});
 });
