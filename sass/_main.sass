@@ -641,6 +641,26 @@
 			+r3
 				padding: 10px 0 
 				border-left: none
+	&__btn
+		float: right
+	&__block_mod
+		+clr
+		text-align: left
+		padding-bottom: 10px 
+		.info__box
+			display: inline-block
+			vertical-align: top
+		.info__box
+			width: 42.4%
+			+r3
+				width: 100%
+				margin-bottom: 20px
+		.info__btn
+			text-align: right
+			width: 57.6%
+			+r3
+				width: 100%
+				text-align: left
 .rating
 	+vertical
 	&__title, &__number, .stars
@@ -1455,3 +1475,108 @@
 .is-tab-block
 	&.is-hidden
 		display: none
+		
+
+//product-page
+.contact
+	width: 100%
+	max-width: 280px
+	float: right
+	margin-left: 20px
+	border: 1px solid #efefef
+	+border-radius(2px)
+	+r3
+		float: none
+		margin: 0 0 20px 
+	&__title
+		display: block
+		+bold
+		font-size: 14px
+		color: #333
+		margin-bottom: 15px
+	&__top
+		padding: 9px 
+		border-bottom: 1px solid #efefef 
+	&__body
+		padding: 9px 9px 0
+	&__box
+		position: relative
+		padding: 0 0 0 50px 
+		height: 40px
+		+vertical
+		text-align: left
+		margin: 0 0 10px 
+		display: block
+		p
+			font-size: 12px
+	a
+		&.contact__box
+			p
+				color: #2196f3 
+	&__icon
+		width: 40px
+		height: 40px
+		position: absolute
+		top: 0
+		left: 0
+		+vertical
+		background: #2196f3 
+		+border-radius(2px)
+		i
+			display: inline-block
+			vertical-align: middle
+			&.is-mail
+				+s(is-mail-white)
+			&.is-map
+				+s(is-map-white)
+			&.is-phone
+				+s(is-phone-white)
+	&__info
+		display: inline-block
+		vertical-align: middle
+		width: 100%
+	&__map
+		width: 100%
+		height: 88px
+		border: 1px solid #efefef
+		margin-bottom: 10px
+		position: relative
+		z-index: 200 
+		div
+			width: 100%
+			height: 100%
+			position: relative
+			z-index: 200 
+.profile
+	position: relative
+	padding: 0 0 0 50px 
+	height: 40px
+	+vertical
+	text-align: left
+	&__img
+		position: absolute
+		top: 0
+		left: 0
+		width: 40px
+		height: 40px
+		img
+			width: 100%
+			+border-radius(2px)
+	&__info
+		display: inline-block
+		vertical-align: middle
+		width: 100%
+	&__name
+		display: block
+		+reg
+		font-size: 12px
+		color: #333 
+		
+
+.row_prod
+	.item
+		width: 25%
+		+r2
+			width: 50%
+		+r4
+			width: 100%
