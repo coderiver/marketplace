@@ -246,4 +246,8 @@ head.ready(function() {
 		$('.js-check-block').toggleClass('is-active');
 		return false;
 	});
+	$('.js-change-btn').on('click', function() {
+		$(this).parents('.js-change').toggleClass('is-active');
+		return false;
+	});
 });

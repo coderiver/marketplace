@@ -249,9 +249,9 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .table-cabinet th.is-seven, .table-cabinet td.is-seven { width: 14%; }
 .table-cabinet th.is-one_mod, .table-cabinet td.is-one_mod { width: 21%; }
 .table-cabinet th.is-two_mod, .table-cabinet td.is-two_mod { width: 19%; }
-.table-cabinet th.is-three_mod, .table-cabinet td.is-three_mod { width: 12%; }
-.table-cabinet th.is-four_mod, .table-cabinet td.is-four_mod { width: 10%; }
-.table-cabinet th.is-five_mod, .table-cabinet td.is-five_mod { width: 8%; }
+.table-cabinet th.is-three_mod, .table-cabinet td.is-three_mod { width: 11%; }
+.table-cabinet th.is-four_mod, .table-cabinet td.is-four_mod { width: 9%; }
+.table-cabinet th.is-five_mod, .table-cabinet td.is-five_mod { width: 10%; }
 .table-cabinet th.is-six_mod, .table-cabinet td.is-six_mod { width: 8%; }
 .table-cabinet th.is-seven_mod, .table-cabinet td.is-seven_mod { width: 9%; }
 .table-cabinet th.is-eight_mod, .table-cabinet td.is-eight_mod { width: 11%; }
@@ -860,6 +860,13 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .row_prod .item { width: 25%; }
 @media only screen and (max-width: 1024px) { .row_prod .item { width: 50%; } }
 @media only screen and (max-width: 480px) { .row_prod .item { width: 100%; } }
+
+.change { position: relative; width: 100%; }
+.change.is-active span { display: none; }
+.change.is-active .change__input { display: block; }
+.change__btn { width: 21px; height: 21px; background: url(../img/karandash.png) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; display: inline-block; cursor: pointer; position: absolute; bottom: 0; right: 0; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; }
+.change__text { display: inline-block; position: relative; padding-right: 21px; height: 21px; }
+.change__input { border-bottom: 1px solid #333333; width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; color: #333333; padding: 3px; display: none; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 

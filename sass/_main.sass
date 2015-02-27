@@ -1585,3 +1585,37 @@
 			width: 50%
 		+r4
 			width: 100%
+			
+.change
+	position: relative
+	width: 100%
+	&.is-active
+		span
+			display: none
+		.change__input
+			display: block
+	&__btn
+		width: 21px
+		height: 21px
+		background: url(../img/karandash.png) no-repeat
+		+cover
+		display: inline-block
+		cursor: pointer
+		position: absolute
+		bottom: 0
+		right: 0
+		+user-select(none)
+	&__text
+		display: inline-block
+		position: relative
+		padding-right: 21px 
+		height: 21px
+	&__input
+		border-bottom: 1px solid #333
+		width: 100%
+		+box
+		+reg
+		font-size: 12px
+		color: #333  
+		padding: 3px 
+		display: none
