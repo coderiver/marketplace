@@ -216,9 +216,9 @@
 	border: 1px solid #efefef
 	+reg
 	font-size: 12px
-	line-height: 20px
 	color: #333 
 	+border-radius(2px)
+	padding: 4px 19px 4px 9px 
 	// z-index: 200
 	&_mod
 		color: #999999 
@@ -233,11 +233,10 @@
 		max-width: 100%
 		max-height: 20px 
 .select-n__text
-	position: relative
 	display: block
-	padding: 4px 19px 4px 9px 
-	min-height: 28px 
 	+box
+	overflow: hidden
+	line-height: 20px
 	&:before
 		content: "" 
 		position: absolute
@@ -271,9 +270,9 @@
 	+box
 	+reg
 	font-size: 12px
-	line-height: 20px
 	color: #fff 
 	+border-radius(2px)
+	padding: 5px 31px 5px 9px 
 	z-index: 200
 	&.is-active
 		+border-radius(2px 2px 0 0)
@@ -296,9 +295,9 @@
 			li
 				padding: 10px 10px 10px 10px
 .select__text
-	position: relative
 	display: block
-	padding: 5px 31px 5px 9px 
+	overflow: hidden
+	line-height: 20px
 	&:before, &:after
 		content: "" 
 		position: absolute
@@ -375,10 +374,9 @@
 		margin-top: -1px
 		+arr(6, 3, #fff, b)
 .select-btns__text
-	position: relative
 	display: block
-	padding: 0 40px 0 0 
 	+border-radius(2px 0 0 2px)
+	padding: 0 40px 0 0 
 	overflow: hidden
 .select-btns__list
 	position: absolute
@@ -641,6 +639,9 @@
 			font-size: 12px
 			line-height: 16px
 			color: #333
+		.btn-rating
+			float: right
+			margin: 0 10px 
 	&__price
 		min-width: 180px
 		h3
@@ -753,6 +754,37 @@
 			line-height: 16px
 		.table-link
 			color: #2196f3 
+	th, td
+		&.is-one
+			width: 21%
+		&.is-two
+			width: 19%
+		&.is-three
+			width: 11%
+		&.is-four
+			width: 15%
+		&.is-five
+			width: 10%
+		&.is-six
+			width: 10%
+		&.is-seven
+			width: 14%
+		&.is-one_mod
+			width: 21%
+		&.is-two_mod
+			width: 19%
+		&.is-three_mod
+			width: 12%
+		&.is-four_mod
+			width: 10%
+		&.is-five_mod
+			width: 8%
+		&.is-six_mod
+			width: 8%
+		&.is-seven_mod
+			width: 9%
+		&.is-eight_mod
+			width: 11%
 	.photo__img
 		display: inline-block
 		vertical-align: middle
@@ -778,6 +810,11 @@
 			font-size: 12px
 			line-height: 20px
 			color: #999
+		.select-n__list
+			top: auto
+			bottom: 100%
+			border-bottom: none
+			border-top: 1px solid #efefef 
 	.btn
 		display: inline-block
 		width: 50px
@@ -807,8 +844,6 @@
 			color: #333 
 			span
 				color: #333 
-	.table-btn
-		width: 100px
 	.delete
 		+s(close)
 		position: absolute

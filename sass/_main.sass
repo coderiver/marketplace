@@ -573,7 +573,7 @@
 		text-align: left
 		padding: 0 20px 0 0
 		display: inline-block
-		margin-bottom: 5px
+		margin: 5px 0
 	&__btns
 		+vertical
 		text-align: left
@@ -590,7 +590,7 @@
 			.btn, .btn-like
 				margin: 0 10px 5px 0 
 	&__select
-		width: 60px
+		min-width: 60px
 	&__title
 		+reg
 		font-size: 12px
@@ -627,7 +627,7 @@
 			line-height: 1.2
 	&__col
 		display: inline-block
-		vertical-align: middle
+		vertical-align: top
 		width: 50%
 		+box
 		+vertical
@@ -651,16 +651,20 @@
 			display: inline-block
 			vertical-align: top
 		.info__box
-			width: 42.4%
+			width: auto
+			overflow: hidden
+			display: block
 			+r3
 				width: 100%
-				margin-bottom: 20px
 		.info__btn
 			text-align: right
-			width: 57.6%
+			width: 320px
+			float: right
 			+r3
 				width: 100%
 				text-align: left
+				margin-bottom: 20px
+				float: none
 .rating
 	+vertical
 	&__title, &__number, .stars
@@ -1501,9 +1505,8 @@
 		padding: 9px 9px 0
 	&__box
 		position: relative
-		padding: 0 0 0 50px 
-		height: 40px
-		+vertical
+		padding: 5px 0 5px 50px 
+		min-height: 40px
 		text-align: left
 		margin: 0 0 10px 
 		display: block
@@ -1511,6 +1514,10 @@
 			font-size: 12px
 	a
 		&.contact__box
+			height: 40px
+			+vertical
+			+box
+			text-align: left 
 			p
 				color: #2196f3 
 	&__icon
@@ -1534,7 +1541,7 @@
 	&__info
 		display: inline-block
 		vertical-align: middle
-		width: 100%
+		// width: 100%
 	&__map
 		width: 100%
 		height: 88px
@@ -1549,23 +1556,21 @@
 			z-index: 200 
 .profile
 	position: relative
-	padding: 0 0 0 50px 
-	height: 40px
-	+vertical
 	text-align: left
+	display: table
+	&__row
+		display: table-row
 	&__img
-		position: absolute
-		top: 0
-		left: 0
 		width: 40px
 		height: 40px
+		display: table-cell
 		img
 			width: 100%
 			+border-radius(2px)
 	&__info
-		display: inline-block
 		vertical-align: middle
-		width: 100%
+		display: table-cell
+		padding: 0 10px 
 	&__name
 		display: block
 		+reg
