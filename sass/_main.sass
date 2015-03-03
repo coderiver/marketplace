@@ -1632,6 +1632,10 @@
 	padding: 10px
 	+box
 	float: left
+	position: relative
+	&:hover
+		.w-item__close
+			display: block
 	+r2
 		width: 33.3%
 	+r3
@@ -1681,7 +1685,13 @@
 			color: #333 
 			&.is-red
 				color: #e53935 
-				
+	&__close
+		position: absolute
+		top: 20px
+		right: 20px
+		+s(w-close)
+		display: none
+
 .results
 	+r3
 		text-align: left

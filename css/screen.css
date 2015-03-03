@@ -917,7 +917,8 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .wishlist__row { margin: 0 -10px; *zoom: 1; padding: 30px 0; }
 .wishlist__row:after { content: " "; display: table; clear: both; }
 
-.w-item { width: 25%; padding: 10px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; float: left; }
+.w-item { width: 25%; padding: 10px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; float: left; position: relative; }
+.w-item:hover .w-item__close { display: block; }
 @media only screen and (max-width: 1024px) { .w-item { width: 33.3%; } }
 @media only screen and (max-width: 768px) { .w-item { width: 50%; } }
 @media only screen and (max-width: 480px) { .w-item { width: 100%; } }
@@ -933,6 +934,7 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .w-item__price { padding: 10px 0; border-bottom: 1px solid #efefef; margin-bottom: 7px; }
 .w-item__price span { display: block; font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; color: #333333; }
 .w-item__price span.is-red { color: #e53935; }
+.w-item__close { position: absolute; top: 20px; right: 20px; background: url('../img/icons-s0b5ef8cde8.png') 0 -1989px no-repeat; width: 12px; height: 12px; display: none; }
 
 @media only screen and (max-width: 768px) { .results { text-align: left; } }
 .results h3 { margin-bottom: 20px; }
