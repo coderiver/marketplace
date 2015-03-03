@@ -242,12 +242,23 @@ head.ready(function() {
 		return false;
 	});
 
+	$('.js-open-discount').on('click', function() {
+		$('.js-popup').removeClass('is-active');
+		$('.js-popup-wrap').addClass('is-active');
+		$('.js-discount').addClass('is-active');
+		return false;
+	});
+
 	$('.js-check-open').on('click', function() {
 		$('.js-check-block').toggleClass('is-active');
 		return false;
 	});
 	$('.js-change-btn').on('click', function() {
 		$(this).parents('.js-change').toggleClass('is-active');
+		return false;
+	});
+	$('.js-btn-change').on('click', function() {
+		$(this).toggleClass('is-active');
 		return false;
 	});
 });

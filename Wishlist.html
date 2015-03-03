@@ -10,7 +10,7 @@
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
-<body onload="initialize()">
+<body>
 <!-- BEGIN  out-->
 <div class="out">
 	<!-- begin header  -->
@@ -573,296 +573,258 @@
 		<div class="inner">
 
 			<div class="main__inner">
-
-				<!-- begin catalog  -->
-				<div class="catalog">
-					<div class="product">
-						<div class="contact">
-							<div class="contact__top">
-								<span class="contact__title">Контактное лицо</span>
-								<div class="profile">
-									<div class="profile__row">										
-										<div class="profile__img">
-											<img src="http://placecage.com/40/40" alt="">
-										</div><!--safari win7--><div class="profile__info">
-											<span class="profile__name">Михайленко Игорь</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="contact__body">
-								<div class="contact__box">
-									<div class="contact__icon"><i class="is-mail"></i></div>
-									<div class="contact__info">
-										<span class="small">Почта</span>
-										<p>igor.mihaylenko@gmail.com</p>
-									</div>
-								</div>
-								<div class="contact__box">
-									<div class="contact__icon"><i class="is-map"></i></div>
-									<div class="contact__info">
-										<span class="small">Адрес</span>
-										<p>Киев, Кловский спуск, 7А</p>
-									</div>
-								</div>
-								<div class="contact__map">
-									<div id="map_canvas"></div>
-								</div>
-								<a href="#" class="contact__box">
-									<div class="contact__icon"><i class="is-phone"></i></div><!--safari win7--><div class="contact__info">
-										<p>Показать номер продавца</p>
-									</div>
-								</a>
-								<a href="#" class="contact__box">
-									<div class="contact__icon"><i class="is-phone"></i></div>
-									<div class="contact__info">
-										<p>Показать номер продавца</p>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="product__left">
-							<!-- BEGIN CAROUSEL -->
-							<div class="gallery">
-								<div class="gallery__top">
-									<a href="#" class="gallery__prev"></a>
-									<a href="#" class="gallery__next"></a>
-									<div class="gallery__slides cycle-slideshow"
-										data-cycle-timeout="0"
-										data-cycle-fx="fade"
-										data-cycle-slides="> div"
-										data-cycle-prev=".gallery__prev"
-										data-cycle-next=".gallery__next"
-										data-cycle-caption=".gallery__conter"
-										data-cycle-caption-template="{{slideNum}} / {{slideCount}}">
-										<div class="slide">
-											<img src="img/prod-item1.jpg" alt=""/>
-										</div>
-										<div class="slide">
-											<img src="img/prod-pager2.jpg" alt="">
-										</div>
-										<div class="slide">
-											<img src="img/prod-pager3.jpg" alt="">
-										</div>
-										<div class="slide slide_mod">
-											<img src="img/prod-pager4.png" alt="">
-										</div>
-									</div>
-								</div>
-								<div class="gallery__bottom">
-									<div class="gallery__pager cycle-slideshow"
-										 data-cycle-timeout="0"
-										 data-cycle-fx="carousel"
-										 data-cycle-carousel-visible="4"
-										 data-cycle-carousel-fluid=true
-										 data-allow-wrap="false"
-										 data-cycle-slides="> div"
-										 >
-										<div class="slide"><img src="img/prod-pager1.jpg" alt=""></div>
-										<div class="slide"><img src="img/prod-pager2.jpg" alt=""></div>
-										<div class="slide"><img src="img/prod-pager3.jpg" alt=""></div>
-										<div class="slide slide_mod"><img src="img/prod-pager4.png" alt=""></div>
-									</div>
-								</div>
-							</div>
-							<!-- END CAROUSEL -->
-						</div>
-						<div class="product__right">
-							<div class="info">
-								<div class="info__row">
+				<!-- begin wishlist  -->
+				<div class="wishlist">
+					<h3>Список желаний</h3>
+					<div class="wishlist__row">
+						<div class="w-item">
+							<a href="#" class="w-item__inner">
+								<div class="w-item__img"><img src="img/item-img1.jpg" alt=""></div>
+								<span class="w-item__title">iMac 24inch Core 2 Duo A7</span>
+								<span class="small">Мобильные телефоны</span>
+								<div class="w-item__rating">
 									<span class="i-sticker is-red">top</span>
-									<h2>iMac 24inch Core 2 Duo A7</h2>
-								</div>
-								<div class="info__row">
-									<div class="info__col">
-										<div class="info__setting">
-											<span class="info__title">Цвет</span>
-											<div class="info__select">
-												<div class="select-n js-colors">
-													<span class="select-n__text js-colors-text"><i style="background: #4caf50;"></i></span>
-													<input type="hidden" class="js-colors-input" value="0">
-													<ul class="select-n__list js-colors-list">
-														<li data-id="#e53934"><i style="background: #e53934;"></i></li>
-														<li data-id="#fbc02d"><i style="background: #fbc02d;"></i></li>
-														<li data-id="#1a1b1f"><i style="background: #1a1b1f;"></i></li>
-														<li data-id="#4caf50"><i style="background: #4caf50;"></i></li>
-														<li data-id="#2196f3"><i style="background: #2196f3;"></i></li>
-													</ul>
-												</div>
-											</div>										
-										</div>
-										<div class="info__setting">
-											<span class="info__title">Размер</span>
-											<div class="info__select">
-												<div class="select-n js-select">
-													<span class="select-n__text js-select-text">46</span>
-													<input type="hidden" class="js-select-input" value="0">
-													<ul class="select-n__list js-select-list">
-														<li data-id="46">46</li>
-														<li data-id="45">45</li>
-														<li data-id="44">44</li>
-														<li data-id="43">43</li>
-														<li data-id="42">42</li>
-													</ul>
-												</div>
-											</div>										
-										</div>
-									</div><!--safari win7--><div class="info__col info__col_mod">
-										<div class="info__setting">
-											<div class="rating">
-												<span class="rating__title">Рейтинг</span>
-												<div class="stars">
-													<a href="#" class="is-active"></a>
-													<a href="#" class="is-active"></a>
-													<a href="#" class="is-active"></a>
-													<a href="#"></a>
-													<a href="#"></a>
-												</div>
-												<span class="rating__number">(3 267)</span>
-											</div>
-										</div>
-									</div>									
-								</div>
-								<div class="info__row">
-									<div class="info__btns info__btns_mod"><!--safari win7--><div class="info__col">
-											<a href="#" class="btn btn_blue">Позвонить ближайшему продавцу</a>
-										</div><!--safari win7--><div class="info__col info__col_mod">
-											<a href="#" class="btn btn_blue js-open-discount">Выиграй скидку</a>		
-											<a href="#" class="btn-like"></a>							
-											<div class="info__select">
-												<div class="select-n js-colors">
-													<span class="select-n__text js-colors-text"><img src="img/select-img.png" alt=""></span>
-													<input type="hidden" class="js-colors-input" value="0">
-													<ul class="select-n__list js-colors-list">
-														<li data-id="#"><img src="img/select-img.png" alt=""></li>
-														<li data-id="#"><img src="img/select-img2.png" alt=""></li>
-														<li data-id="#"><img src="img/select-img.png" alt=""></li>
-														<li data-id="#"><img src="img/select-img2.png" alt=""></li>
-													</ul>
-												</div>
-											</div>
-										</div>										
-									</div>									
-								</div>
-								<div class="info__row">
-									<p>Apple представляет 27-дюймовый iMac с дисплеем Retina 5K, оснащённый экраном с самым высоким в мире разрешением 14.7 млн пикселей, от которого захватывает дух. Благодаря этому невероятному разрешению вы получаете.</p>
-								</div>
-								<div class="info__block info__block_mod">
-									<div class="info__btn">
-										<a href="#" class="btn-phone"><div class="btn-phone__icon"><i></i></div><span>Показать номер продавца</span></a>
-									</div>
-									<div class="info__box">
-										<h4>Условия доставки</h4>
-										<p>Экспертиза выполненного проекта притягивает маркетинг.</p>
+									<div class="stars">
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span></span>
+										<span></span>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>	
-
-					<div class="row row_prod">
-						<h3>Похожие объявления</h3>
-						<div class="item-wrapper">
-							<div class="items-slider">
-								<div class="item">
-									<a href="#">
-										<img src="img/item-img1.jpg" alt="">
-										<div class="item__info">
-											<p>Смартфон Samsung Galaxy</p>
-											<span class="small">Мобильные телефоны</span>
-											<hr>
-											<span class="price">от 699 грн</span>
-										</div>
-									</a>
-								</div><!--safari win7--><div class="item">
-									<a href="#">
-										<img src="img/item-img2.jpg" alt="">
-										<div class="item__info">
-											<p>Смартфон Samsung Galaxy</p>
-											<span class="small">Мобильные телефоны</span>
-											<hr>
-											<span class="price">от 699 грн</span>
-										</div>
-									</a>
-								</div><!--safari win7--><div class="item">
-									<a href="#">
-										<img src="img/item-img3.jpg" alt="">
-										<div class="item__info">
-											<p>Смартфон Samsung Galaxy</p>
-											<span class="small">Мобильные телефоны</span>
-											<hr>
-											<span class="price">от 699 грн</span>
-										</div>
-									</a>
-								</div><!--safari win7--><div class="item">
-									<a href="#">
-										<img src="img/item-img1.jpg" alt="">
-										<div class="item__info">
-											<p>Смартфон Samsung Galaxy</p>
-											<span class="small">Мобильные телефоны</span>
-											<hr>
-											<span class="price">от 699 грн</span>
-										</div>
-									</a>
+								<div class="w-item__price">
+									<span>Цена: 1500 грн.</span>
+									<span class="is-red">Цена: 1000 грн. (56 предложений)</span>
 								</div>
-							</div>
+								<span class="small">Доставка бесплатная</span>
+							</a>
 						</div>
-					</div>
-				</div>	
-				<!-- end catalog -->
+						<div class="w-item">
+							<a href="#" class="w-item__inner">
+								<div class="w-item__img"><img src="img/item-img2.jpg" alt=""></div>
+								<span class="w-item__title">iMac 24inch Core 2 Duo A7</span>
+								<span class="small">Мобильные телефоны</span>
+								<div class="w-item__rating">
+									<span class="i-sticker is-red">top</span>
+									<div class="stars">
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="w-item__price">
+									<span>Цена: 1500 грн.</span>
+									<span class="is-red">Цена: 1000 грн. (56 предложений)</span>
+								</div>
+								<span class="small">Доставка бесплатная</span>
+							</a>
+						</div>
+						<div class="w-item">
+							<a href="#" class="w-item__inner">
+								<div class="w-item__img"><img src="img/item-img3.jpg" alt=""></div>
+								<span class="w-item__title">iMac 24inch Core 2 Duo A7</span>
+								<span class="small">Мобильные телефоны</span>
+								<div class="w-item__rating">
+									<span class="i-sticker is-red">top</span>
+									<div class="stars">
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="w-item__price">
+									<span>Цена: 1500 грн.</span>
+									<span class="is-red">Цена: 1000 грн. (56 предложений)</span>
+								</div>
+								<span class="small">Доставка бесплатная</span>
+							</a>
+						</div>
+						<div class="w-item">
+							<a href="#" class="w-item__inner">
+								<div class="w-item__img"><img src="img/item-img4.jpg" alt=""></div>
+								<span class="w-item__title">iMac 24inch Core 2 Duo A7</span>
+								<span class="small">Мобильные телефоны</span>
+								<div class="w-item__rating">
+									<span class="i-sticker is-red">top</span>
+									<div class="stars">
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="w-item__price">
+									<span>Цена: 1500 грн.</span>
+									<span class="is-red">Цена: 1000 грн. (56 предложений)</span>
+								</div>
+								<span class="small">Доставка бесплатная</span>
+							</a>
+						</div>
+						<div class="w-item">
+							<a href="#" class="w-item__inner">
+								<div class="w-item__img"><img src="img/item-img5.jpg" alt=""></div>
+								<span class="w-item__title">iMac 24inch Core 2 Duo A7</span>
+								<span class="small">Мобильные телефоны</span>
+								<div class="w-item__rating">
+									<span class="i-sticker is-red">top</span>
+									<div class="stars">
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="w-item__price">
+									<span>Цена: 1500 грн.</span>
+									<span class="is-red">Цена: 1000 грн. (56 предложений)</span>
+								</div>
+								<span class="small">Доставка бесплатная</span>
+							</a>
+						</div>
+						<div class="w-item">
+							<a href="#" class="w-item__inner">
+								<div class="w-item__img"><img src="img/item-img6.jpg" alt=""></div>
+								<span class="w-item__title">iMac 24inch Core 2 Duo A7</span>
+								<span class="small">Мобильные телефоны</span>
+								<div class="w-item__rating">
+									<span class="i-sticker is-red">top</span>
+									<div class="stars">
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="w-item__price">
+									<span>Цена: 1500 грн.</span>
+									<span class="is-red">Цена: 1000 грн. (56 предложений)</span>
+								</div>
+								<span class="small">Доставка бесплатная</span>
+							</a>
+						</div>
+						<div class="w-item">
+							<a href="#" class="w-item__inner">
+								<div class="w-item__img"><img src="img/item-img7.jpg" alt=""></div>
+								<span class="w-item__title">iMac 24inch Core 2 Duo A7</span>
+								<span class="small">Мобильные телефоны</span>
+								<div class="w-item__rating">
+									<span class="i-sticker is-red">top</span>
+									<div class="stars">
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="w-item__price">
+									<span>Цена: 1500 грн.</span>
+									<span class="is-red">Цена: 1000 грн. (56 предложений)</span>
+								</div>
+								<span class="small">Доставка бесплатная</span>
+							</a>
+						</div>
+						<div class="w-item">
+							<a href="#" class="w-item__inner">
+								<div class="w-item__img"><img src="img/item-img8.jpg" alt=""></div>
+								<span class="w-item__title">iMac 24inch Core 2 Duo A7</span>
+								<span class="small">Мобильные телефоны</span>
+								<div class="w-item__rating">
+									<span class="i-sticker is-red">top</span>
+									<div class="stars">
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="w-item__price">
+									<span>Цена: 1500 грн.</span>
+									<span class="is-red">Цена: 1000 грн. (56 предложений)</span>
+								</div>
+								<span class="small">Доставка бесплатная</span>
+							</a>
+						</div>
+						<div class="w-item">
+							<a href="#" class="w-item__inner">
+								<div class="w-item__img"><img src="img/item-img6.jpg" alt=""></div>
+								<span class="w-item__title">iMac 24inch Core 2 Duo A7</span>
+								<span class="small">Мобильные телефоны</span>
+								<div class="w-item__rating">
+									<span class="i-sticker is-red">top</span>
+									<div class="stars">
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="w-item__price">
+									<span>Цена: 1500 грн.</span>
+									<span class="is-red">Цена: 1000 грн. (56 предложений)</span>
+								</div>
+								<span class="small">Доставка бесплатная</span>
+							</a>
+						</div>
+						<div class="w-item">
+							<a href="#" class="w-item__inner">
+								<div class="w-item__img"><img src="img/item-img7.jpg" alt=""></div>
+								<span class="w-item__title">iMac 24inch Core 2 Duo A7</span>
+								<span class="small">Мобильные телефоны</span>
+								<div class="w-item__rating">
+									<span class="i-sticker is-red">top</span>
+									<div class="stars">
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="w-item__price">
+									<span>Цена: 1500 грн.</span>
+									<span class="is-red">Цена: 1000 грн. (56 предложений)</span>
+								</div>
+								<span class="small">Доставка бесплатная</span>
+							</a>
+						</div>
+						<div class="w-item">
+							<a href="#" class="w-item__inner">
+								<div class="w-item__img"><img src="img/item-img8.jpg" alt=""></div>
+								<span class="w-item__title">iMac 24inch Core 2 Duo A7</span>
+								<span class="small">Мобильные телефоны</span>
+								<div class="w-item__rating">
+									<span class="i-sticker is-red">top</span>
+									<div class="stars">
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span class="is-active"></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="w-item__price">
+									<span>Цена: 1500 грн.</span>
+									<span class="is-red">Цена: 1000 грн. (56 предложений)</span>
+								</div>
+								<span class="small">Доставка бесплатная</span>
+							</a>
+						</div>
+					</div>					
+				</div>
+				<!-- end wishlist -->
 
 			</div>			
 		</div>
-		<!-- begin viewed  -->
-		<div class="viewed viewed_mod">
-			<div class="inner">
-				<h3>Только что просмотренные товары</h3>
-				<div class="viewed__row">
-					<div class="viewed__item">
-						<a href="#">
-							<img src="img/viewed-item1.jpg" alt="">
-							<div class="item__info">
-								<p>Смартфон Samsung Galaxy</p>
-								<span class="small">Мобильные телефоны</span>
-								<hr>
-								<span class="price">от 699 грн</span>
-							</div>
-						</a>
-					</div><!--safari win7--><div class="viewed__item">
-						<a href="#">
-							<img src="img/viewed-item2.jpg" alt="">
-							<div class="item__info">
-								<p>Смартфон Samsung Galaxy</p>
-								<span class="small">Мобильные телефоны</span>
-								<hr>
-								<span class="price">от 699 грн</span>
-							</div>
-						</a>
-					</div><!--safari win7--><div class="viewed__item">
-						<a href="#">
-							<img src="img/viewed-item3.jpg" alt="">
-							<div class="item__info">
-								<p>Смартфон Samsung Galaxy</p>
-								<span class="small">Мобильные телефоны</span>
-								<hr>
-								<span class="price">от 699 грн</span>
-							</div>
-						</a>
-					</div><!--safari win7--><div class="viewed__item">
-						<a href="#">
-							<img src="img/viewed-item4.jpg" alt="">
-							<div class="item__info">
-								<p>Смартфон Samsung Galaxy</p>
-								<span class="small">Мобильные телефоны</span>
-								<hr>
-								<span class="price">от 699 грн</span>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>				
-		</div>
-		<!-- end viewed -->
 	</section>
 	<!-- end main -->
 
@@ -903,71 +865,6 @@
 
 </div>
 <!-- END out-->
-<div class="popup-wrap js-popup-wrap">
-	<div class="popup-wrapper">
-		<div class="overlay js-overlay"></div>
-		<!-- begin discount  -->
-		<div class="discount js-discount">
-			<div class="discount__row">
-				<div class="discount__left">
-					<div class="discount__img">
-						<img src="img/adds-img1.jpg" alt="">
-					</div>
-				</div>
-				<div class="discount__right">
-					<span class="discount__title">iMac 24inch Core 2 Duo A7</span>
-					<span class="small">Мобильные телефоны</span>
-					<div class="discount__rating">
-						<span class="i-sticker is-red">top</span>
-						<div class="stars">
-							<a href="#" class="is-active"></a>
-							<a href="#" class="is-active"></a>
-							<a href="#" class="is-active"></a>
-							<a href="#"></a>
-							<a href="#"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="discount__row">
-				<div class="discount__left">					
-					<div class="discount__percent">
-						<h2>30%</h2>
-						<span>cкидка</span>
-					</div>
-				</div>
-				<div class="discount__right">
-					<a href="#" class="discount__btn">Попробывать еще раз<span>9</span></a>
-					<a href="#" class="discount__btn">Оформить заказ</a>
-				</div>
-			</div>
-		</div>
-		<!-- end discount -->
-	</div>
-</div>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
-<script type="text/javascript"> 
-  function initialize() {
-    var myLatlng = new google.maps.LatLng(50.4386023,30.5377946);
-    var myOptions = {
-		zoom: 17,
-		center: myLatlng,
-		mapTypeControl: false,
-		panControl: false,
-		zoomControl: false,
-		scaleControl: false,
-		streetViewControl: false
-    }
- 
-    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-    // var marker = new google.maps.Marker({
-    //     position: myLatlng,
-    //     map: map,
-    //     title: '1',
-    // });
-  }
- 
-</script> 
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

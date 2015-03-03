@@ -105,8 +105,27 @@
 		+box
 .basket
 	float: right
-	padding: 20px 0 20px 20px
+	padding: 10px 0 0 10px
 	position: relative
+	z-index: 500
+	&:hover
+		.basket__inner
+			background: #fff 
+			&:before
+				display: block
+		.basket__block
+			.basket__title
+				color: #2196f3
+			.basket__quantity
+				color: #666
+			.basket__icon
+				i
+					&.is-wishlist
+						+s(is-wishlist-blue)
+					&.is-basket
+						+s(is-basket-blue)
+		.w-drop
+			display: block
 	+r3
 		float: none
 		display: inline-block
@@ -114,6 +133,7 @@
 		padding: 20px 20px 0 0 
 	&_mod
 		margin-left: 15px
+		z-index: 700 
 		+r3
 			margin-left: 0
 		&:before
@@ -127,13 +147,29 @@
 			+opacity(0.1) 
 			+r3
 				display: none
-	a 
+		.basket__inner
+			+border-radius(2px 0 0 0)
+			&:before
+				+border-radius(0 2px 0 0)
+	&__inner
 		font-size: 12px
 		position: relative 
 		display: block
-		padding: 4px 0 4px 60px
+		padding: 14px 0 14px 60px
 		+box
 		min-height: 40px 
+		z-index: 110
+		+border-radius(2px 0 2px 2px)
+		&:before
+			position: absolute
+			top: 0
+			right: -10px
+			bottom: 0
+			width: 10px
+			content: "" 
+			background: #fff
+			+border-radius(0 2px 2px 0)
+			display: none
 	span
 		display: block
 	&__title
@@ -145,7 +181,7 @@
 	&__icon
 		position: absolute
 		top: 50%
-		left: 0
+		left: 10px
 		margin-top: -20px
 		width: 40px
 		height: 40px
@@ -155,7 +191,154 @@
 				+s(is-basket)
 			&.is-wishlist
 				+s(is-wishlist)
-			
+	&__block
+		position: relative
+.w-drop
+	position: absolute
+	top: 100%
+	right: -10px
+	width: 430px
+	background: #fff
+	+border-radius(2px 0 2px 2px) 	
+	+box-shadow(0 0 3.8px 1.3px rgba(0, 0, 1, 0.15))
+	z-index: 100 
+	padding: 5px
+	display: none
+	+r3
+		right: auto
+		left: 0px
+		+border-radius(0 2px 2px 2px) 	
+	+r4
+		width: 280px
+	&__inner
+		+clr
+		padding-bottom: 5px
+		position: relative
+		&:before
+			content: "" 
+			position: absolute
+			bottom: 0
+			left: 5px
+			right: 5px
+			border-bottom: 1px solid #efefef 
+	&__item
+		width: 130px
+		+box
+		border: 1px solid #efefef
+		+border-radius(2px)
+		margin: 5px
+		float: left 
+		position: relative
+		&:hover
+			.w-drop__del
+				display: block
+	&__img
+		height: 78px
+		position: relative
+	&__img-link
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		+vertical
+		z-index: 5 
+		img
+			display: inline-block
+			vertical-align: middle
+			max-width: 100%
+			max-height: 100% 
+	&__del
+		position: absolute
+		+s(w-close)
+		top: 9px
+		right: 9px
+		z-index: 15 
+		display: none
+	&__close
+		position: absolute
+		top: -1px
+		bottom: -1px
+		right: -1px
+		left: -1px
+		background: rgba(229, 57, 53, 0.5) 
+		+border-radius(2px)
+		z-index: 10 
+		&:before
+			content: "" 
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -6px 0 0 -6px
+			+s(w-close-white)
+	&__info
+		+clr
+		padding: 9px 4px 4px 
+		p
+			font-size: 12px
+			color: #666
+			max-width: 260px
+			float: left 
+			+r4
+				width: 100%
+				float: none
+				margin-bottom: 10px
+		.w-drop__btn
+			float: right
+	&__icon
+		+s(is-w-heart)
+		display: inline-block
+		margin-bottom: 20px
+	&__text
+		text-align: center
+		padding: 30px 0 40px 
+		h3
+			margin-bottom: 20px
+.w-drop__btn
+	width: 80px
+	padding: 8px 10px 7px
+	+box
+	+border-radius(15px)
+	+reg
+	font-size: 11px
+	color: #fff
+	display: inline-block
+	background: #2196f3  
+	+clr
+	position: relative
+	&:before
+		content: "" 
+		position: absolute
+		top: 3px
+		left: 0
+		width: 24px
+		height: 24px
+		margin: 0 3px
+		background: #fff
+		+border-radius(50%)  
+		+transition(all 0.250s)
+	&.is-active
+		&:before
+			left: 49px
+		span
+			&.is-no
+				visibility: visible
+				+opacity(1)
+			&.is-yes
+				visibility: hidden
+				+opacity(0)
+	span
+		float: left
+		width: 50%
+		+box
+		padding: 0 0 0 5px 
+		+transition(visibility 0.250s, opacity 0.250s)
+		&.is-no
+			visibility: hidden
+			+opacity(0)
+		&.is-yes
+			visibility: visible
+			+opacity(1)
 .nav-wrap
 	background: #1a1b1f
 .nav

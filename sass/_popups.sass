@@ -330,3 +330,102 @@
 	&__price
 		+clr
 		padding: 10px 0 0 
+		
+.discount
+	display: inline-block
+	vertical-align: middle
+	width: 100%
+	max-width: 420px
+	padding: 5px 
+	+box
+	border: 1px solid #efefef
+	background: #fff
+	+border-radius(2px)
+	z-index: 150
+	position: relative 
+	+box-shadow(0 10px 20px rgba(0, 0, 1, 0.1))
+	text-align: left
+	+r4
+		max-width: 300px
+	&__row
+		+clr
+	&__left, &__right
+		padding: 5px 
+		+box
+	&__left
+		float: left
+		width: 140px
+		+r4
+			float: none
+			margin: 0 auto
+	&__right
+		overflow: hidden
+	&__title
+		+reg
+		font-size: 14px
+		color: #2196f3 
+		display: block
+		padding: 6px 0 0 0 
+	&__rating
+		border-top: 1px solid #efefef
+		border-bottom: 1px solid #efefef
+		+clr
+		padding: 4px 0 3px
+		margin: 10px 0 0 0 
+	.i-sticker
+		float: right
+	.stars
+		overflow: hidden
+		padding: 4px 0 
+	&__img
+		height: 80px
+		+vertical
+		border: 1px solid #efefef
+		+border-radius(2px)
+		+box
+		img
+			max-width: 100%
+			max-height: 100%
+			display: inline-block
+			vertical-align: middle 
+	&__percent
+		background: #e53935
+		text-align: center
+		padding: 9px 0 
+		+border-radius(2px)
+		h2, span
+			color: #fff
+			line-height: 1
+		h2
+			+bold
+			font-size: 40px
+		span
+			display: block
+			+reg
+			font-size: 12px
+	&__btn
+		display: block
+		padding: 7px 30px
+		color: #fff
+		+reg
+		font-size: 12px
+		position: relative
+		background: #2196f3
+		+border-radius(2px) 
+		text-align: center
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+		&:active
+			top: 1px
+		span
+			position: absolute
+			top: 50%
+			margin-top: -10px
+			right: 5px
+			line-height: 20px
+			min-width: 20px
+			background: #fff
+			color: #2196f3
+			+border-radius(50%)
+			text-align: center
