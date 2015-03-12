@@ -238,8 +238,12 @@ head.ready(function() {
 	$('body').on('click', function(event) {
 		$('.js-popup-wrap').removeClass('is-active');
 		$('.js-popup').removeClass('is-active');
+		$('.js-discount').removeClass('is-active');
 	});
 	$("body").on("click", ".js-popup", function(event){
+        event.stopPropagation();
+    });
+	$("body").on("click", ".js-discount", function(event){
         event.stopPropagation();
     });
 	$('.js-open-thx').on('click', function() {

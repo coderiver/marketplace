@@ -402,7 +402,7 @@
 	color: #2196f3 
 	display: inline-block
 .discount
-	display: inline-block
+	display: none
 	vertical-align: middle
 	width: 100%
 	max-width: 420px
@@ -415,6 +415,8 @@
 	position: relative 
 	+box-shadow(0 10px 20px rgba(0, 0, 1, 0.1))
 	text-align: left
+	&.is-active
+		display: inline-block
 	+r4
 		max-width: 300px
 	&__row

@@ -1142,7 +1142,8 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 
 .p-link { font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; color: #2196f3; display: inline-block; }
 
-.discount { display: inline-block; vertical-align: middle; width: 100%; max-width: 420px; padding: 5px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid #efefef; background: white; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; z-index: 150; position: relative; -moz-box-shadow: 0 10px 20px rgba(0, 0, 1, 0.1); -webkit-box-shadow: 0 10px 20px rgba(0, 0, 1, 0.1); box-shadow: 0 10px 20px rgba(0, 0, 1, 0.1); text-align: left; }
+.discount { display: none; vertical-align: middle; width: 100%; max-width: 420px; padding: 5px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid #efefef; background: white; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; z-index: 150; position: relative; -moz-box-shadow: 0 10px 20px rgba(0, 0, 1, 0.1); -webkit-box-shadow: 0 10px 20px rgba(0, 0, 1, 0.1); box-shadow: 0 10px 20px rgba(0, 0, 1, 0.1); text-align: left; }
+.discount.is-active { display: inline-block; }
 @media only screen and (max-width: 480px) { .discount { max-width: 300px; } }
 .discount__row { *zoom: 1; }
 .discount__row:after { content: " "; display: table; clear: both; }
