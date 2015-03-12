@@ -22,6 +22,7 @@
 	right: 0
 	left: 0
 	z-index: 50 
+	display: none
 .popup-wrapper
 	+vertical
 	position: absolute
@@ -32,6 +33,7 @@
 	padding: 20px 10px
 	overflow: auto
 	z-index: 100 
+	background: rgba(0, 0, 0, 0.5) 
 .popup
 	display: inline-block
 	vertical-align: middle
@@ -46,6 +48,17 @@
 	position: relative
 	&.is-active
 		display: inline-block
+	&_enter
+		max-width: 320px
+		text-align: center
+		.popup__close
+			top: 15px
+			right: 15px
+		.popup__inner
+			padding-bottom: 0
+		p
+			&.gray
+				color: #666 
 	&_small
 		max-width: 440px
 	&_big
@@ -330,7 +343,64 @@
 	&__price
 		+clr
 		padding: 10px 0 0 
-		
+	&__login
+		padding: 20px 0 0 
+		+clr
+		.input
+			margin-bottom: 10px
+		.checkbox
+			float: left
+			width: auto
+			margin: 0 0 10px
+		.p-link
+			float: right
+			padding: 3px 0 0
+			margin: 0 0 10px
+		.btn
+			clear: both
+			width: 100%
+			margin-bottom: 10px
+		.select-n
+			margin-bottom: 20px
+	&__link
+		padding: 12px 20px
+		border-top: 1px solid #efefef  
+	&__bg
+		border-top: 1px solid #bdd2e3
+		background: #d3eafd
+		padding: 10px 20px 0
+		.input, .select-n
+			border-color: #fff
+	&__bg-box
+		padding-bottom: 10px
+		.small
+			margin-bottom: 10px
+			text-align: left
+		.btn
+			margin-bottom: 10px   
+		&_mod
+			padding-bottom: 0
+			.small
+				text-align: center
+	&__agree
+		padding: 10px 20px 20px 
+		.checkbox
+			float: left
+			width: auto
+		p
+			overflow: hidden
+			text-align: left
+			padding: 4px 0 0 
+			a
+				color: #2196f3 
+		.btn
+			clear: both
+			width: 100%
+.p-link
+	+reg
+	font-size: 12px
+	color: #2196f3 
+	display: inline-block
 .discount
 	display: inline-block
 	vertical-align: middle

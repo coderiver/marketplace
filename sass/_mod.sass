@@ -56,6 +56,16 @@
 			&:checked + span
 				&:before
 					background: #fff 
+	&-mod
+		span
+			&:after
+				top: 6px
+				+s(check-blue)
+		input
+			&:checked + span
+				&:before
+					background: #fff 
+					border-color: #efefef
 //radio
 .radio
 	position: relative

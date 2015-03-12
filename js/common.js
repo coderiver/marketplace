@@ -220,7 +220,7 @@ head.ready(function() {
 	});
 	$('.js-popup-open').click(function(event) {
 		attr = $(this).attr('href');
-		$('#luckyprice, #phone, #add, #new, #load, #services, #order, #create, #thx').removeClass('is-active');
+		$('#luckyprice, #phone, #add, #new, #load, #services, #order, #create, #thx, #login, #registration').removeClass('is-active');
 		$(' '+attr).addClass('is-active');
 		$('.js-popup-wrap').addClass('is-active')
 		return false;
@@ -235,7 +235,13 @@ head.ready(function() {
 		$('.js-popup').removeClass('is-active');
 		return false;
 	});
-
+	$('body').on('click', function(event) {
+		$('.js-popup-wrap').removeClass('is-active');
+		$('.js-popup').removeClass('is-active');
+	});
+	$("body").on("click", ".js-popup", function(event){
+        event.stopPropagation();
+    });
 	$('.js-open-thx').on('click', function() {
 		$('.js-popup').removeClass('is-active');
 		$('.js-popup-thx').addClass('is-active');

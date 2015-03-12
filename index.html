@@ -18,8 +18,8 @@
 		<div class="top">
 			<div class="inner">
 				<div class="enter">
-					<a href="#">Зарегистрироваться</a>
-					<a href="#">Войти</a>
+					<a href="#registration" class="js-popup-open">Зарегистрироваться</a>
+					<a href="#login" class="js-popup-open">Войти</a>
 				</div>
 				<button class="btn-menu js-btn-menu"></button>
 				<ul class="menu js-menu">
@@ -1312,6 +1312,87 @@
 
 </div>
 <!-- END out-->
+<div class="popup-wrap js-popup-wrap">
+	<div class="popup-wrapper">
+		<div class="overlay js-overlay"></div>
+		<!-- begin popup_login  -->
+		<div class="popup popup_enter js-popup" id="login">
+			<div class="popup__inner">
+				<a href="#" class="popup__close js-popup-close"></a>
+				<h3>Войти в аккаунт</h3>
+				<p class="gray">Таким образом, авторские права на реферат принадлежат только вам.</p>
+				<form action="" class="popup__login">
+					<input type="text" class="input" placeholder="Электронная почта">
+					<input type="text" class="input" placeholder="Пароль">
+					<label class="checkbox checkbox-mod">
+						<input type="checkbox">
+						<span>Запомнить меня</span>
+					</label>
+					<a href="#" class="p-link">Напомнить пароль</a>
+					<button class="btn btn_blue">Войти</button>
+				</form>
+			</div>
+			<div class="popup__link">
+				<a href="#registration" class="p-link js-popup-open">Зарегистрироваться</a>
+			</div>
+		</div>
+		<!-- begin popup_registration  -->
+		<div class="popup popup_enter js-popup" id="registration">
+			<div class="popup__inner">
+				<a href="#" class="popup__close js-popup-close"></a>
+				<h3>Регистрация</h3>
+				<p class="gray">Таким образом, авторские права на реферат принадлежат только вам.</p>
+				<form action="" class="popup__login">
+					<input type="text" class="input" placeholder="Ваша электронная почта">
+					<input type="text" class="input" placeholder="Пароль">
+					<label class="checkbox checkbox-mod">
+						<input type="checkbox">
+						<span>Я планирую продовать товары</span>
+					</label>
+				</form>
+			</div>
+			<div class="popup__bg">
+				<h3>Активация телефона</h3>
+				<p class="gray">Данная услуга предоставляется компанией и доступна только абонентам.</p>
+				<form action="" class="popup__login">
+					<div class="popup__bg-box">
+						<input type="text" class="input" placeholder="Ваш номер телефона">
+						<span class="small">Отправьте СМС с цифрой 1 на номер 9555</span>
+						<button class="btn btn_blue">Отправить</button>
+					</div>		
+					<div class="popup__bg-box">			
+						<input type="text" class="input" placeholder="Укажите пароль полученный по смс">
+						<button class="btn btn_blue">Подтвердить</button>
+					</div>
+					<div class="popup__bg-box popup__bg-box_mod">
+						<input type="text" class="input" placeholder="Укажите ваш город">
+						<div class="select-n select-n_mod js-select">
+							<span class="select-n__text js-select-text">Укажите регион доставки</span>
+							<input type="hidden" class="js-select-input" value="0">
+							<ul class="select-n__list js-select-list">
+								<li data-id="Москва">Москва</li>
+								<li data-id="Киев">Киев</li>
+							</ul>
+						</div>	
+						<span class="small">Вы всегда можете зайти используя ваш номер телефона и пароль полученный по СМС</span>	
+						<button class="btn btn_blue">Готово</button>				
+					</div>
+				</form>
+			</div>
+			<div class="popup__agree">
+				<label class="checkbox checkbox-mod">
+					<input type="checkbox">
+					<span></span>
+				</label>
+				<p>Я соглашаюсь с <a href="#">пользовательским соглашением</a> и политикой конфиденциальности.</p>
+				<button class="btn btn_blue">Зарегистрироваться</button>		
+			</div>
+			<div class="popup__link">
+				<a href="#login" class="p-link js-popup-open">Войти в аккаунт</a>
+			</div>
+		</div>
+	</div>
+</div>
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
