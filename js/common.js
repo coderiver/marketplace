@@ -271,4 +271,20 @@ head.ready(function() {
 		$(this).toggleClass('is-active');
 		return false;
 	});
+	$('.js-reg-check').click(function(){
+	    if ($('.js-reg-check').attr('checked')) {
+	        $('.js-popup-bg').addClass('is-active');
+	    }
+	    else {    	
+	        $('.js-popup-bg').removeClass('is-active');
+	    };
+	});
+	$('.js-reg-check').on('click', function() {
+		if ($(this).prop('checked')) {
+		    $('.js-popup-bg').slideDown('600');
+		}
+		else {    	
+		    $('.js-popup-bg').slideUp('600');
+		};
+	});
 });

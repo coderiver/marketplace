@@ -151,6 +151,7 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .btn:active { top: 1px; }
 .btn_blue { background: #2196f3; }
 .btn_gray { background: #999999; }
+.btn_green { background: #4caf50; }
 
 .btn-status, .btn-rating { font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; line-height: 20px; color: white; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; display: inline-block; position: relative; }
 
@@ -616,10 +617,10 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .info__setting:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .info__btns { text-align: center; font-size: 0; text-align: left; }
 .info__btns:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
-.info__btns .btn { display: inline-block; vertical-align: middle; margin: 0 20px 5px 0; }
+.info__btns .btn { display: inline-block; vertical-align: middle; margin: 0 10px 10px 0; }
 .info__btns .btn-like { display: inline-block; vertical-align: middle; }
-.info__btns .info__select { margin-bottom: 5px; }
-.info__btns_mod .btn, .info__btns_mod .btn-like { margin: 0 10px 5px 0; }
+.info__btns .info__select { margin-bottom: 10px; }
+.info__btns_mod .btn, .info__btns_mod .btn-like { margin: 0 10px 10px 0; }
 .info__select { min-width: 60px; }
 .info__title { font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; line-height: 16px; color: #333333; padding-right: 15px; }
 .info__select, .info__title { display: inline-block; vertical-align: middle; }
@@ -973,6 +974,9 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .pages li a i.is-prev { background: url(../img/icons/p-prev.png) no-repeat center center; }
 .pages li a i.is-next { background: url(../img/icons/p-next.png) no-repeat center center; }
 
+.is-tab-block .pages { padding: 0; }
+.is-tab-block .pages li { padding: 0 10px; }
+
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
@@ -1127,7 +1131,7 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .popup__login .btn { clear: both; width: 100%; margin-bottom: 10px; }
 .popup__login .select-n { margin-bottom: 20px; }
 .popup__link { padding: 12px 20px; border-top: 1px solid #efefef; }
-.popup__bg { border-top: 1px solid #bdd2e3; background: #d3eafd; padding: 10px 20px 0; }
+.popup__bg { border-top: 1px solid #bdd2e3; background: #d3eafd; padding: 10px 20px 0; display: none; }
 .popup__bg .input, .popup__bg .select-n { border-color: white; }
 .popup__bg-box { padding-bottom: 10px; }
 .popup__bg-box .small { margin-bottom: 10px; text-align: left; }
