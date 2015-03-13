@@ -880,7 +880,7 @@
 								<div class="info__row">
 									<div class="info__btns"><!--safari win7--><div class="info__col">
 											<a href="#" class="btn btn_blue">Позвонить ближайшему продавцу</a>
-											<a href="#" class="btn btn_green">Добавить в корзину</a>
+											<a href="#thx" class="btn btn_green js-popup-open">Добавить в корзину</a>
 										</div><!--safari win7--><div class="info__col info__col_mod">
 											<a href="#" class="btn btn_gray">В список желаний</a>
 											<div class="info__select">
@@ -1087,6 +1087,17 @@
 							</div>
 						</div>						
 					</div>	
+					<!-- begin pages  -->
+					<div class="pages">
+						<ul>
+							<li><a href="#"><i class="is-prev"></i></a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#"><i class="is-next"></i></a></li>
+						</ul>
+					</div>
+					<!-- end pages -->
 					<div class="comments">
 						<span class="comments__title">Отзывы</span>
 						<div class="comment">
@@ -1331,6 +1342,14 @@
 				<a href="#login" class="p-link js-popup-open">Войти в аккаунт</a>
 			</div>
 		</div>
+		<!-- begin popup_final  -->
+		<div class="popup popup_small js-popup js-popup-thx" id="thx">
+			<div class="popup__inner">
+				<a href="#" class="popup__close js-popup-close"></a>
+				<h3>Ваш товар добавлен в Корзину</h3>
+			</div>
+		</div>
+		<!-- end popup_final -->
 	</div>
 </div>
 <!-- load scripts -->
