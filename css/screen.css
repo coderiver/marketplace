@@ -982,8 +982,10 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 
 .error { text-align: left; padding: 20px 0 200px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 1024px) { .error { display: block; vertical-align: top; } }
-.error h1 { font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 60px; color: white; line-height: 1; }
+.error h1 { font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 60px; color: white; line-height: 1; margin-bottom: 20px; }
+@media only screen and (max-width: 768px) { .error h1 { font-size: 48px; } }
 .error p { font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 20px; color: white; line-height: 1.2; }
+@media only screen and (max-width: 768px) { .error p { font-size: 16px; } }
 .error__search { padding: 35px 0 0 0; }
 .error__search label { display: block; position: relative; }
 .error .search__block { padding: 0; }
