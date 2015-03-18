@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<meta name="viewport" content="initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out out_error">
+	<!-- begin header  -->
+	<header class="header">
+		<div class="top">
+			<div class="inner">
+				<div class="enter">
+					<a href="#registration" class="js-popup-open">Зарегистрироваться</a>
+					<a href="#login" class="js-popup-open">Войти</a>
+				</div>
+				<button class="btn-menu js-btn-menu"></button>
+				<ul class="menu js-menu">
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Лучшие предложения</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Блог</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	
+	<!-- begin error  -->
+	<div class="error">
+		<div class="inner">
+			<a href="#" class="error__logo"></a>
+			<h1>Ошибка 404</h1>
+			<p>Страница не найдена.</p>
+			<p>Попробуйте найти нужную информацию в других разделах сайта либо воспользуйтесь поиском.</p>
+			<div class="error__search">
+				<div class="search__block">
+					<label>
+						<i class="search__icon"></i>
+						<input type="text" class="search__input">
+					</label>
+				</div>
+			</div>	
+		</div>		
+	</div>
+	<!-- end error -->
+</div>
+<!-- END out-->
+<!-- begin footer  -->
+<footer class="footer footer_error">
+	<div class="inner">
+		<div class="footer__row">
+			<div class="footer__box">
+				<h5>Узнайте о нас</h5>
+				<ul class="footer__list">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Обратная связь</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Сами о нас</a></li>
+				</ul>				
+			</div>
+			<div class="footer__box">
+				<h5>Партнерская программа</h5>
+				<ul class="footer__list">
+					<li><a href="#">Как начать продавать</a></li>
+					<li><a href="#">Как продавать эффективно</a></li>
+					<li><a href="#">Стать партнером</a></li>
+					<li><a href="#">Стоимость услуг</a></li>
+				</ul>				
+			</div>
+			<div class="footer__box">
+				<h5>Партнерская программа</h5>
+				<ul class="footer__list">
+					<li><a href="#">Практические советы</a></li>
+					<li><a href="#">Продавай по новому</a></li>
+					<li><a href="#"Управляй продажами></a></li>
+				</ul>				
+			</div>
+		</div>			
+	</div>
+</footer>
+<!-- end footer -->
+<div class="popup-wrap js-popup-wrap">
+	<div class="popup-wrapper">
+		<div class="overlay js-overlay"></div>
+		<!-- begin popup_login  -->
+		<div class="popup popup_enter js-popup" id="login">
+			<div class="popup__inner">
+				<a href="#" class="popup__close js-popup-close"></a>
+				<h3>Войти в аккаунт</h3>
+				<p class="gray">Таким образом, авторские права на реферат принадлежат только вам.</p>
+				<form action="" class="popup__login">
+					<input type="text" class="input" placeholder="Электронная почта">
+					<input type="text" class="input" placeholder="Пароль">
+					<label class="checkbox checkbox-mod">
+						<input type="checkbox">
+						<span>Запомнить меня</span>
+					</label>
+					<a href="#" class="p-link">Напомнить пароль</a>
+					<button class="btn btn_blue">Войти</button>
+				</form>
+			</div>
+			<div class="popup__link">
+				<a href="#registration" class="p-link js-popup-open">Зарегистрироваться</a>
+			</div>
+		</div>
+		<!-- begin popup_registration  -->
+		<div class="popup popup_enter js-popup" id="registration">
+			<div class="popup__inner">
+				<a href="#" class="popup__close js-popup-close"></a>
+				<h3>Регистрация</h3>
+				<p class="gray">Таким образом, авторские права на реферат принадлежат только вам.</p>
+				<form action="" class="popup__login">
+					<input type="text" class="input" placeholder="Ваша электронная почта">
+					<input type="text" class="input" placeholder="Пароль">
+					<label class="checkbox checkbox-mod">
+						<input type="checkbox" class="js-reg-check">
+						<span>Я планирую продовать товары</span>
+					</label>
+				</form>
+			</div>
+			<div class="popup__bg js-popup-bg">
+				<h3>Активация телефона</h3>
+				<p class="gray">Данная услуга предоставляется компанией и доступна только абонентам.</p>
+				<form action="" class="popup__login">
+					<div class="popup__bg-box">
+						<input type="text" class="input" placeholder="Ваш номер телефона">
+						<span class="small">Отправьте СМС с цифрой 1 на номер 9555</span>
+						<button class="btn btn_blue">Отправить</button>
+					</div>		
+					<div class="popup__bg-box">			
+						<input type="text" class="input" placeholder="Укажите пароль полученный по смс">
+						<button class="btn btn_blue">Подтвердить</button>
+					</div>
+					<div class="popup__bg-box popup__bg-box_mod">
+						<input type="text" class="input" placeholder="Укажите ваш город">
+						<div class="select-n select-n_mod js-select">
+							<span class="select-n__text js-select-text">Укажите регион доставки</span>
+							<input type="hidden" class="js-select-input" value="0">
+							<ul class="select-n__list js-select-list">
+								<li data-id="Москва">Москва</li>
+								<li data-id="Киев">Киев</li>
+							</ul>
+						</div>	
+						<span class="small">Вы всегда можете зайти используя ваш номер телефона и пароль полученный по СМС</span>	
+						<button class="btn btn_blue">Готово</button>				
+					</div>
+				</form>
+			</div>
+			<div class="popup__agree">
+				<label class="checkbox checkbox-mod">
+					<input type="checkbox">
+					<span></span>
+				</label>
+				<p>Я соглашаюсь с <a href="#">пользовательским соглашением</a> и политикой конфиденциальности.</p>
+				<button class="btn btn_blue">Зарегистрироваться</button>		
+			</div>
+			<div class="popup__link">
+				<a href="#login" class="p-link js-popup-open">Войти в аккаунт</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

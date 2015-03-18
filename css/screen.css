@@ -23,6 +23,8 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .out { margin: 0 auto; min-width: 320px; overflow: hidden; }
+.out_error { min-height: 100%; position: relative; background: #2196f3; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: -208px; }
+.out_error:after { display: block; height: 208px; width: 100%; content: ""; }
 
 .inner { max-width: 1600px; padding: 0 10px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0 auto; position: relative; }
 
@@ -435,7 +437,8 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .nav__drop li a span { color: #333333; font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; letter-spacing: 0.025em; }
 .nav__drop li .nav__icon { border-color: rgba(26, 27, 31, 0.1); }
 
-.footer { background: #1a1b1f; padding: 20px 0 30px; }
+.footer { background: #1a1b1f; padding: 20px 0 30px; position: relative; z-index: 10; }
+.footer_error { min-width: 320px; }
 .footer__row { margin: 0 -10px; font-size: 0; }
 .footer__box { display: inline-block; vertical-align: top; width: 25%; padding: 0 10px 20px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 1024px) { .footer__box { width: 33.3%; } }
@@ -976,6 +979,15 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 
 .is-tab-block .pages { padding: 0; }
 .is-tab-block .pages li { padding: 0 10px; }
+
+.error { text-align: left; padding: 20px 0 200px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+@media only screen and (max-width: 1024px) { .error { display: block; vertical-align: top; } }
+.error h1 { font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 60px; color: white; line-height: 1; }
+.error p { font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 20px; color: white; line-height: 1.2; }
+.error__search { padding: 35px 0 0 0; }
+.error__search label { display: block; position: relative; }
+.error .search__block { padding: 0; }
+.error__logo { display: inline-block; width: 200px; height: 60px; border: 1px dashed rgba(255, 255, 255, 0.5); margin-bottom: 150px; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
