@@ -665,6 +665,32 @@
 				text-align: left
 				margin-bottom: 20px
 				float: none
+			.call
+				&__number
+					padding: 10px 0
+					+r3
+						text-align: left
+	&__discount
+		h3
+			font-family: Helvetica
+			font-weight: bold 
+			font-size: 20px
+			color: #ff4500 
+			margin-bottom: 5px
+		span
+			+reg
+			display: block
+			font-size: 14px
+			color: #333333 
+	&__more
+		display: inline-block
+		font-size: 14px
+		+reg
+		color: #0000ee 
+		margin: 3px 0 
+		text-decoration: underline
+		&:hover
+			text-decoration: none
 .rating
 	+vertical
 	&__title, &__number, .stars
@@ -1871,7 +1897,7 @@
 		text-align: center
 		display: none
 	&.is-active
-		.btn-call
+		.js-call-btn
 			display: none
-		.call__number
+		.js-call-number
 			display: block
