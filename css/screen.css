@@ -729,6 +729,7 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .choice p { margin-bottom: 15px; }
 .choice__select { float: right; width: 100%; max-width: 280px; }
 @media only screen and (max-width: 768px) { .choice__select { float: none; margin-bottom: 20px; } }
+.choice__select .select-btns button, .choice__select .select-btns a { height: 40px; }
 .choice__search { overflow: hidden; padding: 0 10px 0 0; }
 .choice__search label { position: relative; }
 .choice__search label i { position: absolute; top: 50%; left: 10px; margin-top: -9px; background: url('../img/icons-s9118a35a05.png') 0 -38px no-repeat; width: 18px; height: 18px; }
