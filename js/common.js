@@ -293,4 +293,19 @@ head.ready(function() {
 		$(this).parents('.js-call').toggleClass('is-active');
 		return false;
 	});
+
+	$('.js-order-btn').on('click', function() {
+		$(this).parents('.js-order').addClass('is-order-step');
+		return false;
+	});
+	$('.js-order-add').on('click', function() {
+		$('.is-order-step').addClass('is-order');
+		return false;
+	});
+	$('.js-search-input').focusin(function() {
+		$('.js-search-box').slideDown('600');
+	});
+	$('.js-search-input').focusout(function() {
+		$('.js-search-box').slideUp('600');
+	});
 });

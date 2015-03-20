@@ -677,11 +677,14 @@
 			font-size: 20px
 			color: #ff4500 
 			margin-bottom: 5px
-		span
+		p
 			+reg
-			display: block
 			font-size: 14px
 			color: #333333 
+			position: relative
+			&.is-old
+				span
+					text-decoration: line-through
 	&__more
 		display: inline-block
 		font-size: 14px
@@ -942,6 +945,12 @@
 	&:hover
 		.check__btns
 			display: block
+	&.is-order
+		.check__btns
+			.btn-date
+				display: inline-block
+			.btn_gray
+				display: none
 	&__item
 		width: 100%
 		max-width: 280px
@@ -1041,8 +1050,12 @@
 			z-index: 210 
 		.btn
 			padding: 7px 18px 
+		.btn_gray
+			background: #00FA9A 
 		.select-btns
 			max-width: 140px
+		.btn-date
+			display: none
 	&__hidden
 		border: 1px solid #efefef
 		border-top: none
@@ -1901,3 +1914,8 @@
 			display: none
 		.js-call-number
 			display: block
+			
+.p-list
+	.table
+		.btn_gray
+			background: #00FA9A 
