@@ -203,6 +203,9 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .btn-phone__icon i { display: inline-block; vertical-align: middle; background: url('../img/icons-s0b5ef8cde8.png') 0 -1155px no-repeat; width: 21px; height: 21px; }
 .btn-phone span { display: inline-block; vertical-align: middle; width: 100%; font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; color: #2196f3; }
 
+.btn-call { display: inline-block; width: 100%; text-align: center; padding: 8px 10px 7px 10px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: orangered; color: white; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; position: relative; font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; line-height: 1.3; }
+.btn-call:active { top: 1px; }
+
 .table-wrap { overflow-y: auto; -ms-overflow-x: visible; overflow-x: visible; width: 100%; padding: 0; }
 .table-wrap__in { overflow: visible; }
 
@@ -222,6 +225,7 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .table__btns { min-width: 160px; }
 .table__btns .select-btns { margin-bottom: 10px; max-width: 160px; }
 .table__btns .btn { width: 100%; max-width: 160px; text-align: center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.table .call { margin-bottom: 10px; max-width: 160px; }
 
 .form__row { margin: 0 -5px; font-size: 0; }
 .form__col { padding: 0 5px 10px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; vertical-align: top; }
@@ -990,6 +994,10 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .error__search label { display: block; position: relative; }
 .error .search__block { padding: 0; }
 .error__logo { display: inline-block; width: 200px; height: 60px; border: 1px dashed rgba(255, 255, 255, 0.5); margin-bottom: 150px; }
+
+.call__number { font-family: Helvetica, sans-serif; color: #2196f3; font-size: 22px; line-height: 1.4; font-weight: bold; text-align: center; display: none; }
+.call.is-active .btn-call { display: none; }
+.call.is-active .call__number { display: block; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 

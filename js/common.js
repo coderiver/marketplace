@@ -287,4 +287,10 @@ head.ready(function() {
 		    $('.js-popup-bg').slideUp('600');
 		};
 	});
+
+	//call
+	$('.js-call-btn').on('click', function() {
+		$(this).parents('.js-call').toggleClass('is-active');
+		return false;
+	});
 });
