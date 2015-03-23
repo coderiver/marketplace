@@ -857,18 +857,15 @@
 	p
 		margin-bottom: 15px
 	&__select
-		float: right
-		width: 100%
-		max-width: 280px
-		+r3
-			float: none
-			margin-bottom: 20px
+		width: 280px
 		.select-btns
 			button, a
 				height: 40px
 	&__search
-		overflow: hidden
 		padding: 0 10px 0 0 
+		+r3
+			margin-bottom: 20px
+			padding: 0 
 		label
 			position: relative
 			i
@@ -879,7 +876,20 @@
 				+s(choice-search)
 	&__input
 		padding: 12px 10px 12px 40px
-	
+	&__table
+		display: table
+		width: 100%
+		+r3
+			display: block
+	&__row
+		display: table-row
+		+r3
+			display: block
+	&__cell
+		display: table-cell
+		position: relative
+		+r3
+			display: block
 
 //tools
 .tools

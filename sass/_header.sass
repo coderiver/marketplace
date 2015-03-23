@@ -102,6 +102,7 @@
 		z-index: 700 
 		+r3
 			margin-left: 0
+			margin-right: 10px
 		&:before
 			content: "" 
 			position: absolute
@@ -534,7 +535,7 @@
 	position: absolute
 	top: 100%
 	left: 0
-	right: 0
+	right: 10px
 	background: #fff
 	z-index: 800  
 	border: 1px solid #efefef
@@ -542,9 +543,14 @@
 	max-height: 1030px
 	overflow: auto
 	display: none
+	+r3
+		right: 0
 .s-item
 	+clr
 	padding: 10px 
+	border-top: 1px solid #efefef 
+	&:first-child
+		border-top: none
 	&__img
 		float: left
 		width: 100%
@@ -552,7 +558,7 @@
 		height: 100%
 		+box
 		+vertical
-		+r2
+		+r1
 			float: none
 		img
 			max-width: 100%
@@ -560,14 +566,32 @@
 			display: inline-block
 			vertical-align: middle
 	&__info
-		overflow: hidden
+		// overflow: hidden
 		text-align: left 
-		+r2
+		padding-right: 120px
+		position: relative
+		display: inline-block
+		+box
+		+r1
 			overflow: visible
 	&__choose
-		padding: 10px 0 0 0 
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: 120px
+		+box
+		padding: 10px 0 10px 20px
+		+vertical 
+		text-align: left
+		+r4
+			position: static
+			padding: 10px 0 10px 
+			&:before
+				display: none
 		button					
 			display: inline-block
+			vertical-align: middle
 			padding: 7px 23px 
 			+reg
 			font-size: 12px
@@ -577,3 +601,7 @@
 			background: #4caf50
 			&:active
 				top: 1px
+	.w-item__rating
+		border: none
+	.w-item__price
+		border: none
