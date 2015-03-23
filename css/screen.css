@@ -458,7 +458,7 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .s-item__info { overflow: hidden; text-align: left; }
 @media only screen and (max-width: 1024px) { .s-item__info { overflow: visible; } }
 .s-item__choose { padding: 10px 0 0 0; }
-.s-item__choose button { display: inline-block; padding: 7px 23px; font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; color: white; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; position: relative; background: mediumspringgreen; }
+.s-item__choose button { display: inline-block; padding: 7px 23px; font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; color: white; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; position: relative; background: #4caf50; }
 .s-item__choose button:active { top: 1px; }
 
 .footer { background: #1a1b1f; padding: 20px 0 30px; position: relative; z-index: 10; }
@@ -784,7 +784,7 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .check__btns { font-size: 0; margin: 0 -5px -10px; padding-bottom: 10px; display: none; }
 .check__btns .btn, .check__btns .select-btns, .check__btns .btn-date { display: inline-block; vertical-align: top; margin: 0 5px 10px; z-index: 210; }
 .check__btns .btn { padding: 7px 18px; }
-.check__btns .btn_gray { background: mediumspringgreen; }
+.check__btns .btn_gray { background: #4caf50; }
 .check__btns .select-btns { max-width: 140px; }
 .check__btns .btn-date { display: none; }
 .check__hidden { border: 1px solid #efefef; border-top: none; -moz-box-shadow: 0 10px 20px rgba(0, 0, 1, 0.1); -webkit-box-shadow: 0 10px 20px rgba(0, 0, 1, 0.1); box-shadow: 0 10px 20px rgba(0, 0, 1, 0.1); -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; overflow: hidden; display: none; position: absolute; top: 100%; left: 0; right: 0; z-index: 200; background: white; }
@@ -1031,7 +1031,7 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .call.is-active .js-call-btn { display: none; }
 .call.is-active .js-call-number { display: block; }
 
-.p-list .table .btn_gray { background: mediumspringgreen; }
+.p-list .table .btn_gray { background: #4caf50; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
