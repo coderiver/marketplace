@@ -577,7 +577,7 @@
 	&__btns
 		+vertical
 		text-align: left
-		.btn
+		.btn, .basket-btn, .call-btn
 			display: inline-block
 			vertical-align: middle
 			margin: 0 10px 10px 0 
@@ -962,7 +962,7 @@
 		.check__btns
 			.btn-date
 				display: inline-block
-			.btn_gray
+			.btn-yellow
 				display: none
 	&__item
 		width: 100%
@@ -1056,19 +1056,19 @@
 		margin: 0 -5px -10px
 		padding-bottom: 10px
 		display: none
-		.btn, .select-btns, .btn-date
+		.btn-yellow, .select-btns, .btn-date, .call-btn
 			display: inline-block
-			vertical-align: top
+			vertical-align: middle
 			margin: 0 5px 10px
 			z-index: 210 
-		.btn
-			padding: 7px 18px 
-		.btn_gray
-			background: #4caf50 
+		.btn-yellow
+			max-width: 130px		
 		.select-btns
 			max-width: 140px
 		.btn-date
 			display: none
+		.call-btn
+			max-width: 140px
 	&__hidden
 		border: 1px solid #efefef
 		border-top: none
