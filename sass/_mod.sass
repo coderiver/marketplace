@@ -561,7 +561,7 @@
 .btn-like
 	width: 40px
 	height: 30px
-	border: 1px solid #efefef
+	border: 1px solid #2196f3
 	+border-radius(2px)
 	position: relative
 	display: inline-block
@@ -574,7 +574,7 @@
 		margin-top: -7px
 		margin-left: -8px
 	&:before
-		+s(is-heart-gray)
+		+s(is-heart-blue)
 	&:after
 		+s(is-heart-white)
 		visibility: hidden
@@ -646,9 +646,9 @@
 	font-size: 12px
 	line-height: 1
 	color: #fff
-	padding: 14px 40px
+	padding: 14px 14px 14px 40px
 	display: inline-block
-	width: 160px
+	// width: 100%
 	+box
 	+g(#79D66F, #4FBF43)
 	+box-shadow(0 2px 0 0 #3c9933) 
@@ -681,9 +681,9 @@
 	&:active
 		+g(#FFC005, #FFD34C)
 .basket-btn, .basket-btn-small
-	+box-shadow(0 2px 0 0 #F58702) 
-	+g(#FFD34C, #FFC005)
-	color: #333333
+	background: #2196f3 
+	+box-shadow(0 2px 0 0 #196fb3) 
+	color: #fff
 	display: inline-block
 	padding: 14px 40px
 	+reg
@@ -702,7 +702,7 @@
 		+s(basket-btn)
 		margin-top: -8px
 	&:active
-		+g(#FFC005, #FFD34C)
+		top: 1px
 .basket-btn-small
 	width: 40px
 	height: 40px
@@ -749,8 +749,8 @@
 			line-height: 16px
 			color: #333
 		.btn-rating
-			float: right
-			margin: 0 10px 
+			// float: right
+			// margin: 0 10px 
 	&__price
 		min-width: 180px
 		h3
@@ -785,9 +785,11 @@
 			display: inline-block
 			vertical-align: top
 			margin: 0 20px 0 0 
+			width: 160px
 			&__number
 				padding: 5px 0 
-				width: 160px
+		.call-btn
+			width: 100%
 		a
 			display: inline-block
 			vertical-align: top
