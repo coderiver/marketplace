@@ -68,10 +68,15 @@
 		background: #333
 		content: "" 
 
-
-.basket
+.baskets
 	float: right
-	padding: 10px 15px 0 10px
+	+r3
+		float: none
+		padding-bottom: 10px
+.basket
+	display: inline-block
+	vertical-align: top
+	padding: 0 15px 0 10px
 	position: relative
 	z-index: 500
 	&:hover
@@ -96,7 +101,7 @@
 		float: none
 		display: inline-block
 		vertical-align: top
-		padding: 20px 20px 0 0 
+		padding: 10px 20px 0 0 
 	&_mod
 		padding-right: 0
 		z-index: 700 
@@ -171,22 +176,25 @@
 	&__block
 		overflow: hidden
 		text-align: right
-		padding: 20px 0  
-		+r3
+		padding: 10px 0  
+		position: relative
+		+r2
 			text-align: left
-	&__keybox, label
-		max-width: 520px
+	&__keybox, label, &__block-in
+		max-width: 440px
 		display: inline-block
 		position: relative
 		width: 100%
 		+r3
 			max-width: 100%
-	&__icon
+	&__btn
 		+s(search__icon)
 		position: absolute
 		top: 50%
-		left: 9px
+		right: 9px
 		margin-top: -9px
+		z-index: 5
+		cursor: pointer 
 	&__input
 		width: 100%
 		color: #fff
@@ -364,172 +372,6 @@
 		&.is-yes
 			visibility: visible
 			+opacity(1)
-.nav-wrap
-	background: #1a1b1f
-.nav
-	font-size: 0
-	position: relative
-	text-align: center
-	+r2
-		padding: 0 60px 
-	li
-		display: inline-block
-		vertical-align: top
-		padding: 10px 0 10px 0
-		margin: 0 10px 0 
-		position: relative
-		+r2
-			display: inline-block
-			position: relative
-			text-align: center
-			// margin: 0 auto
-			// width: 33.3%
-		+r3
-			// width: 50%
-		+r4
-			// width: 100%
-		&:hover
-			.nav__drop
-				display: block
-			.nav__item
-				background: #fff
-				+border-radius(2px 2px 0 0)
-			.nav__icon
-				border-color: #fff
-				+border-radius(2px 2px 0 0)
-				i
-					&:before
-						display: block
-		.nav__item
-			height: 40px
-			position: relative
-			width: 40px
-			display: block
-			+border-radius(2px)
-			+r1
-				margin: 0 auto
-	&__icon
-		width: 40px
-		height: 40px
-		border: 1px solid rgba(255, 255, 255, 0.1)
-		+box
-		+vertical
-		position: relative
-		+border-radius(2px)
-		i
-			display: inline-block
-			vertical-align: middle
-			position: relative
-			&:before
-				content: "" 
-				position: absolute
-				top: 0
-				bottom: 0
-				left: 0
-				right: 0
-				display: none
-			&.is-camera
-				+s(is-camera)
-				&:before
-					+s(is-camera-active)
-			&.is-monitor
-				+s(is-monitor)
-				&:before
-					+s(is-monitor-active)
-			&.is-tech
-				+s(is-tech)
-				&:before
-					+s(is-tech-active)
-			&.is-home
-				+s(is-home)
-				&:before
-					+s(is-home-active)
-			&.is-closet
-				+s(is-closet)
-				&:before
-					+s(is-closet-active)
-			&.is-child
-				+s(is-child)
-				&:before
-					+s(is-child-active)
-			&.is-makeup
-				+s(is-makeup)
-				&:before
-					+s(is-makeup-active)
-			&.is-sport
-				+s(is-sport)
-				&:before
-					+s(is-sport-active)
-			&.is-car
-				+s(is-car)
-				&:before
-					+s(is-car-active)
-			&.is-cake
-				+s(is-cake)
-				&:before
-					+s(is-cake-active)
-			&.is-piano
-				+s(is-piano)
-				&:before
-					+s(is-piano-active)
-			&.is-food
-				+s(is-food)
-				&:before
-					+s(is-food-active)
-			&.is-office
-				+s(is-office)
-				&:before
-					+s(is-office-active)
-	&__drop
-		position: absolute
-		top: 100%
-		background: #fff
-		z-index: 200
-		border-top: none  
-		padding: 6px 10px 0 10px 
-		width: 200px
-		font-size: 0
-		display: none
-		+box
-		text-align: left
-		margin-top: -10px
-		+r2
-			left: 50%
-			right: 50%
-			margin: -10px -100px 0 -100px 
-		+r4
-			width: 180px
-			margin: -10px -90px 0 -90px 
-		&.is-left
-			left: 0
-			+border-radius(0 2px 2px 2px)
-			+r2
-				left: 50%
-				+border-radius(2px)
-		&.is-right
-			right: 0
-			+border-radius(2px 0 2px 2px)
-			+r2
-				right: 50%
-				+border-radius(2px)
-		li
-			margin: 0 
-			padding: 10px 0 4px 
-			display: block
-			vertical-align: top
-			+box
-			text-align: left
-			width: 100%
-			a
-				display: block
-				position: relative
-				span
-					color: #333
-					+reg
-					font-size: 12px
-					letter-spacing: 0.025em
-			.nav__icon
-				border-color: rgba(26, 27, 31, 0.1)
 					 
 .s-items
 	position: absolute
@@ -543,6 +385,8 @@
 	max-height: 1030px
 	overflow: auto
 	display: none
+	+box-shadow(0 0 3.8px 1.3px rgba(239, 239, 239, 0.3))
+	margin-top: 1px
 	+r3
 		right: 0
 .s-item
@@ -605,3 +449,136 @@
 		border: none
 	.w-item__price
 		border: none
+		
+.logo
+	float: left
+	padding: 17px 0 
+	+r3
+		float: none
+		padding: 17px 0 0 0 
+	a
+		display: block
+		width: 126px
+		height: 28px
+		+opacity(0.8)
+	img
+		max-width: 100%
+
+.search__left
+	float: left
+	padding: 10px 20px 0 35px 
+	+r2
+		float: none
+		clear: both
+		padding: 0 
+.cat-select
+	width: 200px
+	+reg
+	font-size: 12px
+	color: #333 
+	position: relative
+	display: inline-block
+	vertical-align: top
+	z-index: 200 
+	+user-select(none)
+	&.is-active
+		.cat-select__text
+			+border-radius(2px 2px 0 0)
+	a
+		color: #333 
+	&__text
+		display: block
+		padding: 12px 50px 12px 10px 	
+		white-space: nowrap
+		overflow: hidden
+		-ms-text-overflow: ellipsis
+		text-overflow: ellipsis
+		background: #fff 
+		position: relative
+		+border-radius(2px)
+		z-index: 10 
+		cursor: pointer
+		&:before, &:after
+			position: absolute
+			content: "" 
+		&:before
+			+arr(6, 3, #333, b)
+			top: 50%
+			right: 18px
+			margin-top: -1px
+		&:after
+			top: 0
+			bottom: 0
+			right: 40px
+			border-left: 1px solid #eeeeee  
+	&__list
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		background: #FFF 
+		border-top: 1px solid #eeeeee 
+		+border-radius(0 0 2px 2px)
+		+box-shadow(0 0 3.8px 1.3px rgba(0, 0, 1, 0.15))
+		z-index: 5 
+		display: none
+		&.is-active
+			display: block
+		li
+			position: relative
+	&__item
+		display: block
+		padding: 12px 40px 12px 10px 
+		position: relative
+		&:before
+			position: absolute
+			top: 50%
+			right: 19px
+			margin-top: -3px
+			content: "" 
+			+arr(3, 6, #333, r)	
+			+r3
+				+arr(6, 3, #333, b)
+				top: 50%
+				right: 18px
+				margin-top: -1px	
+		&:hover, &.is-active
+			background: #eee 
+	&__drop
+		background: #fff 
+		position: absolute
+		top: 0
+		left: 100%
+		+clr
+		width: 400px
+		+border-radius(0 2px 2px 2px)
+		+box-shadow(0 0 3.8px 1.3px rgba(0, 0, 1, 0.15))
+		display: none
+		+r3
+			position: static
+			width: auto
+			+box-shadow(none)
+			border-top: 1px solid #eee
+			border-bottom: 1px solid #eee
+		&.is-active
+			display: block
+		&:before
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 50%
+			border-left: 1px solid #eeeeee
+			content: "" 
+			+r3
+				display: none
+		ul
+			width: 200px
+			+box
+			float: left
+			+r3
+				float: none
+			li
+				padding: 12px 10px 12px 10px 	
+				cursor: pointer
+				&:hover
+					background: #eee 

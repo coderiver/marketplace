@@ -858,9 +858,18 @@
 		margin-bottom: 15px
 	&__select
 		width: 280px
+		padding: 0 10px 0 0
 		.select-btns
 			button, a
 				height: 40px
+			&__text
+				background: #2196F3 
+				z-index: 110 
+				position: relative
+			&__list
+				+box-shadow(0 0 3.8px 1.3px rgba(0, 0, 1, 0.3))
+			&__btn
+				z-index: 120 	
 	&__search
 		padding: 0 10px 0 0 
 		+r3
@@ -1932,3 +1941,29 @@
 	.table
 		.btn_gray
 			background: #4caf50
+			
+.seller
+	width: 100%
+	height: 440px
+	+vertical
+	border: 1px solid #eeeeee
+	+border-radius(2px)
+	margin-bottom: 15px
+	&__in
+		display: inline-block
+		vertical-align: middle
+	&__icon
+		+s(seller-icon)
+		display: inline-block
+		margin: 0 0 25px 
+	p
+		+reg
+		font-size: 12px
+		letter-spacing: 0.025em 
+		color: #333
+		max-width: 230px
+		margin: 0 auto 15px
+	&__btn
+		.btn
+			width: 100px
+			+box
