@@ -462,6 +462,7 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 
 .cat-select { width: 200px; font-family: "HelveticaNeue Roman", Helvetica, sans-serif; font-size: 12px; color: #333333; position: relative; display: inline-block; vertical-align: top; z-index: 200; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; }
 .cat-select.is-active .cat-select__text { -moz-border-radius: 2px 2px 0 0; -webkit-border-radius: 2px; border-radius: 2px 2px 0 0; }
+.cat-select.is-active .cat-select__list { display: block; }
 .cat-select a { color: #333333; }
 .cat-select__text { display: block; padding: 12px 50px 12px 10px; white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; background: white; position: relative; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; z-index: 10; cursor: pointer; }
 .cat-select__text:before, .cat-select__text:after { position: absolute; content: ""; }
