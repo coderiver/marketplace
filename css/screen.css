@@ -470,9 +470,7 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .cat-select__list { position: absolute; top: 100%; left: 0; right: 0; background: white; border-top: 1px solid #eeeeee; -moz-border-radius: 0 0 2px 2px; -webkit-border-radius: 0; border-radius: 0 0 2px 2px; -moz-box-shadow: 0 0 3.8px 1.3px rgba(0, 0, 1, 0.15); -webkit-box-shadow: 0 0 3.8px 1.3px rgba(0, 0, 1, 0.15); box-shadow: 0 0 3.8px 1.3px rgba(0, 0, 1, 0.15); z-index: 5; display: none; }
 .cat-select__list.is-active { display: block; }
 .cat-select__list li { position: relative; }
-.cat-select__item { display: block; padding: 12px 40px 12px 10px; position: relative; }
-.cat-select__item:before { position: absolute; top: 50%; right: 19px; margin-top: -3px; content: ""; width: 0px; height: 0px; border-style: solid; border-width: 3px 0 3px 3px; border-color: transparent transparent transparent #333333; }
-@media only screen and (max-width: 768px) { .cat-select__item:before { width: 0px; height: 0px; border-style: solid; border-width: 3px 3px 0 3px; border-color: #333333 transparent transparent transparent; top: 50%; right: 18px; margin-top: -1px; } }
+.cat-select__item { display: block; padding: 12px 10px 12px 10px; position: relative; cursor: pointer; }
 .cat-select__item:hover, .cat-select__item.is-active { background: #eeeeee; }
 .cat-select__drop { background: white; position: absolute; top: 0; left: 100%; *zoom: 1; width: 400px; -moz-border-radius: 0 2px 2px 2px; -webkit-border-radius: 0; border-radius: 0 2px 2px 2px; -moz-box-shadow: 0 0 3.8px 1.3px rgba(0, 0, 1, 0.15); -webkit-box-shadow: 0 0 3.8px 1.3px rgba(0, 0, 1, 0.15); box-shadow: 0 0 3.8px 1.3px rgba(0, 0, 1, 0.15); display: none; }
 .cat-select__drop:after { content: " "; display: table; clear: both; }

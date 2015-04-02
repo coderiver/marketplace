@@ -528,20 +528,21 @@
 			position: relative
 	&__item
 		display: block
-		padding: 12px 40px 12px 10px 
+		padding: 12px 10px 12px 10px 
 		position: relative
-		&:before
-			position: absolute
-			top: 50%
-			right: 19px
-			margin-top: -3px
-			content: "" 
-			+arr(3, 6, #333, r)	
-			+r3
-				+arr(6, 3, #333, b)
-				top: 50%
-				right: 18px
-				margin-top: -1px	
+		cursor: pointer
+		// &:before
+		// 	position: absolute
+		// 	top: 50%
+		// 	right: 19px
+		// 	margin-top: -3px
+		// 	content: "" 
+		// 	+arr(3, 6, #333, r)	
+		// 	+r3
+		// 		+arr(6, 3, #333, b)
+		// 		top: 50%
+		// 		right: 18px
+		// 		margin-top: -1px	
 		&:hover, &.is-active
 			background: #eee 
 	&__drop
