@@ -69,7 +69,7 @@
 		content: "" 
 
 .baskets
-	float: right
+	// float: right
 	+r3
 		float: none
 		padding-bottom: 10px
@@ -99,9 +99,11 @@
 			display: block
 	+r3
 		float: none
-		display: inline-block
+		display: block
 		vertical-align: top
 		padding: 10px 20px 0 0 
+		width: 170px
+		+box
 	&_mod
 		padding-right: 0
 		z-index: 700 
@@ -174,8 +176,8 @@
 	+r3
 		text-align: left
 	&__block
-		overflow: hidden
-		text-align: right
+		// overflow: hidden
+		// text-align: right
 		padding: 10px 0  
 		position: relative
 		+r2
@@ -202,30 +204,39 @@
 		+border-radius(2px)
 		font-size: 12px
 		+reg
-		padding: 13px 20px 13px 40px 
+		padding: 13px 40px 13px 20px 
 		+box
 	&__wrap
 		display: table
 		width: 100%
 		border-collapse: collapse
+		+r2
+			display: block
 	&__inner
 		display: table-row
 		width: 100%
+		+r2
+			display: block
 	&__cell
 		display: table-cell
 		float: none
 		overflow: visible
-		text-align: right
 		vertical-align: top
-		+r3
+		+r2
 			display: inline-block
 			width: 100%
-		&.is-box
-			width: 170px
-			+box
+		&.is-basket
+			width: 340px
 			+r3
 				width: 100%
-				max-width: 170px
+		&.is-drop
+			width: 220px
+			padding: 10px 0 
+			+r3
+				// width: 100%
+		&.is-logo
+			width: 160px
+			padding: 17px 0 
 .w-drop
 	position: absolute
 	top: 100%
@@ -451,11 +462,6 @@
 		border: none
 		
 .logo
-	float: left
-	padding: 17px 0 
-	+r3
-		float: none
-		padding: 17px 0 0 0 
 	a
 		display: block
 		width: 126px
@@ -465,8 +471,6 @@
 		max-width: 100%
 
 .search__left
-	float: left
-	padding: 10px 20px 0 35px 
 	+r2
 		float: none
 		clear: both
@@ -479,7 +483,7 @@
 	position: relative
 	display: inline-block
 	vertical-align: top
-	z-index: 200 
+	z-index: 800 
 	+user-select(none)
 	&.is-active
 		.cat-select__text
@@ -557,7 +561,8 @@
 		+border-radius(0 2px 2px 2px)
 		+box-shadow(0 0 3.8px 1.3px rgba(0, 0, 1, 0.15))
 		display: none
-		+r3
+		overflow: hidden
+		+r2
 			position: static
 			width: auto
 			+box-shadow(none)
@@ -572,16 +577,39 @@
 			left: 50%
 			border-left: 1px solid #eeeeee
 			content: "" 
-			+r3
+			+r2
 				display: none
 		ul
-			width: 200px
-			+box
-			float: left
-			+r3
-				float: none
+			font-size: 0
 			li
 				padding: 12px 10px 12px 10px 	
 				cursor: pointer
+				width: 50%
+				+box
+				display: inline-block
+				font-size: 12px
+				vertical-align: top
+				+r2
+					width: 100%
 				&:hover
 					background: #eee 
+					
+.cat
+	position: absolute
+	top: 100%
+	left: 0
+	right: 0
+	background: #fff 
+	z-index: 750
+	+border-radius(0 0 2px 2px)
+	overflow: hidden 
+	+box-shadow(0 0 3.8px 1.3px rgba(0, 0, 1, 0.15))
+	display: none
+	li
+		+reg
+		font-size: 12px
+		color: #333 
+		padding: 12px 10px 12px 10px 
+		cursor: pointer			
+		&:hover
+			background: #eee 
