@@ -532,6 +532,10 @@
 			display: block
 		li
 			position: relative
+			&:hover
+				.cat-select__drop
+					+rw(1024)
+						display: block
 	&__item
 		display: block
 		padding: 12px 10px 12px 10px 
@@ -582,8 +586,6 @@
 		ul
 			font-size: 0
 			li
-				padding: 12px 10px 12px 10px 	
-				cursor: pointer
 				width: 50%
 				+box
 				display: inline-block

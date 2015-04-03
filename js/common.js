@@ -316,21 +316,23 @@ head.ready(function() {
 		 	$('.js-cat-link').removeClass('is-active');
 		 	$('.js-cat-items').removeClass('is-active');
 		 });
-		 $('.js-cat-link').on('click', function() {
-		 	if ($(this).hasClass('is-active')) {		 		
-		 		$(this).removeClass('is-active');
-		 		$(this).parents('.js-cat-list li').find('.js-cat-items').removeClass('is-active');	
-		 	}
-		 	else {
-		 		$('.js-cat-link').removeClass('is-active');
-		 		$(this).addClass('is-active');
-		 		$('.js-cat-items').removeClass('is-active');
-		 		$(this).parents('.js-cat-list li').find('.js-cat-items').addClass('is-active');		 		
-		 	}
-		 	return false;
-		 });
+		 if ($(window).width() < 1024) {
+			 $('.js-cat-link').on('click', function() {
+			 	
+			 		if ($(this).hasClass('is-active')) {		 		
+			 			$(this).removeClass('is-active');
+			 			$(this).parents('.js-cat-list li').find('.js-cat-items').removeClass('is-active');	
+			 		}
+			 		else {
+			 			$('.js-cat-link').removeClass('is-active');
+			 			$(this).addClass('is-active');
+			 			$('.js-cat-items').removeClass('is-active');
+			 			$(this).parents('.js-cat-list li').find('.js-cat-items').addClass('is-active');		 		
+			 		}
+			 		return false;	 	
+			 });
+		 };	
 		 $('.js-cat-items li').on('click', function() {
-		 	$('.js-cat-text').text($(this).text());
 		 	$('.js-cat-list').removeClass('is-active');
 		 	$('.js-cat-items').removeClass('is-active');
 		 	$('.js-cat').removeClass('is-active');
@@ -347,11 +349,11 @@ head.ready(function() {
 		    event.stopPropagation();
 		});
 		 $('.js-cat-item').on('click', function() {
-		 	$('.js-cat-text').text($(this).text());
 		 	$('.js-cat-list').removeClass('is-active');
 		 	$('.js-cat-items').removeClass('is-active');
 		 	$('.js-cat').removeClass('is-active');
 		 	$('.js-cat-link').removeClass('is-active');
+		 	return false;
 		 });
 	});
 
