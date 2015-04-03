@@ -346,6 +346,13 @@ head.ready(function() {
 		$("body").on("click", ".js-cat", function(event){
 		    event.stopPropagation();
 		});
+		 $('.js-cat-item').on('click', function() {
+		 	$('.js-cat-text').text($(this).text());
+		 	$('.js-cat-list').removeClass('is-active');
+		 	$('.js-cat-items').removeClass('is-active');
+		 	$('.js-cat').removeClass('is-active');
+		 	$('.js-cat-link').removeClass('is-active');
+		 });
 	});
 
 	$('.js-search-cat-input').each(function() {
