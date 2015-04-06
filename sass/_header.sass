@@ -99,11 +99,13 @@
 			display: block
 	+r3
 		float: none
-		display: block
+		display: inline-block
 		vertical-align: top
 		padding: 10px 20px 0 0 
 		width: 170px
 		+box
+	+r(400)
+		display: block
 	&_mod
 		padding-right: 0
 		z-index: 700 
@@ -248,12 +250,25 @@
 	z-index: 100 
 	padding: 5px
 	display: none
+	+r2
+		left: 0px
+		width: 280px 
+		right: auto		
+		+border-radius(0 2px 2px 2px) 
 	+r3
 		right: auto
 		left: 0px
 		+border-radius(0 2px 2px 2px) 	
 	+r4
 		width: 280px
+	+r(500)
+		left: auto
+		right: -10px
+		+border-radius(2px 0 2px 2px) 
+	+r(400)
+		right: auto
+		left: 0px
+		+border-radius(0 2px 2px 2px) 		
 	&__inner
 		+clr
 		padding-bottom: 5px

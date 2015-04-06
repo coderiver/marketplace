@@ -362,7 +362,8 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .basket:hover .basket__block .basket__icon i.is-wishlist { background: url('../img/icons-s042abfd236.png') 0 -1636px no-repeat; width: 40px; height: 40px; }
 .basket:hover .basket__block .basket__icon i.is-basket { background: url('../img/icons-s042abfd236.png') 0 -168px no-repeat; width: 40px; height: 40px; }
 .basket:hover .w-drop { display: block; }
-@media only screen and (max-width: 768px) { .basket { float: none; display: block; vertical-align: top; padding: 10px 20px 0 0; width: 170px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } }
+@media only screen and (max-width: 768px) { .basket { float: none; display: inline-block; vertical-align: top; padding: 10px 20px 0 0; width: 170px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } }
+@media only screen and (max-width: 400px) { .basket { display: block; } }
 .basket_mod { padding-right: 0; z-index: 700; }
 @media only screen and (max-width: 768px) { .basket_mod { margin-left: 0; margin-right: 10px; } }
 .basket_mod:before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; width: 1px; background: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10); opacity: 0.1; }
@@ -401,8 +402,11 @@ hr { width: 100%; border: none; height: 1px; background: black; filter: progid:D
 .search__cell.is-logo { width: 160px; padding: 17px 0; }
 
 .w-drop { position: absolute; top: 100%; right: -10px; width: 430px; background: white; -moz-border-radius: 2px 0 2px 2px; -webkit-border-radius: 2px; border-radius: 2px 0 2px 2px; -moz-box-shadow: 0 0 3.8px 1.3px rgba(0, 0, 1, 0.15); -webkit-box-shadow: 0 0 3.8px 1.3px rgba(0, 0, 1, 0.15); box-shadow: 0 0 3.8px 1.3px rgba(0, 0, 1, 0.15); z-index: 100; padding: 5px; display: none; }
+@media only screen and (max-width: 1024px) { .w-drop { left: 0px; width: 280px; right: auto; -moz-border-radius: 0 2px 2px 2px; -webkit-border-radius: 0; border-radius: 0 2px 2px 2px; } }
 @media only screen and (max-width: 768px) { .w-drop { right: auto; left: 0px; -moz-border-radius: 0 2px 2px 2px; -webkit-border-radius: 0; border-radius: 0 2px 2px 2px; } }
 @media only screen and (max-width: 480px) { .w-drop { width: 280px; } }
+@media only screen and (max-width: 500px) { .w-drop { left: auto; right: -10px; -moz-border-radius: 2px 0 2px 2px; -webkit-border-radius: 2px; border-radius: 2px 0 2px 2px; } }
+@media only screen and (max-width: 400px) { .w-drop { right: auto; left: 0px; -moz-border-radius: 0 2px 2px 2px; -webkit-border-radius: 0; border-radius: 0 2px 2px 2px; } }
 .w-drop__inner { *zoom: 1; padding-bottom: 5px; position: relative; }
 .w-drop__inner:after { content: " "; display: table; clear: both; }
 .w-drop__inner:before { content: ""; position: absolute; bottom: 0; left: 5px; right: 5px; border-bottom: 1px solid #efefef; }
