@@ -500,6 +500,14 @@
 	vertical-align: top
 	z-index: 800 
 	+user-select(none)
+	&_mod
+		.cat-select__text
+			background: rgba(255, 255, 255, 0.2) 
+			color: #fff 
+			&:before
+				+arr(6, 3, #fff, b)
+			&:after
+				+opacity(0.1) 
 	&.is-active
 		.cat-select__text
 			+border-radius(2px 2px 0 0)
@@ -531,7 +539,7 @@
 			top: 0
 			bottom: 0
 			right: 40px
-			border-left: 1px solid #eeeeee  
+			border-left: 1px solid #eeeeee 
 	&__list
 		position: absolute
 		top: 100%
