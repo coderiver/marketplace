@@ -1,0 +1,176 @@
+.dis
+	position: relative
+	max-width: 902px
+	padding: 12px 11px
+	+box
+	margin: 0 auto 
+	+r(800)
+		text-align: center
+	.d-item
+		padding: 30px 0 0 
+		max-width: 420px
+		margin: 0 auto
+		position: relative
+		&__icon
+			position: absolute
+			bottom: 16px
+			left: 100%
+			margin-left: -8px
+			+s(d-item) 
+			+r(600)
+				display: none
+	.discount
+		display: block
+		margin: 0 auto 
+		position: relative
+		h2
+			margin: 0
+	&__header
+		background: #4dabf5
+		text-align: center
+		padding: 23px 20px 
+		+border-radius(2px)
+		+r(800)
+			padding: 23px 10px 
+		span
+			+reg
+			font-size: 24px
+			color: #fff
+			line-height: 1.2
+			+r(800)
+				font-size: 22px
+		i
+			&.is-machine
+				+s(is-machine)
+				display: inline-block
+				vertical-align: middle
+				margin-left: 7px
+	&__body
+		padding: 40px 100px 0
+		+r(800)
+			padding: 40px 0 
+		p
+			color: #1a1b1f 
+	&__top
+		margin-bottom: 55px
+	&__steps
+		h2
+			margin-bottom: 45px
+	&__step
+		position: relative
+		padding-bottom: 26px
+		&.is-two
+			padding-top: 11px 
+		&.is-three
+			padding-top: 15px 
+		hr
+			border: none
+			border-top: 1px solid #f3f3f3 
+			margin: 30px -100px 0
+			width: auto
+			+r(800)
+				margin: 30px 0 0 
+	&__number
+		display: block
+		text-align: center
+		width: 47px
+		line-height: 47px
+		+border-radius(50%)
+		background: #4dabf5
+		+reg
+		font-size: 24px
+		color: #fff
+		position: absolute
+		right: 100%
+		top: 2px
+		margin-right: 15px  
+		+r(800)
+			position: static
+			margin: 0 auto 15px 
+	&__title
+		+reg
+		font-size: 24px
+		color: #4dabf5
+		line-height: 1.2
+		margin-bottom: 14px
+		+r(800)
+			font-size: 22px
+	&__list
+		font-size: 0
+		li
+			width: 50%
+			display: inline-block
+			+reg
+			font-size: 18px
+			line-height: 1.2
+			color: #4dabf5
+			vertical-align: top
+			margin-bottom: 18px
+			+r(800)
+				width: 100%
+	&__img
+		max-width: 100%
+		text-align: center
+		font-size: 0
+		padding: 15px 0 0 
+.d-size
+	text-align: center
+	padding: 20px 0 6px
+	position: relative
+	&__inner
+		border: 1px solid #4dabf5
+		+border-radius(2px)
+		height: 7px
+		max-width: 422px
+		width: 100%
+		+box
+		position: relative
+		margin: 0 auto 
+		margin-top: 22px
+	&__percent
+		+s(percent)
+		display: inline-block
+		font-size: 0
+	&__row
+		background: #00aeef
+		height: 100%
+		width: 62.5%
+		margin-left: 22% 
+	&__pin
+		position: absolute
+		bottom: -6px
+		padding: 0 0 33px
+		+med
+		font-size: 24px
+		color: #00aeef 
+		z-index: 2 
+		&:before
+			position: absolute
+			content: ""
+			bottom: 5px
+			left: 50%
+			width: 21px
+			margin-left: -10.5px 
+			background: #fff
+			height: 7px
+		&:after
+			position: absolute
+			bottom: 0
+			left: 50%
+			margin-left: -9.5px
+			content: ""
+		&.is-min
+			left: 17.5% 
+			&:after
+				+s(pin-green)
+		&.is-max
+			right: 9.2%
+			&:after
+				+s(pin-red)
+	&__icon
+		+s(fader)
+		position: absolute
+		bottom: 3px
+		right: 0
+		+r(600)
+			display: none
